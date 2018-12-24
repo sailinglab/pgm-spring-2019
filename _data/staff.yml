@@ -1,0 +1,50 @@
+Instructors:
+    - name: Eric P. Xing
+      email: epxing@cs.cmu.edu
+      url: https://www.cs.cmu.edu/~epxing/
+      office-hours: TBA
+      image: eric.jpg
+
+Head-GSI:
+    - name: Maruan Al-Shedivat
+      email: alshedivat@cs.cmu.edu
+      url: https://maruan.alshedivat.com
+      office-hours: TBA
+      image: maruan.png
+
+GSI:
+    - name: Lisa Lee
+      email: lslee@cs.cmu.edu
+      url: http://leelisa.com
+      office-hours: TBA
+      image: lisa.jpg
+
+    - name: Xun Zheng
+      email: xunzheng@cs.cmu.edu
+      url: https://www.cs.cmu.edu/~xunzheng/
+      office-hours: TBA
+      image:
+
+    - name: Hao Zhang
+      email: hao@cs.cmu.edu
+      url: https://www.cs.cmu.edu/~hzhang2/
+      office-hours: TBA
+      image: hao.jpg
+
+    - name: Paul P. Liang
+      email: pliang@cs.cmu.edu
+      url: https://www.cs.cmu.edu/~xunzheng/
+      office-hours: TBA
+      image: paul.jpg
+
+    - name: Ben Eysenbach
+      image: ben.jpg
+      url: https://ben-eysenbach.github.io
+      office-hours: TBA
+      email: beysenba@cs.cmu.edu
+
+    - name: Yifan Wu
+      image: yifan.jpg
+      url: https://www.cs.cmu.edu/~yw4/
+      office-hours: TBA
+      email: yw4@andrew.cmu.edu
