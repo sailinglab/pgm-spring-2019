@@ -11,7 +11,7 @@ title: Schedule
 {% assign lecture = item %}
 <tr>
     <th scope="row">{{ lecture.date }}</th>
-    {% if lecture.title contains 'No class' %}
+    {% if lecture.title contains 'No class' or forloop.last %}
     {% assign skip_classes = skip_classes | plus: 1 %}
     <td colspan="3" align="center">{{ lecture.title }}</td>
     {% else %}

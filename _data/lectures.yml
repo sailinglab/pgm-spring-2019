@@ -2,7 +2,8 @@
 
 - date: Monday,<br />Jan 14
   lecturer: Eric
-  title: "Introduction to GM"
+  title: >
+    <strong>Introduction to GM</strong>
   slides: "#"
   video: "#"
   notes: "#"
@@ -11,76 +12,98 @@
     - E. Airoldi, <a href="#" target="_blank">Getting Started in Probabilistic Graphical Models</a>
 
 - date: Wednesday,<br />Jan 16
-  lecturer:
-  title: "Representation: BN"
+  lecturer: Eric
+  title: >
+    <strong>Representation: Directed GMs (BNs)</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Jan 21
-  lecturer:
-  title: "No class (MLK day)"
+  title: No class (MLK day)
 
 - date: Wednesday,<br />Jan 23
-  lecturer:
-  title: "Representation: Undirected GMs"
+  lecturer: Eric
+  title: >
+    <strong>Representation: Undirected GMs (MRFs)</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Jan 28
-  lecturer:
-  title: "Exact inference (elimination, message passing, sum product)"
+  lecturer: Eric
+  title: >
+    <strong>Exact inference</strong> <br />
+    - Elimination <br />
+    - Message passing <br />
+    - Sum product algorithm
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Jan 30
-  lecturer:
-  title: "Parameter learning in fully observable GM"
+  lecturer: Eric
+  title: >
+    <strong>Parameter learning in fully observable Bayesian Networks</strong> <br />
+    - Generalized Linear Models (GLIMs) <br />
+    - Maximum Likelihood Estimation (MLE) <br />
+    - Markov Models
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Feb 4
-  lecturer:
-  title: "Structure learning in fully observable GM"
+  lecturer: Eric
+  title: >
+    <strong>Parameter Learning of partially observed BN</strong> <br />
+    - Mixture models <br />
+    - Hidden Markov Models (HMMs) <br />
+    - The EM algorithm
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Feb 6
-  lecturer:
-  title: "Causal inference"
+  lecturer: Eric
+  title: >
+    <strong>Parameter learning in fully observable Markov networks (CRF)</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Feb 11
-  lecturer:
-  title: "Partially observed GM and the EM algorithm"
+  lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a>
+  title: >
+    <strong>Causal inference</strong> <br />
+    - Structure learning <br />
+    - Chow-Liu algorithm <br />
+    - ...
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Feb 13
-  lecturer:
-  title: "Gaussian graphical models, Ising model, Modeling networks"
+  lecturer: Eric
+  title: >
+    <strong>Gaussian graphical models, Ising model, Modeling networks</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Feb 18
-  lecturer:
-  title: "Discrete sequential models: HMM vs. CRF"
+  lecturer: Eric
+  title: >
+    <strong>Sequential models</strong> <br />
+    - Discrete Hidden State (HMM vs. CRF) <br />
+    - Continuous Hidden State (Kalman Filter)
   slides:
   video:
   notes:
@@ -89,40 +112,52 @@
 - title: "Module 2: Approximate Inference"
 
 - date: Wednesday,<br />Feb 20
-  lecturer:
-  title: "Approximate Inference: Introduction and Overview"
+  lecturer: Eric
+  title: >
+    <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Feb 25
-  lecturer:
-  title: "Theory of Variational Inference: Inner and Outer Approximation"
+  lecturer: Eric
+  title: >
+    <strong>Theory of Variational Inference: Inner and Outer Approximations</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Feb 27
-  lecturer:
-  title: "Variational Inference: Mean Field Approximation and Topic Models"
+  lecturer: Eric
+  title: >
+    <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Mar 4
-  lecturer:
-  title: "Approximate Inference: Monte Carlo and Sequential Monte Carlo methods"
+  lecturer: Eric
+  title: >
+    <strong>Markov Chain Monte Carlo</strong> <br />
+    - Metropolis-Hastings <br />
+    - Hamiltonian Monte Carlo <br />
+    - Langevin Dynamics
   slides:
   video:
   notes:
   readings:
 
+- title: "Module 3: Deep Learning &amp; Generative Models"
+
 - date: Wednesday,<br />Mar 6
-  lecturer:
-  title: "Markov Chain Monte Carlo (including Hamiltonian MC and Langevin dynamics)"
+  lecturer: Eric
+  title: >
+    <strong>Statistical and Algorithmic Foundations of Deep Learning</strong> <br />
+    - Insight into DL <br />
+    - Connections to GM
   slides:
   video:
   notes:
@@ -134,77 +169,79 @@
 - date: Monday,<br />Mar 13
   title: No classes (Spring break)
 
-- title: "Module 3: Deep Generative Models &amp; Reinforcement Learning"
-
 - date: Monday,<br />Mar 18
-  lecturer:
-  title: "Building blocks of DL (part 1) and connections to GM"
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  title: >
+    <strong>Building blocks of DL</strong> <br />
+    - RNN and LSTM <br />
+    - CNN, Transformers <br />
+    - Attention mechanisms <br />
+    - (Case studies in NLP)
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Mar 20
-  lecturer:
-  title: "Building blocks of DL (part 2): RNN, CNN, attention (with case studies in NLP)"
+  lecturer: Eric
+  title: >
+    <strong>Deep generative models (part 1): <br />
+    Overview of advances and theoretical basis of deep generative models</strong> <br />
+    - Wake sleep algorithm <br />
+    - Variational autoencoders <br />
+    - Generative adversarial networks
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Mar 25
-  lecturer:
-  title: "Deep generative models (part 1): VAE, Normalizing Flows, Inverse Autoregressive Flows"
+  lecturer: Maruan or <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  title: >
+    <strong>Deep generative models (part 2)</strong> <br />
+    - Variational Autoencoders (VAE) <br />
+    - Normalizing Flows <br />
+    - Inverse Autoregressive Flows <br />
+    - GANs and Implicit Models
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Mar 27
-  lecturer:
-  title: "Deep generative models (part 2): GANs and Implicit Models"
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  title: >
+    <strong>A unified view of deep generative models</strong> <br />
+    - New formulations of deep generative models <br />
+    - Symmetric modeling of latent and visible variables <br />
+    - Evaluation of Deep Generative Models
   slides:
   video:
   notes:
   readings:
 
+- title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
+
 - date: Monday,<br />Apr 1
-  lecturer:
-  title: "Deep generative models (part 3): Evaluation of Deep Generative Models"
+  lecturer: Maruan
+  title: >
+    <strong>Sequential decision making (part 1): The framework</strong> <br />
+    - Brief introduction to reinforcement learning (RL) <br />
+    - Connections to GM: RL and control as inference
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Apr 3
-  lecturer:
-  title: "Automated black-box variational inference and elements of probabilistic programming"
-  slides:
-  video:
-  notes:
-  readings:
-
-- date: Monday,<br />Apr 8
-  lecturer:
-  title: "Sequential decision making (part 1): Brief introduction to reinforcement learning (RL)"
-  slides:
-  video:
-  notes:
-  readings:
-
-- date: Wednesday,<br />Apr 10
-  lecturer:
-  title: "Sequential decision making (part 2): The GM and Bayesian perspectives on RL"
-  slides:
-  video:
-  notes:
-  readings:
-
-- title: "Module 4: Scalable methods"
-
-- date: Monday,<br />Apr 15
-  lecturer:
-  title: "Scalable algorithms and systems for learning, inference, and prediction"
+  lecturer: Maruan
+  title: >
+    <strong>Sequential decision making (part 2): The algorithms</strong> <br />
+    - Maximum entropy RL and inverse RL <br />
+    - Max-entropy policy gradient algorithms <br />
+    - Soft Q-learning algorithms <br />
+    - Some open questions/challenges <br />
+    - Applications/case studies (games, robotics, etc.)
   slides:
   video:
   notes:
@@ -212,42 +249,78 @@
 
 - title: "Module 5: Nonparametric methods"
 
-- date: Wednesday,<br />Apr 17
-  lecturer:
-  title: "Non-parameterics: DP, HDP, IBP"
+- date: Monday,<br />Apr 8
+  lecturer: Eric
+  title: >
+    <strong>Bayesian non-parameterics</strong> <br />
+    - Dirichlet process (DP) <br />
+    - Hierarchical Dirichlet Process (HDP) <br />
+    - Chinese Restaurant Process (CRP) <br />
+    - Indian Buffet Process (IBP)
   slides:
   video:
   notes:
   readings:
 
+- date: Wednesday,<br />Apr 10
+  lecturer: Maruan
+  title: >
+    <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
+    - GPs and (deep) kernel learning <br />
+    - Meta-learning formulation as learning a process <br />
+    - Hypernetworks and contextual networks <br />
+    - Neural processes (NPs) as an approximation to GPs
+  slides:
+  video:
+  notes:
+  readings:
+
+- date: Monday,<br />Apr 15
+  lecturer: Eric
+  title: >
+    <strong>Regularized Bayesian GMs (structured sparsiry, diversity, etc.)</strong>
+  slides:
+  video:
+  notes:
+  readings:
+
+- date: Wednesday,<br />Apr 17
+  lecturer: Eric
+  title: >
+    <strong>Elements of Spectral & Kernel GMs</strong>
+  slides:
+  video:
+  notes:
+  readings:
+
+- title: "Module 6: Modular and scalable algorithms and systems"
+
 - date: Monday,<br />Apr 22
   lecturer:
-  title: "Non-parameterics: Gaussian Processes and elements of meta-learning"
+  title: >
+    <strong>Automated black-box variational inference and elements of probabilistic programming</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />Apr 24
-  lecturer:
-  title: "Regularized Bayesian Graphical Models"
+  lecturer: Eric
+  title: >
+    <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Monday,<br />Apr 29
-  lecturer:
-  title: "Elements of Spectral &amp; Kernel Graphical Models"
+  lecturer: Eric
+  title: >
+    <strong>Industialization of AI: standards, modules, building-blocks, and platform</strong>
   slides:
   video:
   notes:
   readings:
 
 - date: Wednesday,<br />May 1
-  lecturer:
-  title: "Project presentations"
-  slides:
-  video:
-  notes:
-  readings:
+  title: Project presentations (TBA)
