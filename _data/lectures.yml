@@ -80,10 +80,7 @@
 - date: 2/11
   lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a>
   title: >
-    <strong>Causal inference</strong> <br />
-    - Structure learning <br />
-    - Chow-Liu algorithm <br />
-    - ...
+    <strong>Causal discovery and inference</strong>
   slides:
   video:
   notes:
