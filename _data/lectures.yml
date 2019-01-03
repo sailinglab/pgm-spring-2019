@@ -1,6 +1,6 @@
 - title: "Module 1: Introduction, Representation, and Exact Inference"
 
-- date: Monday,<br />Jan 14
+- date: 1/14
   lecturer: Eric
   title: >
     <strong>Introduction to GM</strong>
@@ -11,7 +11,7 @@
     - Jordan, <a href="#" target="_blank">Graphical Models</a>
     - E. Airoldi, <a href="#" target="_blank">Getting Started in Probabilistic Graphical Models</a>
 
-- date: Wednesday,<br />Jan 16
+- date: 1/16
   lecturer: Eric
   title: >
     <strong>Representation: Directed GMs (BNs)</strong>
@@ -20,10 +20,10 @@
   notes:
   readings:
 
-- date: Monday,<br />Jan 21
+- date: 1/21
   title: No class (MLK day)
 
-- date: Wednesday,<br />Jan 23
+- date: 1/23
   lecturer: Eric
   title: >
     <strong>Representation: Undirected GMs (MRFs)</strong>
@@ -32,7 +32,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Jan 28
+- date: 1/28
   lecturer: Eric
   title: >
     <strong>Exact inference</strong> <br />
@@ -44,7 +44,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Jan 30
+- date: 1/30
   lecturer: Eric
   title: >
     <strong>Parameter learning in fully observable Bayesian Networks</strong> <br />
@@ -56,7 +56,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Feb 4
+- date: 2/4
   lecturer: Eric
   title: >
     <strong>Parameter Learning of partially observed BN</strong> <br />
@@ -68,7 +68,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Feb 6
+- date: 2/6
   lecturer: Eric
   title: >
     <strong>Parameter learning in fully observable Markov networks (CRF)</strong>
@@ -77,7 +77,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Feb 11
+- date: 2/11
   lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a>
   title: >
     <strong>Causal inference</strong> <br />
@@ -89,7 +89,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Feb 13
+- date: 2/13
   lecturer: Eric
   title: >
     <strong>Gaussian graphical models, Ising model, Modeling networks</strong>
@@ -98,7 +98,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Feb 18
+- date: 2/18
   lecturer: Eric
   title: >
     <strong>Sequential models</strong> <br />
@@ -111,7 +111,7 @@
 
 - title: "Module 2: Approximate Inference"
 
-- date: Wednesday,<br />Feb 20
+- date: 2/20
   lecturer: Eric
   title: >
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
@@ -120,7 +120,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Feb 25
+- date: 2/25
   lecturer: Eric
   title: >
     <strong>Theory of Variational Inference: Inner and Outer Approximations</strong>
@@ -129,7 +129,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Feb 27
+- date: 2/27
   lecturer: Eric
   title: >
     <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
@@ -138,7 +138,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Mar 4
+- date: 3/4
   lecturer: Eric
   title: >
     <strong>Markov Chain Monte Carlo</strong> <br />
@@ -152,7 +152,7 @@
 
 - title: "Module 3: Deep Learning &amp; Generative Models"
 
-- date: Wednesday,<br />Mar 6
+- date: 3/6
   lecturer: Eric
   title: >
     <strong>Statistical and Algorithmic Foundations of Deep Learning</strong> <br />
@@ -163,13 +163,13 @@
   notes:
   readings:
 
-- date: Monday,<br />Mar 11
+- date: 3/11
   title: No classes (Spring break)
 
-- date: Monday,<br />Mar 13
+- date: 3/13
   title: No classes (Spring break)
 
-- date: Monday,<br />Mar 18
+- date: 3/18
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
   title: >
     <strong>Building blocks of DL</strong> <br />
@@ -182,7 +182,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Mar 20
+- date: 3/20
   lecturer: Eric
   title: >
     <strong>Deep generative models (part 1): <br />
@@ -195,7 +195,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Mar 25
+- date: 3/25
   lecturer: Maruan or <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
   title: >
     <strong>Deep generative models (part 2)</strong> <br />
@@ -208,7 +208,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Mar 27
+- date: 3/27
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
   title: >
     <strong>A unified view of deep generative models</strong> <br />
@@ -222,7 +222,7 @@
 
 - title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
 
-- date: Monday,<br />Apr 1
+- date: 4/1
   lecturer: Maruan
   title: >
     <strong>Sequential decision making (part 1): The framework</strong> <br />
@@ -233,7 +233,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Apr 3
+- date: 4/3
   lecturer: Maruan
   title: >
     <strong>Sequential decision making (part 2): The algorithms</strong> <br />
@@ -249,7 +249,7 @@
 
 - title: "Module 5: Nonparametric methods"
 
-- date: Monday,<br />Apr 8
+- date: 4/8
   lecturer: Eric
   title: >
     <strong>Bayesian non-parameterics</strong> <br />
@@ -262,7 +262,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Apr 10
+- date: 4/10
   lecturer: Maruan
   title: >
     <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
@@ -275,7 +275,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Apr 15
+- date: 4/15
   lecturer: Eric
   title: >
     <strong>Regularized Bayesian GMs (structured sparsiry, diversity, etc.)</strong>
@@ -284,7 +284,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Apr 17
+- date: 4/17
   lecturer: Eric
   title: >
     <strong>Elements of Spectral & Kernel GMs</strong>
@@ -295,7 +295,7 @@
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
-- date: Monday,<br />Apr 22
+- date: 4/22
   lecturer:
   title: >
     <strong>Automated black-box variational inference and elements of probabilistic programming</strong>
@@ -304,7 +304,7 @@
   notes:
   readings:
 
-- date: Wednesday,<br />Apr 24
+- date: 4/24
   lecturer: Eric
   title: >
     <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
@@ -313,7 +313,7 @@
   notes:
   readings:
 
-- date: Monday,<br />Apr 29
+- date: 4/29
   lecturer: Eric
   title: >
     <strong>Industialization of AI: standards, modules, building-blocks, and platform</strong>
@@ -322,5 +322,5 @@
   notes:
   readings:
 
-- date: Wednesday,<br />May 1
+- date: 5/1
   title: Project presentations (TBA)
