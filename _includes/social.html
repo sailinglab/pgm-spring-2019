@@ -1,15 +1,6 @@
-<div class="social">
-  <span class="contacticon center">
-    <a href="mailto:{{ site.email | encode_email }}"><i class="fas fa-envelope"></i></a>
-    {% if site.orcid_id %}<a href="https://orcid.org/{{ site.orcid_id }}" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>{% endif %}
-    {% if site.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-    {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
-    {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
-    {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>{% endif %}
-    {% if site.strava_userid %}<a href="https://www.strava.com/athletes/{{ site.strava_userid }}" target="_blank" title="Strava"><i class="fab fa-strava"></i></a>{% endif %}
-  </span>
-
-  <div class="col three caption">
-    {{ site.contact_note }}
-  </div>
-</div>
+<ul class="social-media-list">
+  {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank"><i class="fab fa-github"></i> <span class="username">{{ site.github_username| escape }}</span></a></li>{%- endif -%}
+  {%- if site.youtube_username -%}<li><a href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}"  target="_blank"><i class="fab fa-youtube"></i> <span class="username">{{ site.youtube_username| escape }}</span></a></li>{%- endif -%}
+  {%- if site.youtube_channel -%}<li><a href="https://www.youtube.com/channel/{{ site.youtube_channel| cgi_escape | escape }}"  target="_blank"><i class="fab fa-youtube"></i> <span class="username">{%- if site.youtube_channel_name -%}{{ site.youtube_channel_name | escape }}{%- else -%}YouTube{%- endif -%}</span></a></li>{%- endif -%}
+  {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"  target="_blank"><i class="fas fa-rss"></i> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
+</ul>

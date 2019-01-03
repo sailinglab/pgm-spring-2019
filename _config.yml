@@ -1,7 +1,8 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Probabilistic Graphical Models
+author: SAILING lab
+name: 10-708 PGM
 title: Probabilistic Graphical Models
 email: 10708-instructor@cs.cmu.edu
 description: >
@@ -11,25 +12,20 @@ footer_text: >
 
 url:  # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
-last_updated:  # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: # your GitHub user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
-contact_note: # contact note
-
-google_analytics:  # out your google-analytics code
+github_username: sailinglab
+google_analytics: UA-131744305-1
+youtube_channel: UCim-E6bNz7lUyKZwhgN6S1A
+rss:  # notes rss
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: course notes
-blog_description:
+blog_description: course notes written by students and edited by instructors
 
 # Pagination
 paginate: 4
@@ -46,7 +42,7 @@ disqus_shortname: # put your disqus shortname
 
 # Optional features
 show_social_icons:  true
-enable_anchorjs:    false
+enable_anchorjs:    true
 enable_katex:       true
 
 # -----------------------------------------------------------------------------
@@ -67,7 +63,7 @@ announcements_limit: 5
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Includes & excludes
 include: ['_pages']
@@ -83,5 +79,5 @@ plugins:
 # Other settings
 # -----------------------------------------------------------------------------
 jquery_version: "1.12.4"
-katex_version: "0.9.0"
+katex_version: "0.10.0"
 anchorjs_version: "3.2.2"

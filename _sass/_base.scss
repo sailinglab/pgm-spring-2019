@@ -22,11 +22,18 @@ body {
 }
 
 .wrapper {
-    max-width: -webkit-calc(900px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(900px - (#{$horizontal-spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$horizontal-spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$horizontal-spacing-unit}));
     margin-right: auto;
     margin-left: auto;
+    padding-right: $horizontal-spacing-unit / 2;
+    padding-left: $horizontal-spacing-unit / 2;
+    @extend .clearfix;
+
+    @media screen and (min-width: $on-large) {
+    max-width: -webkit-calc(#{$content-width} - (#{$horizontal-spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$horizontal-spacing-unit} * 2));
     padding-right: $horizontal-spacing-unit;
     padding-left: $horizontal-spacing-unit;
-    @extend .clearfix;
+  }
 }

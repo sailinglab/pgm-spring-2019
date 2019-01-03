@@ -15,7 +15,7 @@ It is expected that after taking this class, students will have obtained suffici
 
 In order to take this class, students are required to have successfully completed Machine Learning 10-701/15-781, or an equivalent class.
 
-### Textbooks
+### textbooks
 
 The required textbook for this class is (note that the material of the class goes beyond this book):
 - Daphne Koller and Nir Friedman, [Probabilistic Graphical Models: Principles and Techniques](http://www.amazon.com/Probabilistic-Graphical-Models-Principles-Computation/dp/0262013193/ref=sr_1_1?ie=UTF8&s=books&qid=1250711756&sr=8-1).
@@ -26,7 +26,7 @@ We will also be using excerpts from the following work, which you do not need to
 Optional:
 - Kevin Murphy, **Machine Learning: a Probabilistic Perspective**.
 
-### Grading
+### grading
 
 The class requirements include brief reading summaries, scribe notes for 1 lecture, 4 problem sets, and a project.
 This is a PhD level course, and by the end of this class you should have a good understanding of the basic methodologies in probabilistic graphical models, and be able to use them to solve real problems of modest complexity.
@@ -39,7 +39,7 @@ The grading breakdown is as follows:
 
 Note that this class does not have any tests or exams.
 
-### Reading Summaries
+<!-- ### reading summaries
 
 **The required readings for this class are compulsory.**
 At the beginning of each lecture, students are to submit a *half-page summary* of the readings for that lecture.
@@ -48,9 +48,9 @@ Submitting a hard copy is a requirement and must be turned in on time *individua
 You have a total of **5 grace days** on which you can submit the summaries after the start of class or via email to [10708-instructor@cs.cmu.edu](mailto:10708-instructor@cs.cmu.edu) with no penalty.
 
 The summaries must be written at a high level and should focus on the main points of the assigned reading.
-As long as the summary is reasonable, full credit will be given.
+As long as the summary is reasonable, full credit will be given. -->
 
-### Scribe Duties
+### scribe duties
 
 Each student is required to scribe for a small number of lectures (most likely just 1).
 Most lectures will have at least 2 students acting as scribes, and they should work as a team.
@@ -63,7 +63,7 @@ As long as your scribe notes are of sufficient standard, you will be awarded ful
 If your notes have errors or are otherwise not up to standard, we will inform you and give you a chance to correct them.
 You will receive zero credit if you fail to submit your notes.
 
-### Homework Assignments
+### homework assignments
 
 There will be 4 homework assignments over the course of the semester.
 These assignments may contain material that has been covered by published papers and webpages.
@@ -73,7 +73,7 @@ We strongly recommend that you typeset your homework using appropriate software 
 If you are writing please make sure your homework is cleanly written up and legible.
 **The TAs will not invest undue effort to decrypt bad handwriting.**
 
-### Collaboration Policy
+### collaboration policy
 
 **Homework assignments must be done individually:** each student must hand in their own answers.
 However, it is acceptable to collaborate when figuring out answers and to help each other solve the problems.
@@ -81,14 +81,14 @@ We will be assuming that, as participants in a graduate course, you will be taki
 You also must indicate on each homework with whom you have collaborated.
 
 
-### Final Project
+### final project
 
 The class project will be carried out in groups of 2 or 3 people, and has four main parts: a proposal, a midway report, a final report, and a poster/oral presentation.
 The project is an integral part of this class, and is designed to be as similar as possible to researching and writing a conference-style paper.
 Please see the project page for more information about the final project.
 
 
-### Late Policy
+### late policy
 
 You will be allowed 2 total homework late days without penalty for the entire semester.
 You may be late by 1 day on two different homework assignments or late by 2 days on one homework.
@@ -101,12 +101,12 @@ Once those days are used, you will be penalized according to the following polic
 You must turn in at least 3 of the 4 assignments, even if for zero credit, in order to pass the course.
 **Please upload your late submissions to Gradescope.**
 
-### Regrade Policy
+### regrade policy
 
 If you feel that we have made a mistake in grading your homework, please submit a regrading request on Gradescope and we will consider your request.
 Please note that regrading of a homework may cause your grade to go either up or down.
 
-### Auditing
+### auditing
 
 To satisfy the auditing requirement, you must do *one* of the following:
 
@@ -116,9 +116,9 @@ You will need to submit a project proposal with everyone else, and present the p
 However, you don't need to submit a milestone or final paper.
 You must get at least 80% on the final presentation part of the project.
 
-*If you plan to audit the class, please email instructors saying that you will be auditing and tell us which requirement you plan to fulfill.*
+*If you plan to audit the class, please notify instructors that you are auditing and specify which requirement you plan to fulfill.*
 
-### A note to listeners outside CMU
+### listeners outside CMU
 
 Please feel free to reuse any of these course materials that you find of use in your own courses.
 We ask that you retain any copyright notices, and include a written notice indicating the source of any materials you use.

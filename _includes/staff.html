@@ -1,11 +1,11 @@
 <div class="instructors clearfix">
   {% for instructor in site.data.staff.Instructors %}
   <div class="instructor-profile-two-col">
-    <img src="{{ instructor.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" />
+    <a href="{{ instructor.url }}" target="_blank"><img src="{{ instructor.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" /></a>
     <ul class="instructor-info">
-      <li><strong>Instructor</strong> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
-      <li><a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
-      <li><strong>Office hours:</strong> {{ instructor.office-hours }}</li>
+      <li><span>Instructor</span> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
+      <li><span>Email:</span> <a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
+      <li><span>Office hours:</span> {{ instructor.office-hours }}</li>
     </ul>
   </div>
   {% endfor %}
@@ -13,12 +13,12 @@
   {% for instructor in site.data.staff.Head-GSI %}
   <div class="instructor-profile-two-col">
     {% if instructor.image %}
-    <img src="{{ instructor.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" />
+    <a href="{{ instructor.url }}" target="_blank"><img src="{{ instructor.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" /></a>
     {% endif %}
     <ul class="instructor-info">
-      <li><strong>Head GSI</strong> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
-      <li><a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
-      <li><strong>Office hours:</strong> {{ instructor.office-hours }}</li>
+      <li><span>Head GSI</span> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
+      <li><span>Email:</span> <a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
+      <li><span>Office hours:</span> {{ instructor.office-hours }}</li>
     </ul>
   </div>
   {% endfor %}
@@ -26,12 +26,12 @@
   {% for instructor in site.data.staff.GSI %}
   <div class="instructor-profile-two-col">
     {% if instructor.image %}
-    <img src="{{ instructor.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" />
+    <a href="{{ instructor.url }}" target="_blank"><img src="{{ instructor.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" /></a>
     {% endif %}
     <ul class="instructor-info">
-      <li><strong>GSI</strong> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
-      <li><a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
-      <li><strong>Office hours:</strong> {{ instructor.office-hours }}</li>
+      <li><span>GSI</span> <a href="{{ instructor.url }}" target="_blank">{{ instructor.name }}</a></li>
+      <li><span>Email:</span> <a href="mailto:{{ instructor.email | encode_email }}" target="_blank">{{ instructor.email }}</a></li>
+      <li><span>Office hours:</span> {{ instructor.office-hours }}</li>
     </ul>
   </div>
   {% endfor %}

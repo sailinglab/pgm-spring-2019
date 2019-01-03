@@ -235,4 +235,10 @@ $caption-font-size: 12px;
 $caption-color: #aaa;
 
 /* add on-palm to be consistent with other jekyll theme media queries */
-$on-palm:  600px !default;
+$content-width:    900px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;

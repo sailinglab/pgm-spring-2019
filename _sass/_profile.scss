@@ -37,6 +37,17 @@
         float: left;
         list-style-type: none;
         padding-left: 0;
+
+        a {
+            color: $theme-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            font-weight: 400;
+        }
     }
 }
 .instructor-profile-two-col {

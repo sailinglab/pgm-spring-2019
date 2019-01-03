@@ -10,6 +10,13 @@
         border-bottom: 1px solid $light-gray;
         padding-bottom: $space-3;
         padding-top: $space-3;
+
+        h2 {
+            margin-top: 0.2em;
+        }
+        p {
+            margin-top: 0.1em;
+        }
     }
 }
 .post-title {
