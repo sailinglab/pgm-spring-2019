@@ -12,7 +12,7 @@ Many of the problems in artificial intelligence, statistics, computer systems, c
 ***
 
 - **Time:** Monday, Wednesday 12:00-1:20 pm
-- **Location:** GHC 4307
+- **Location:** [Posner Hall 152](https://www.google.com/maps/place/Posner+Hall/@40.4424422,-79.9448675){:target="\_blank"}
 - **Recitations:** TBA
 
 ***
