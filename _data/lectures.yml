@@ -5,11 +5,12 @@
   title: >
     <strong>Introduction to GM</strong>
   slides: "#"
-  video: "#"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
   notes: "#"
   readings:
     - Jordan, <a href="#" target="_blank">Graphical Models</a>
     - E. Airoldi, <a href="#" target="_blank">Getting Started in Probabilistic Graphical Models</a>
+  logistics:
 
 - date: 1/16
   lecturer: Eric
@@ -19,6 +20,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 1/21
   title: No class (MLK day)
@@ -31,6 +33,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 1/28
   lecturer: Eric
@@ -43,6 +46,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW1 out (Mon, 1/28)
 
 - date: 1/30
   lecturer: Eric
@@ -55,6 +60,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 2/4
   lecturer: Eric
@@ -67,6 +73,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 2/6
   lecturer: Eric
@@ -76,6 +83,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 2/11
   lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a>
@@ -85,6 +93,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 2/13
   lecturer: Eric
@@ -94,6 +103,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW1 due (Wed, 2/13)
 
 - date: 2/18
   lecturer: Eric
@@ -105,6 +116,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW2 out (Mon, 2/18)
 
 - title: "Module 2: Approximate Inference"
 
@@ -116,6 +129,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 2/25
   lecturer: Eric
@@ -125,6 +139,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 2/27
   lecturer: Eric
@@ -134,6 +149,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 3/4
   lecturer: Eric
@@ -146,6 +162,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - title: "Module 3: Deep Learning &amp; Generative Models"
 
@@ -159,6 +176,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW2 due, HW3 out (Wed, 3/6)
 
 - date: 3/11
   title: No classes (Spring break)
@@ -178,6 +197,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 3/20
   lecturer: Eric
@@ -191,6 +211,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 3/25
   lecturer: Maruan or <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
@@ -204,6 +225,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 3/27
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
@@ -216,6 +238,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW3 due (Wed, 3/27)
 
 - title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
 
@@ -229,6 +253,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW4 out (Mon, 4/8)
 
 - date: 4/3
   lecturer: Maruan
@@ -243,6 +269,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - title: "Module 5: Nonparametric methods"
 
@@ -258,6 +285,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 4/10
   lecturer: Maruan
@@ -271,6 +299,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 4/15
   lecturer: Eric
@@ -280,6 +309,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 4/17
   lecturer: Eric
@@ -289,6 +319,8 @@
   video:
   notes:
   readings:
+  logistics: >
+    HW4 due (Wed, 4/17)
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
@@ -300,6 +332,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 4/24
   lecturer: Eric
@@ -309,6 +342,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 4/29
   lecturer: Eric
@@ -318,6 +352,7 @@
   video:
   notes:
   readings:
+  logistics:
 
 - date: 5/1
   title: Project presentations (TBA)
