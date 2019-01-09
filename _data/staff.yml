@@ -2,7 +2,7 @@ Instructors:
     - name: Eric P. Xing
       email: epxing@cs.cmu.edu
       url: https://www.cs.cmu.edu/~epxing/
-      office-hours: TBA
+      office-hours: "Monday 1:30-2:30pm, GHC 8101"
       image: eric.jpg
 
 Head-GSI:
@@ -22,7 +22,7 @@ GSI:
     - name: Xun Zheng
       email: xunzheng@cs.cmu.edu
       url: https://www.cs.cmu.edu/~xunzheng/
-      office-hours: Friday 4-5pm
+      office-hours: "Friday 4-5pm"
       image: xun.jpg
 
     - name: Hao Zhang
