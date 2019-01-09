@@ -32,32 +32,20 @@ The class requirements include brief reading summaries, scribe notes for 1 lectu
 This is a PhD level course, and by the end of this class you should have a good understanding of the basic methodologies in probabilistic graphical models, and be able to use them to solve real problems of modest complexity.
 The grading breakdown is as follows:
 
-- Reading Summaries (10%)
-- Scribe Duties (10%)
+- Scribe Duties (20%)
 - Homework Assignments (40%)
 - Final Project (40%)
 
-Note that this class does not have any tests or exams.
-
-<!-- ### reading summaries
-
-**The required readings for this class are compulsory.**
-At the beginning of each lecture, students are to submit a *half-page summary* of the readings for that lecture.
-Submitting a hard copy is a requirement and must be turned in on time *individually* (i.e. before the start of each class) in order to receive the credit.
-
-You have a total of **5 grace days** on which you can submit the summaries after the start of class or via email to [10708-instructor@cs.cmu.edu](mailto:10708-instructor@cs.cmu.edu) with no penalty.
-
-The summaries must be written at a high level and should focus on the main points of the assigned reading.
-As long as the summary is reasonable, full credit will be given. -->
+*Note that this class does not have any tests or exams.*
 
 ### scribe duties
 
 Each student is required to scribe for a small number of lectures (most likely just 1).
-Most lectures will have at least 2 students acting as scribes, and they should work as a team.
+Most lectures will have 3-4 students acting as scribes, and they should work as a team.
 During your assigned lectures, you are to take detailed notes in collaboration with your fellow scribes.
-After the lecture, the scribe team is to convert their notes into a written format (LaTeX).
-The notes must be detailed and thorough, and must be submitted through a Pull Request on GitHub within 1 week after the lecture.
-TAs will audit and review the submitted notes, request changes if necessary, and will eventually approve the notes and add them to the class page.
+After the lecture, the scribe team is to convert their notes into a written format (see [the guidelines](https://github.com/sailinglab/pgm-spring-2019/tree/master/_posts){:target="\_blank"}).
+The notes must be detailed and thorough, and must be submitted through a pull request on GitHub within 1 week after the lecture.
+TAs will audit and review the submitted notes, request changes if necessary, and will eventually approve the notes and add them to the course page.
 
 As long as your scribe notes are of sufficient standard, you will be awarded full credit for scribe duties.
 If your notes have errors or are otherwise not up to standard, we will inform you and give you a chance to correct them.
@@ -69,9 +57,7 @@ There will be 4 homework assignments over the course of the semester.
 These assignments may contain material that has been covered by published papers and webpages.
 It is a graduate class and we expect students to solve the problems themselves rather than search for answers.
 
-We strongly recommend that you typeset your homework using appropriate software such as $$\LaTeX.$$
-If you are writing please make sure your homework is cleanly written up and legible.
-**The TAs will not invest undue effort to decrypt bad handwriting.**
+**The students are required to typeset homework solutions using appropriate software such as $$\LaTeX.$$**
 
 ### collaboration policy
 
@@ -83,14 +69,15 @@ You also must indicate on each homework with whom you have collaborated.
 
 ### final project
 
-The class project will be carried out in groups of 2 or 3 people, and has four main parts: a proposal, a midway report, a final report, and a poster/oral presentation.
+The class project will be carried out in groups of 3 or 4 people, and has four main parts: a proposal, a midway report, a final report, and a poster/oral presentation.
 The project is an integral part of this class, and is designed to be as similar as possible to researching and writing a conference-style paper.
-Please see the project page for more information about the final project.
+
+Please see the [project page](https://sailinglab.github.io/pgm-spring-2019/project/) for more information about the final project.
 
 
 ### late policy
 
-You will be allowed 2 total homework late days without penalty for the entire semester.
+You will be allowed **2 total homework late days** without penalty for the entire semester.
 You may be late by 1 day on two different homework assignments or late by 2 days on one homework.
 Once those days are used, you will be penalized according to the following policy:
 
@@ -99,7 +86,7 @@ Once those days are used, you will be penalized according to the following polic
 - It is worth zero credit after that.
 
 You must turn in at least 3 of the 4 assignments, even if for zero credit, in order to pass the course.
-**Please upload your late submissions to Gradescope.**
+Please upload your late submissions to [Gradescope](https://www.gradescope.com/courses/36025){:target="\_blank"}.
 
 ### regrade policy
 

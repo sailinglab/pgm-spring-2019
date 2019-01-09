@@ -13,6 +13,8 @@ Many of the problems in artificial intelligence, statistics, computer systems, c
 
 - **Time:** Monday, Wednesday 12:00-1:20 pm
 - **Location:** [Posner Hall 152](https://www.google.com/maps/place/Posner+Hall/@40.4424422,-79.9448675){:target="\_blank"}
-- **Recitations:** TBA
+- **Discussion:** [Piazza](https://piazza.com/class/jqh4n6275r82yq){:target="\_blank"}
+- **HW submission:** [Gradescope](https://www.gradescope.com/courses/36025){:target="\_blank"}
+- **Online lectures:** TBA
 
 ***
