@@ -4,6 +4,10 @@ title: lecture notes template
 description: an example of a distill-style lecture notes that showcases the main elements
 date: 2019-01-09
 
+lecturers:
+  - name: Eric Xing
+    url: "https://www.cs.cmu.edu/~epxing/"
+
 authors:
   - name: Author 1  # author's full name
     url: "#"  # optional URL to the author's homepage

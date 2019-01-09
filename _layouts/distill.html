@@ -11,6 +11,14 @@
       "title": "{{ page.title }}",
       "description": "{{ page.description }}",
       "published": "{{ page.date }}",
+      "lecturers": [
+        {% for lecturer in page.lecturers %}
+        {
+          "lecturer": "{{ lecturer.name }}",
+          "lecturerURL": "{{ lecturer.url }}"
+        }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+      ],
       "authors": [
         {% for author in page.authors %}
         {
