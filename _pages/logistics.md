@@ -16,9 +16,9 @@ This is a PhD level course, and by the end of this class you should have a good 
 The grading breakdown is as follows:
 
 - Participation (4%)
-- Scribe Duties (16%)
+- Scribe Duties (10%)
 - Homework Assignments (40%)
-- Final Project (40%)
+- Final Project (46%)
 
 *Note that this class does not have any tests or exams.*
 
