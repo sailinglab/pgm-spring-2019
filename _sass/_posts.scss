@@ -65,3 +65,10 @@
     display: block;
     font-size: 42px;
 }
+#markdown-toc {
+    list-style: none;
+    padding-left: 0;
+    li > ul {
+        margin-bottom: 0;
+    }
+}
