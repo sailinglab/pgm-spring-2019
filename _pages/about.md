@@ -11,9 +11,6 @@ Many of the problems in artificial intelligence, statistics, computer systems, c
 The probabilistic graphical models framework provides an unified view for this wide range of problems, enables efficient inference, decision-making and learning in problems with a very large number of attributes and huge datasets.
 This graduate-level course will provide you with a strong foundation for both applying graphical models to complex problems and for addressing core research topics in graphical models.
 
-The class will cover the following aspects: the core representation, including Bayesian and Markov networks, and dynamic Bayesian networks; probabilistic inference algorithms, both exact and approximate; and learning methods for both the parameters and the structure of graphical models; modern topics such as deep generative models and reinforcement learning.
-Students entering the class should have a pre-existing working knowledge of probability, statistics, and algorithms, though the class has been designed to allow students with a strong mathematical background to catch up and fully participate.
-
 ***
 
 - **Time:** Monday/Wednesday 12:00-1:20 pm
