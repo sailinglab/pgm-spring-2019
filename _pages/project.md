@@ -18,7 +18,8 @@ All write-ups should use the [ICML style](https://media.neurips.cc/Conferences/I
 
 ### team formation
 
-You are responsible for forming project teams of 3 people. In some cases, we will also accept teams of 2, but a 3-person group is preferred.
+You are responsible for forming project teams of 3-4 people.
+In some cases, we will also accept teams of 2, but a 3-4-person group is preferred.
 Once you have formed your group, please send one email per team to the class instructor list with the names of all team members.
 If you have trouble forming a group, please send us an email and we will help you find project partners.
 
@@ -43,11 +44,13 @@ The grading breakdown for the proposal is as follows:
 - 10% for plan of activities
 - 10% for quality of writing
 
-The project proposal will be due by **7 PM on Monday, February 20th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project proposal will be due by **7 PM on Friday, February 22th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### midway report
 
-The midway report will serve as a check-point at the halfway mark of your project. It should be about **5 pages long**, and should be formatted like a conference paper, with the following sections: introduction, background & related work, methods, experiments, conclusion. The introduction and related work sections should be in their final form; the section on the proposed methods should be almost finished; the sections on the experiments and conclusions will have the results you have obtained, perhaps with place-holders for the results you plan/hope to obtain.
+The midway report will serve as a check-point at the halfway mark of your project.
+It should be about **5 pages long**, and should be formatted like a conference paper, with the following sections: introduction, background & related work, methods, experiments, conclusion.
+The introduction and related work sections should be in their final form; the section on the proposed methods should be almost finished; the sections on the experiments and conclusions will have the results you have obtained, perhaps with place-holders for the results you plan/hope to obtain.
 
 The grading breakdown for the midway report is as follows:
 
@@ -57,7 +60,7 @@ The grading breakdown for the midway report is as follows:
 - 10% for data collection and preliminary results
 - 10% for quality of writing
 
-The project midway report will be due on **Monday, March 27th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project midway report will be due on **Monday, April 1st**, and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### final report
 
@@ -81,6 +84,8 @@ The grading breakdown for the final report is as follows:
 - 30% for correctness, completeness, and difficulty of experiments and figures
 - 10% for empirical and theoretical analysis of results and methods
 - 20% for quality of writing (clarity, organization, flow, etc.)
+
+The project final report will be due on **Monday, May 8th** (tentative), and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### presentation
 

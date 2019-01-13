@@ -47,7 +47,7 @@
   notes:
   readings:
   logistics: >
-    HW1 out (Mon, 1/28)
+    <span class="event">HW1 out (Mon, 1/28)</span>
 
 - date: 1/30
   lecturer: Eric
@@ -104,7 +104,7 @@
   notes:
   readings:
   logistics: >
-    HW1 due (Wed, 2/13)
+    <span class="deadline">HW1 due (Wed, 2/13)</span>
 
 - date: 2/18
   lecturer: Eric
@@ -117,7 +117,7 @@
   notes:
   readings:
   logistics: >
-    HW2 out (Mon, 2/18)
+    <span class="event">HW2 out (Mon, 2/18)</span>
 
 - title: "Module 2: Approximate Inference"
 
@@ -129,7 +129,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">Project proposal due (Fri, 2/22)</span>
 
 - date: 2/25
   lecturer: Eric
@@ -177,7 +178,7 @@
   notes:
   readings:
   logistics: >
-    HW2 due, HW3 out (Wed, 3/6)
+    <span class="deadline">HW2 due</span>, <span class="event">HW3 out</span> (Wed, 3/6)
 
 - date: 3/11
   title: No classes (Spring break)
@@ -239,7 +240,7 @@
   notes:
   readings:
   logistics: >
-    HW3 due (Wed, 3/27)
+    <span class="deadline">HW3 due (Wed, 3/27)</span>
 
 - title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
 
@@ -254,7 +255,9 @@
   notes:
   readings:
   logistics: >
-    HW4 out (Mon, 4/8)
+    <span class="event">HW4 out</span>,
+    <span class="deadline">Midway report due</span>
+    (Mon, 4/1)
 
 - date: 4/3
   lecturer: Maruan
@@ -320,7 +323,7 @@
   notes:
   readings:
   logistics: >
-    HW4 due (Wed, 4/17)
+    <span class="deadline">HW4 due (Wed, 4/17)</span>
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
