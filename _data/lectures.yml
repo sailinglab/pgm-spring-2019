@@ -8,8 +8,8 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
   notes:
   readings:
-    - Jordan, <a href="#" target="_blank">Graphical Models</a>
-    - E. Airoldi, <a href="#" target="_blank">Getting Started in Probabilistic Graphical Models</a>
+    - Jordan, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/reading/graphical_model_Jordan.pdf" target="_blank">Graphical Models</a>
+    - E. Airoldi, <a href="https://dash.harvard.edu/bitstream/handle/1/2757496/Airoldi_GettingStarted.pdf" target="_blank">Getting Started in Probabilistic Graphical Models</a>
   logistics:
 
 - date: 1/16
@@ -20,6 +20,8 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
   notes:
   readings:
+    - Jordan Textbook, Ch. 2 (Section 2.1)
+    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%203.pdf" target="_blank">Ch. 3</a>
   logistics:
 
 - date: 1/21
