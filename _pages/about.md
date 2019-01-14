@@ -21,22 +21,3 @@ This graduate-level course will provide you with a strong foundation for both ap
 - **Contact:** Students should ask all course-related questions on [Piazza](https://piazza.com/class/jqh4n6275r82yq){:target="\_blank"}, where you will also find announcements. For external enquiries, personal matters, or in emergencies, you can email us at *10708-instructor@cs.cmu.edu*.
 
 ***
-
-### Textbooks
-
-The required textbook for this class is (note that the material of the class goes beyond this book):
-- Daphne Koller and Nir Friedman, [Probabilistic Graphical Models: Principles and Techniques](http://www.amazon.com/Probabilistic-Graphical-Models-Principles-Computation/dp/0262013193/ref=sr_1_1?ie=UTF8&s=books&qid=1250711756&sr=8-1){:target="\_blank"}.
-
-We will also be using excerpts from the following work, which you do not need to purchase:
-- Michael I. Jordan, **An Introduction to Probabilistic Graphical Models**, in preparation.<br/>
-Copies of certain chapters will be made available to students taking the class.
-
-Optional:
-- Kevin Murphy, **Machine Learning: A Probabilistic Perspective**.
-
-### Listeners outside CMU
-
-Please feel free to reuse any of these course materials that you find of use in your own courses.
-We ask that you retain any copyright notices, and include a written notice indicating the source of any materials you use.
-
-***
