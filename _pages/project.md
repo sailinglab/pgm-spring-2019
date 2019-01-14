@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /project/
-title: course project
-description: guidelines and suggestions for course projects
+title: Course Project
+description: Guidelines and suggestions for course projects
 ---
 
 Your class project is an opportunity for you to explore an interesting problem in the context of a real-world data sets.
@@ -16,14 +16,14 @@ Each project will be assigned a TA as a project consultant/mentor; instructors a
 
 All write-ups should use the [ICML style](https://media.neurips.cc/Conferences/ICML2019/Styles/icml2019_style.zip).
 
-### team formation
+### Team Formation
 
 You are responsible for forming project teams of 3-4 people.
 In some cases, we will also accept teams of 2, but a 3-4-person group is preferred.
 Once you have formed your group, please send one email per team to the class instructor list with the names of all team members.
 If you have trouble forming a group, please send us an email and we will help you find project partners.
 
-### project proposal
+### Project Proposal
 
 You must turn in a brief project proposal that provides an overview of your idea and also contains a brief survey of related work on the topic.
 We will provide a list of suggested project ideas for you to choose from, though you may discuss other project ideas with us, whether applied or theoretical.
@@ -46,7 +46,7 @@ The grading breakdown for the proposal is as follows:
 
 The project proposal will be due by **7 PM on Friday, February 22th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
-### midway report
+### Midway Report
 
 The midway report will serve as a check-point at the halfway mark of your project.
 It should be about **5 pages long**, and should be formatted like a conference paper, with the following sections: introduction, background & related work, methods, experiments, conclusion.
@@ -62,7 +62,7 @@ The grading breakdown for the midway report is as follows:
 
 The project midway report will be due on **Monday, April 1st**, and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
-### final report
+### Final Report
 
 Your final report is expected to be **8 pages excluding references**, in accordance with the length requirements for an ICML paper. It should have roughly the following format:
 
@@ -87,14 +87,14 @@ The grading breakdown for the final report is as follows:
 
 The project final report will be due on **Monday, May 8th** (tentative), and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
-### presentation
+### Presentation
 
 All project teams will present their work at the end of the semester.
 Each team will be given a time slot during which they will give a slide presentation to the class, similar in style to a conference presentation.
 If applicable, live demonstrations of your software are highly encouraged.
 
 
-## project suggestions
+## Project Suggestions
 
 If you are interested in a particular project, please contact the respective *contact person* to get further ideas or details.
 We may add more project suggestions down the road.

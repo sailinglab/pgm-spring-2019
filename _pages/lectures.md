@@ -1,7 +1,7 @@
 ---
 layout: schedule
 permalink: /lectures/
-title: schedule
+title: Schedule
 ---
 
 {% assign current_module = 0 %}

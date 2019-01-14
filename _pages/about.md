@@ -17,7 +17,7 @@ This graduate-level course will provide you with a strong foundation for both ap
 - **Location:** [Posner Hall 152](https://www.google.com/maps/place/Posner+Hall/@40.4424422,-79.9448675){:target="\_blank"}
 - **Discussion:** [Piazza](https://piazza.com/class/jqh4n6275r82yq){:target="\_blank"}
 - **HW submission:** [Gradescope](https://www.gradescope.com/courses/36025){:target="\_blank"}
-- **Online lectures:** the lectures will be live-streamed through [Panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0f44b4d7-fb4e-49eb-b88d-a9d00125e1b3){:target="\_blank"}, recorded, and made available on [YouTube](https://www.youtube.com/playlist?list=PLoZgVqqHOumTY2CAQHL45tQp6kmDnDcqn){:target="\_blank"}.
+- **Online lectures:** The lectures will be live-streamed through [Panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0f44b4d7-fb4e-49eb-b88d-a9d00125e1b3){:target="\_blank"}, recorded, and made available on [YouTube](https://www.youtube.com/playlist?list=PLoZgVqqHOumTY2CAQHL45tQp6kmDnDcqn){:target="\_blank"}.
 - **Contact:** Students should ask all course-related questions on [Piazza](https://piazza.com/class/jqh4n6275r82yq){:target="\_blank"}, where you will also find announcements. For external enquiries, personal matters, or in emergencies, you can email us at *10708-instructor@cs.cmu.edu*.
 
 ***
@@ -32,9 +32,9 @@ We will also be using excerpts from the following work, which you do not need to
 Copies of certain chapters will be made available to students taking the class.
 
 Optional:
-- Kevin Murphy, **Machine Learning: a Probabilistic Perspective**.
+- Kevin Murphy, **Machine Learning: A Probabilistic Perspective**.
 
-### Listeners Outside CMU
+### Listeners outside CMU
 
 Please feel free to reuse any of these course materials that you find of use in your own courses.
 We ask that you retain any copyright notices, and include a written notice indicating the source of any materials you use.

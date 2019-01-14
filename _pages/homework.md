@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /homework/
-title: homework assignments
+title: Homework Assignments
 ---
 
 TBA
