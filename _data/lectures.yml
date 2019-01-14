@@ -4,9 +4,9 @@
   lecturer: Eric
   title: >
     <strong>Introduction to GM</strong>
-  slides: "#"
+  slides: "https://www.dropbox.com/s/noxer7mbtvalj0t/lecture1-Introduction.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
-  notes: "#"
+  notes:
   readings:
     - Jordan, <a href="#" target="_blank">Graphical Models</a>
     - E. Airoldi, <a href="#" target="_blank">Getting Started in Probabilistic Graphical Models</a>
@@ -16,8 +16,8 @@
   lecturer: Eric
   title: >
     <strong>Representation: Directed GMs (BNs)</strong>
-  slides:
-  video:
+  slides: "https://www.dropbox.com/s/q53gmhc056zob8e/lecture2-BNrepresentation.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
   notes:
   readings:
   logistics:
