@@ -9,16 +9,18 @@ lecturers:
     url: "https://www.cs.cmu.edu/~epxing/"
 
 authors:
-  - name: Author 1  # author's full name
+  - name: Daniel Martin  # author's full name
     url: "#"  # optional URL to the author's homepage
-  - name: Author 2
+  - name: Yiwen Yuan
     url: "#"
-  - name: Author 3
+  - name: Youngseog Chung
+    url: "#"
+  - name: Siddarth Satpathy
     url: "#"
 
 editors:
-  - name: Editor 1  # editor's full name
-    url: "#"  # optional URL to the editor's homepage
+  - name: Maruan Al-Shedivat  # editor's full name
+    url: "https://www.cs.cmu.edu/~mshediva/"  # optional URL to the editor's homepage
 
 abstract: >
   An example abstract block.
