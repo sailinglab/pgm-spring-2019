@@ -20,7 +20,7 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
   notes:
   readings:
-    - Jordan Textbook, Ch. 2 (Section 2.1)
+    - Jordan Textbook, <a href="http://www.cs.cmu.edu/~epxing/Class/10708-05/Chapters/GM_mj/chapter2.ps" target="_blank">Ch. 2</a> (Section 2.1) 
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%203.pdf" target="_blank">Ch. 3</a>
   logistics:
 
