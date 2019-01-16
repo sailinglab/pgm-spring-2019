@@ -20,7 +20,7 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
   notes:
   readings:
-    - Jordan Textbook, <a href="http://www.cs.cmu.edu/~epxing/Class/10708-05/Chapters/GM_mj/chapter2.ps" target="_blank">Ch. 2</a> (Section 2.1)
+    - Jordan Textbook, <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf" target="_blank">Ch. 2</a> (Sec. 2.1)
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%203.pdf" target="_blank">Ch. 3</a>
   logistics:
 
@@ -35,7 +35,7 @@
   video:
   notes:
   readings:
-    - Jordan Textbook, Ch. 2 (Section 2.2 - end)
+    - Jordan Textbook, Ch. 2 (Sec. 2.2 - end)
     - Koller and Friedman Textbook, <a href="http://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%204.pdf" target="_blank">Ch. 4</a>
     - A. Fischer and C. Igel, <a href="http://image.diku.dk/igel/paper/AItRBM-proof.pdf" target="_blank">An Introducton to Restricted Boltzmann Machines</a>
   logistics:
@@ -51,6 +51,10 @@
   video:
   notes:
   readings:
+    - Jordan Textbook, Ch. <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf" target="_blank">3</a> and <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter4.pdf" target="_blank">4</a>
+    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch9.1-9.4.pdf" target="_blank">Ch. 9</a>, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch10.1-10.3.pdf" target="_blank">Ch. 10</a>
+    - Tom Minka, <a href="https://www.seas.harvard.edu/courses/cs281/papers/minka-divergence.pdf" target="_blank">Divergence measures and message passing</a>
+    
   logistics: >
     <span class="event">HW1 out (Mon, 1/28)</span>
 
