@@ -12,8 +12,7 @@ To prepare the scribe notes, you'll need a few steps.
 
 ### Preliminary steps
 - [Fork](https://help.github.com/articles/fork-a-repo/) the course repository.
-- [Create a new branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) and name it `notes-lecture-xx`, where `xx` must be the lecture number.
-- In the settings of your fork, set GitHub Pages source to `notes-lecture-xx` branch.
+- In the settings of your fork, set GitHub Pages source to the `master` branch.
 - Make sure GitHub Pages correctly renders the webpage at `<your-github-username>.github.io/pgm-spring-2019/`.
 
 If you are not familiar with GitHub, take a look the [intro tutorial](https://guides.github.com/activities/hello-world/) and the [GitHub Pages tutorial](https://guides.github.com/features/pages/).
@@ -28,10 +27,14 @@ If you are not familiar with GitHub, take a look the [intro tutorial](https://gu
 ## Submission
 
 To submit your lecture notes for review, create [a pull request](https://help.github.com/articles/about-pull-requests/) (PR) into the master branch of the course repository.
+Make sure you title your PR `Lecture xx: <lecture title>` and submit it within a week after the lecture.
 You will be assigned one of the TAs as an editor who will review your notes and approve or request changes.
 Once the editor is satisfied with the quality of the scribed notes, your PR will be merged.
 Once the PR is merged, authors of the submitted notes get credit for scribing.
 
 ## FAQ
 
-TBD
+**Q:** When I go to `<your-github-username>.github.io/pgm-spring-2019/`, I get 404 error. What should I do?
+
+**A:** Please make sure you followed the preliminary steps and GitHub Pages source points to the `master` branch.
+Note that it takes a few minutes for the website to start rendering.
