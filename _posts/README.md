@@ -21,6 +21,7 @@ If you are not familiar with GitHub, take a look the [intro tutorial](https://gu
 - Using the template, write up and add your notes to `_posts/yyyy-mm-dd-lecture-xx.md` and bibliography to `assets/bibliography/yyyy-mm-dd-lecture-xx.bib` (in the BibTeX format; here is [an example](https://github.com/sailinglab/pgm-spring-2019/blob/master/assets/bibliography/2019-01-09-lecture-notes-template.bib)) in your fork of the repository.
 - Add the images used in your post to `assets/img/notes/lecture-xx/`.
   Then, you can link the images as `<img src="{{ '/assets/img/notes/lecture-xx/img-name.png' | relative_url }}" />` in the writeup.
+  Please follow the [template](https://sailinglab.github.io/pgm-spring-2019/notes/lecture-notes-template/#figures) to make your figures correctly aligned and captioned.
 - Make sure the title of the notes is formatted as `Lecture xx: <lecture title>`.
 - Make sure the Lecturer and the Authors information is correct.
 
