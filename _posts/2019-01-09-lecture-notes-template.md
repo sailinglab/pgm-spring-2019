@@ -42,6 +42,79 @@ Yet, it is [blazing fast](http://www.intmath.com/cg5/katex-mathjax-comparison.ph
 
 ***
 
+## Figures
+
+To add figures, use `<figure>...</figure>` tags.
+Within the tags, define multiple rows of images using `<div class="row">...</div>`.
+To add captions, use `<figcaption>...</figcaption>` tags.
+
+Here is an example usage of a figure that consists of a row of images with a caption:
+
+<figure id="example-figure" class="l-body-outset">
+  <div class="row">
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/1.jpg' | relative_url }}" />
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/2.jpg' | relative_url }}" />
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/3.jpg' | relative_url }}" />
+    </div>
+  </div>
+  <figcaption>
+    <strong>Figure caption title in bold.</strong>
+    An example figure caption.
+  </figcaption>
+</figure>
+
+Note that the figure uses `class="l-body-outset"` which lets it take more horizontal space.
+For more on this, see layouts section below.
+Also, the size of the images themselves is controlled by `class="one"`, `class="two"`, or `class="three"` which corresponds to 1/3, 2/3, 3/3 of the full horizontal space, respectively.
+
+Here is the same example, but each image is captioned separately:
+<figure id="example-figure" class="l-body-outset">
+  <div class="row">
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/1.jpg' | relative_url }}" />
+      <figcaption>
+        <strong>Figure caption title 1.</strong>
+        Caption text for figure 1.
+      </figcaption>
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/2.jpg' | relative_url }}" />
+      <figcaption>
+        <strong>Figure caption title 2.</strong>
+        A very very very long caption text for figure 2 so that it is longer than the image itself.
+      </figcaption>
+    </div>
+  </div>
+</figure>
+
+Here is an example that shows how the figures of different sizes are aligned:
+
+<figure>
+  <div class="row">
+    <div class="col two">
+      <img src="{{ 'assets/img/notes/template/4.jpg' | relative_url }}" />
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/2.jpg' | relative_url }}" />
+      <figcaption>
+        <strong>Subcaption.</strong>
+        The content of the subcaption.
+      </figcaption>
+    </div>
+  </div>
+  <figcaption>
+    <strong>The second row figure caption title.</strong>
+    An example of a sencond row figure caption.
+  </figcaption>
+</figure>
+
+***
+
 ## Citations
 
 Citations are then used in the article body with the `<d-cite>` tag.
