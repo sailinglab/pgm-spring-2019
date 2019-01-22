@@ -1,41 +1,29 @@
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-.blankbox {
-    background: $theme-color;
-}
-.img_row {
-    height: $img-height;
-    width: 100%;
-    overflow: hidden;
-    box-sizing:border-box;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
 }
 .col {
+    display: inline-block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     box-sizing:border-box;
     padding: $img-spacing;
 }
+
 .one {
-    width:33.33%;
+    width:33%;
 }
 .two {
-    width: 66.66%;
+    width: 66%;
 }
 .three {
     width: 100%;
 }
-.caption {
-    height: 100%;
-    color: $caption-color;
+
+figcaption {
     text-align: center;
-    vertical-align: middle;
-    font-size: $caption-font-size;
 }
