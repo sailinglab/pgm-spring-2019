@@ -27,11 +27,14 @@ If you are not familiar with GitHub, take a look the [intro tutorial](https://gu
 
 ## Submission
 
-To submit your lecture notes for review, create [a pull request](https://help.github.com/articles/about-pull-requests/) (PR) into the master branch of the course repository.
-Make sure you title your PR `Lecture xx: <lecture title>` and submit it within a week after the lecture.
-You will be assigned one of the TAs as an editor who will review your notes and approve or request changes.
-Once the editor is satisfied with the quality of the scribed notes, your PR will be merged.
-Once the PR is merged, authors of the submitted notes get credit for scribing.
+The due date for each set of notes is 1 week after the lecture.
+To submit the notes for review, please do the following:
+- Create [a pull request](https://help.github.com/articles/about-pull-requests/) (PR) into the master branch of the course repository.
+- Make sure you title your PR `Lecture xx: <lecture title>`.
+- Make sure the description of your PR contains a link to the rendered version of the notes.
+- You will be assigned one of the TAs as an editor who will review your notes and approve or request changes.
+- Once the editor is satisfied with the quality of the scribed notes, your PR will be merged.
+- Once the PR is merged, authors of the submitted notes get credit for scribing.
 
 ## FAQ
 
