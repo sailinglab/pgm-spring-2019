@@ -31,8 +31,8 @@
   lecturer: Eric
   title: >
     <strong>Representation: Undirected GMs (MRFs)</strong>
-  slides:
-  video:
+  slides: "https://www.dropbox.com/s/a22z8io0nuxnp5o/lecture3-MRFrepresentation.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=702de16d-fb04-4906-9014-a9d0012983e2"
   notes:
   readings:
     - Jordan Textbook, Ch. 2 (Sec. 2.2 - end)
@@ -48,7 +48,7 @@
     - Message passing <br />
     - Sum product algorithm
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61db95f2-aec1-415d-9180-a9d0012992fe"
   notes:
   readings:
     - Jordan Textbook, Ch. <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf" target="_blank">3</a> and <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter4.pdf" target="_blank">4</a>
@@ -66,7 +66,7 @@
     - Maximum Likelihood Estimation (MLE) <br />
     - Markov Models
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
   notes:
   readings:
   logistics:
