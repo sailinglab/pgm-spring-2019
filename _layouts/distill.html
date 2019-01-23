@@ -14,24 +14,24 @@
       "lecturers": [
         {% for lecturer in page.lecturers %}
         {
-          "lecturer": "{{ lecturer.name }}",
-          "lecturerURL": "{{ lecturer.url }}"
+          "lecturer": "{{ lecturer.name }}"{% if lecturer.url and lecturer.url != "#" %},
+          "lecturerURL": "{{ lecturer.url }}"{% endif %}
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
       ],
       "authors": [
         {% for author in page.authors %}
         {
-          "author": "{{ author.name }}",
-          "authorURL": "{{ author.url }}"
+          "author": "{{ author.name }}"{% if author.url and author.url != "#" %},
+          "authorURL": "{{ author.url }}"{% endif %}
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
       ],
       "editors": [
         {% for editor in page.editors %}
         {
-          "editor": "{{ editor.name }}",
-          "editorURL": "{{ editor.url }}"
+          "editor": "{{ editor.name }}"{% if editor.url and editor.url != "#" %},
+          "editorURL": "{{ editor.url }}"{% endif %}
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
       ],
