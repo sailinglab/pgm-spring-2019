@@ -99,4 +99,8 @@ If applicable, live demonstrations of your software are highly encouraged.
 If you are interested in a particular project, please contact the respective *contact person* to get further ideas or details.
 We may add more project suggestions down the road.
 
+- Deep Generative Models for Multimodal Representation Learning
+- Deep Generative Models for Disentangled Representation Learning
+- Deep Generative Models for Video, Text, and Audio generation
+
 ***
