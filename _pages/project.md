@@ -102,6 +102,5 @@ We may add more project suggestions down the road.
 - Deep generative models for video, text, and audio generation
 - Deep generative models for multimodal representation learning
 - Deep generative models for disentangled representation learning
-- 
 
 ***
