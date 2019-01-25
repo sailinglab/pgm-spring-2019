@@ -43,6 +43,7 @@ disqus_shortname: # put your disqus shortname
 # Optional features
 show_social_icons:  true
 enable_anchorjs:    true
+enable_latexjs:     true
 enable_katex:       true
 
 # -----------------------------------------------------------------------------
@@ -81,3 +82,4 @@ plugins:
 jquery_version: "1.12.4"
 katex_version: "0.10.0"
 anchorjs_version: "3.2.2"
+latexjs_version: "0.11.1"

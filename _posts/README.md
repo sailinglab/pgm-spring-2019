@@ -17,6 +17,17 @@ To prepare the scribe notes, you'll need a few steps.
 
 If you are not familiar with GitHub, take a look the [intro tutorial](https://guides.github.com/activities/hello-world/) and the [GitHub Pages tutorial](https://guides.github.com/features/pages/).
 
+### Rendering notes locally
+For a more convenient workflow, while writing your notes, you can render them locally.
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), do the following steps:
+```bash
+$ git clone git@github.com:<your-github-username>/pgm-spring-2019.git
+$ cd pgm-spring-2019
+$ bundle install
+$ bundle exec jekyll serve
+```
+After that, you will be able to see a rendered version of the course webpage (with all your changes to the notes) by going to [http://localhost:4000](http://localhost:4000/).
+
 ### Write up lecture notes
 - Using the template, write up and add your notes to `_posts/yyyy-mm-dd-lecture-xx.md` and bibliography to `assets/bibliography/yyyy-mm-dd-lecture-xx.bib` (in the BibTeX format; here is [an example](https://github.com/sailinglab/pgm-spring-2019/blob/master/assets/bibliography/2019-01-09-lecture-notes-template.bib)) in your fork of the repository.
 - When writing notes, you can use a combination of Markdown and HTML (the latter for more fine-grained rendering, if necessary).

@@ -36,3 +36,9 @@ div.equation {
     margin: $space-1 0;
     text-align: center;
 }
+
+latex-js {
+    display: block;
+    margin-bottom: -webkit-calc(#{$vertical-spacing-unit} / 2);
+    margin-bottom:         calc(#{$vertical-spacing-unit} / 2);
+}
