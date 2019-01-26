@@ -6,7 +6,7 @@
     <strong>Introduction to GM</strong>
   slides: "https://www.dropbox.com/s/noxer7mbtvalj0t/lecture1-Introduction.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-01/"
   readings:
     - Jordan, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/reading/graphical_model_Jordan.pdf" target="_blank">Graphical Models</a>
     - E. Airoldi, <a href="https://dash.harvard.edu/bitstream/handle/1/2757496/Airoldi_GettingStarted.pdf" target="_blank">Getting Started in Probabilistic Graphical Models</a>
@@ -69,6 +69,10 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
   notes:
   readings:
+    - Jordan Textbook: Ch. 8, 9 (Sec. 9.1 - 9.2)
+    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch17.1-17.4.pdf" target="_blank">Ch. 17 (Sections 17.1 - 17.4)</a>
+    - Geiger and Heckerman, <a href="https://projecteuclid.org/euclid.aos/1035844981" target="_blank">Parameter priors for directed acyclic graphical models and the characterization of several probability distributions</a>
+    - Geiger and Heckerman, <a href="https://projecteuclid.org/euclid.aos/1069362752" target="_blank">A characterization of the Dirichlet distribution through global and local parameter independence</a>
   logistics:
 
 - date: 2/4
@@ -82,6 +86,10 @@
   video:
   notes:
   readings:
+    - Jordan Textbook: Ch. 11
+    - Koller and Friedman Textbook: <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch19.1-19.4.pdf" target="_blank">Ch. 19.1-19.4</a>
+    - Bowman, <a href="https://www.cs.utah.edu/~piyush/teaching/EM_algorithm.pdf">The EM algorithm: A short tutorial</a>
+    - <a href="http://www.cs.toronto.edu/~hinton/absps/emk.pdf" target="_blank">Some interesting aspects of the EM algorithm</a> (Neal and Hinton)
   logistics:
 
 - date: 2/6
