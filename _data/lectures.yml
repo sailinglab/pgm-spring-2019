@@ -88,7 +88,7 @@
   readings:
     - Jordan Textbook, Ch. 11
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch19.1-19.4.pdf" target="_blank">Ch. 19.1-19.4</a>
-    - Bowman, <a href="https://www.cs.utah.edu/~piyush/teaching/EM_algorithm.pdf">The EM algorithm: A short tutorial</a>
+    - Bowman, <a href="https://www.cs.utah.edu/~piyush/teaching/EM_algorithm.pdf">The EM algorithm (A short tutorial)</a>
     - <a href="http://www.cs.toronto.edu/~hinton/absps/emk.pdf" target="_blank">Some interesting aspects of the EM algorithm</a> (Neal and Hinton)
   logistics:
 
