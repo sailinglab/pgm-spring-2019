@@ -31,7 +31,7 @@ In general, potential functions have to be positive non-zero.
 
 Potential functions are not necessarily probabilistic:
 Img4
-This model implies that $$X \perp Y | Z$$ So this graph factorizes as:
+This model implies that '$X \perp Y | Z$' So this graph factorizes as:
 <d-math block>
 \begin{aligned}
     p(x,y,z)&=p(y)p(x|y)p(z|y) \\
