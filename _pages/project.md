@@ -99,9 +99,20 @@ If applicable, live demonstrations of your software are highly encouraged.
 If you are interested in a particular project, please contact the respective *contact person* to get further ideas or details.
 We may add more project suggestions down the road.
 
-- Deep generative models for video, text, and audio generation (Paul)
-- Deep generative models for multimodal representation learning (Paul)
-- Deep generative models for disentangled representation learning (Paul)
-- Big DAGs with NO TEARS: scalable Bayesian network structure learning (Xun)
-
 ***
+
+#### Deep generative models for video, text, and audio generation
+**Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
+
+#### Deep generative models for multimodal representation learning
+**Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
+
+#### Deep generative models for disentangled representation learning
+**Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
+
+#### Big DAGs with NO TEARS: scalable Bayesian network structure learning
+**Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
+
+#### Optimization-based decoding for improved machine translation
+**Contact person:** [Maruan Al-Shedivat](https://www.cs.cmu.edu/~mshediva/){:target="\_blank"}
+
