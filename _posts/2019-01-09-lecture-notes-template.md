@@ -1,470 +1,318 @@
 ---
 layout: distill
-title: "Lecture 3: Undirected Graphical Models"
-description: an introduction to undirected graphical models
-date: 2019-01-23
+title: [lecture notes template]
+description: an example of a distill-style lecture notes that showcases the main elements
+date: 2019-01-09
 
 lecturers:
   - name: Eric Xing
     url: "https://www.cs.cmu.edu/~epxing/"
 
 authors:
-  - name: Allan Wang
+  - name: Author 1  # author's full name
     url: "#"  # optional URL to the author's homepage
-  - name: Binghao Deng
+  - name: Author 2
     url: "#"
-  - name: Weizhao Shao
+  - name: Author 3
     url: "#"
-  - name: Zhuoran Liu
 
 editors:
-  - name: Lisa Lee
+  - name: Editor 1  # editor's full name
+    url: "#"  # optional URL to the editor's homepage
 
 abstract: >
+  An example abstract block.
 ---
 
-## Review
+## Equations
 
-In addition to the **I-map** concept that is introduced in the last lecture, today's lecture also includes **minimal I-map**.
+This theme supports rendering beautiful math in inline and display modes using [KaTeX](https://khan.github.io/KaTeX/) engine.
+You just need to surround your math expression with `$`, like `$ E = mc^2 $`.
+If you leave it inside a paragraph, it will produce an inline expression, just like $E = mc^2$.
 
-### Definition: Minimal I-maps
-A DAG is a **minimal I-map** if it is an I-map for $$P$$, and if the removal of even a single edge from $$\mathcal{G}$$ renders it not an I-map.
+To use display mode, again surround your expression with `$$` and place it as a separate paragraph.
+Here is an example:
 
-* A distribution may have several minimal I-maps. Each corresponding to a specific node-ordering.
-
-* The fact that $$\mathcal{G}$$ is a minimal I-map for $$P$$ is **far from** a guarantee that $$\mathcal{G}$$ captures the independence structure in $$P$$.
-
-## "Bayes-ball" Algorithm
-
-"Bayes-ball" algorithm is an algorithm that we can apply to retrieve independences directly from the graphical models. It states that $$X$$ is **d-separated** from $$Z$$ given $$Y$$ if we cannot send a ball from any node in $$X$$ to any node in $$Z$$. "Given" is represented by shading the node in the actual graph. Examples of three basic directed graphical structures are shown below.
-
-<figure id="basic-structure" class="l-body">
-    <div class="row">
-        <div class="col two">
-            <img src="{{ '/assets/img/notes/lecture-03/basic.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-
-* From the first and the second structure, we can see that the shaded $$Y$$ node blocks the ball from going between node $$X$$ and $$Z$$, which leads to the independence relations that have been introduced in the last lecture: $$X \perp Z \mid Y$$.
-
-* The third one, the "V-structure", is a special case. Opposite from the first two exmaples, the ball can go between $$X$$ and $$Z$$ if the node $$Y$$ is shaded and is blocked otherwise. Therefore, the graph on the right will yield $$X \perp Z \mid Y$$.
-
-With the basic structures, we can try to apply the rules on a DAG. For example, let us try to find whether $$X_2$$ and $$X_3$$ are independent given $$X_1$$ and $$X_6$$.
-
-<figure id="bayes-ball-example" class="l-body">
-    <div class="row">
-        <div class="col two">
-            <img src="{{ 'assets/img/notes/lecture-03/dag.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-
-After shaded $$X_1$$ and $$X_6$$, we can see that the ball cannot go from $$X_2$$ to $$X_3$$ through $$X_1$$ because it is blocked; however, $$X_2$$, $$X_5$$ and $$X_6$$ forms a "V-structure", so the ball can go between $$X_2$$ and $$X_3$$ through the shaded $$X_6$$. Therefore, the independence statement is invalid.
-
-## Limits of Directed and Undirected GMs
-
-From a representational perspective, we aim to find a graph $$\mathcal{G}$$ that precisely captures the independencies in a given distribution $$P$$. This goal of learning GMs motivates the following definition.
-
-### Definition: Perfect Maps
-
-We say that a graph $$\mathcal{G}$$ is a perfect map (P-map) for a set of independencies $$\mathcal{I}$$ if we have that $$\mathcal{I}(\mathcal{G}) = \mathcal{I}$$. We say that $$\mathcal{G}$$ is a perfect map for $$P$$ if $$\mathcal{I}(\mathcal{G}) = \mathcal{I}(P)$$. That is
 $$
-\text{sep}_{\mathcal{G}}(X;Z \vert Y) \iff P \models (X \perp Z \vert Y)
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 $$
 
-* The P-map of a distribution is unique up to I-equivalence between networks. That is, a distribution P can have many P-maps, but all of them are I-equivalent.
+Alternatively and for more complex math environments, use `<d-math block>...</d-math>` tags.
+Here is an example:
 
-Arbitrary distribution $$P$$'s, however, do not necessarily attain perfect maps as either undirected or directed GMs. Two such examples are shown below. 
-<figure id="graph-separation" class="l-body">
+<d-math block>
+\begin{aligned}
+\left( \sum_{i=1}^n u_i v_i \right)^2 & \leq \left( \sum_{i=1}^n u_i^2 \right) \left( \sum_{i=1}^n v_i^2 \right) \\
+\left| \int f(x) \overline{g(x)} dx \right|^2 & \leq  \int |f(x)|^2 dx \int |g(x)|^2 dx
+\end{aligned}
+</d-math>
+
+Note that [KaTeX](https://khan.github.io/KaTeX/) is work in progress, so it does not support the full range of math expressions as, say, [MathJax](https://www.mathjax.org/).
+Yet, it is [blazing fast](http://www.intmath.com/cg5/katex-mathjax-comparison.php).
+
+***
+
+## Figures
+
+To add figures, use `<figure>...</figure>` tags.
+Within the tags, define multiple rows of images using `<div class="row">...</div>`.
+To add captions, use `<figcaption>...</figcaption>` tags.
+
+Here is an example usage of a figure that consists of a row of images with a caption:
+
+<figure id="example-figure" class="l-body-outset">
   <div class="row">
-    <div class="col two">
-      <img src="{{ 'assets/img/notes/lecture-03/graph_venn.png' | relative_url }}" />
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/1.jpg' | relative_url }}" />
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/2.jpg' | relative_url }}" />
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/3.jpg' | relative_url }}" />
     </div>
   </div>
   <figcaption>
-    <strong>A Venn diagram illustration of graphical model families, where D is the family of directed GMs, and U the family of undirected GMs.</strong>
+    <strong>Figure caption title in bold.</strong>
+    An example figure caption.
   </figcaption>
 </figure>
 
-<figure id="graph-separation" class="l-body">
+Note that the figure uses `class="l-body-outset"` which lets it take more horizontal space.
+For more on this, see layouts section below.
+Also, the size of the images themselves is controlled by `class="one"`, `class="two"`, or `class="three"` which corresponds to 1/3, 2/3, 3/3 of the full horizontal space, respectively.
+
+Here is the same example, but each image is captioned separately:
+<figure id="example-figure" class="l-body-outset">
+  <div class="row">
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/1.jpg' | relative_url }}" />
+      <figcaption>
+        <strong>Figure caption title 1.</strong>
+        Caption text for figure 1.
+      </figcaption>
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/2.jpg' | relative_url }}" />
+      <figcaption>
+        <strong>Figure caption title 2.</strong>
+        A very very very long caption text for figure 2 so that it is longer than the image itself.
+      </figcaption>
+    </div>
+  </div>
+</figure>
+
+Here is an example that shows how the figures of different sizes are aligned:
+
+<figure>
   <div class="row">
     <div class="col two">
-      <img src="{{ 'assets/img/notes/lecture-03/graph_counterexamples.png' | relative_url }}" />
+      <img src="{{ 'assets/img/notes/template/4.jpg' | relative_url }}" />
+    </div>
+    <div class="col one">
+      <img src="{{ 'assets/img/notes/template/2.jpg' | relative_url }}" />
+      <figcaption>
+        <strong>Subcaption.</strong>
+        The content of the subcaption.
+      </figcaption>
     </div>
   </div>
   <figcaption>
-    <strong>Left: a distribution with no possible DGM representation; right: a distribution with no UGM representation</strong>
+    <strong>The second row figure caption title.</strong>
+    An example of a sencond row figure caption.
   </figcaption>
 </figure>
 
-The left example entails $$A\perp C\vert \{B,D\}$$ and $$B\perp D\vert \{A,C\}$$, and the right is a v-structure.
+***
 
-## Undirected Graphical Models - Overview
+## Citations
 
-* There can only be symmetric relationships between a pair of nodes (random variables). In other words, there is no causal effect from one random variable to another.
-* The model can represent properties and configurations of a distribution, but it cannot generate samples explicitly.
-* Each node has strong correlations with its neighbors.
+Citations are then used in the article body with the `<d-cite>` tag.
+The key attribute is a reference to the id provided in the bibliography.
+The key attribute can take multiple ids, separated by commas.
 
-### Example
+The citation is presented inline like this: <d-cite key="gregor2015draw"></d-cite> (a number that displays more information on hover).
+If you have an appendix, a bibliography is automatically created and populated in it.
 
-<figure id="UGM-example" class="l-body">
-    <div class="row">
-        <div class="col two">
-            <img src="{{ 'assets/img/notes/lecture-03/UGM_example.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
+Distill chose a numerical inline citation style to improve readability of citation dense articles and because many of the benefits of longer citations are obviated by displaying more information on hover.
+However, we consider it good style to mention author last names if you discuss something at length and it fits into the flow well — the authors are human and it’s nice for them to have the community associate them with their work.
 
-Let each node represents an image patch. It is impossible to tell what is inside this image patch by isolating it from others. However, when we look at its neighboring image patches, we can see that it’s an image patch of water. Due to the fact that the relationships between neighboring image patches should be symmetric, an image is best represented by an undirected graphical model. This particular undirected graphical model is also known as the grid model.
+***
 
-## Quantitative Specification
-### Cliques
-* Cliques are subgraphs that are fully connected.
-* A maximal clique is a clique such that any superset (any bigger subgraph that contains this subgraph) is not a complete graph.
-* A sub-clique is a not-necessarily-maximal clique.
-#### Example
-<figure id="clique-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/clique_example.PNG' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-<figure id="clique-example" class="l-body">
-    <div class="row">
-        <div class="col two">
-            <img src="{{ 'assets/img/notes/lecture-03/clique_example_max_clique.PNG' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-<figure id="clique-example" class="l-body">
-    <div class="row">
-        <div class="col two">
-            <img src="{{ 'assets/img/notes/lecture-03/clique_example_sub_clique.PNG' | relative_url }}" />
-        </div>
-    </div>
-</figure>
+## Footnotes
 
-### Potential Functions
-Each clique can be associated with a potential function. The potential function can be understood as a provisional function of its arguments by assigning a pre-probabilistic score of their joint distribution. This potential function can be somewhat arbitrary.
+Just wrap the text you would like to show up in a footnote in a `<d-footnote>` tag.
+The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote>
 
-Why cliques? Each component of the clique contributes to the overall potential function.
-#### Example
-<figure id="potential-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/potential_func_example.PNG' | relative_url }}" />
-        </div>
-    </div>
-    <figcaption>
-    <strong>An example used to illustrate potential functions. Both X1 and X2 are binary.</strong>
-    </figcaption>
-</figure>
-For $$\psi_c(X_1, X_2)$$
-<figure id="potential-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/potential_func_table.PNG' | relative_url }}" />
-        </div>
-    </div>
-    <figcaption>
-    <strong>This table represents the potential function values given combinations of random variable inputs.</strong>
-    </figcaption>
-</figure>
+***
 
-In general, potential functions have to be positive non-zero.
+## Code Blocks
 
-Potential functions are not necessarily probabilistic:
-<figure id="potential-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/potential_func_illustration.PNG' | relative_url }}" />
-        </div>
-    </div>
-    <figcaption>
-    <strong>Another example used to illustrate potential functions.</strong>
-    </figcaption>
-</figure>
-This model implies that $$X \perp Y | Z$$ So this graph factorizes as:
-<d-math block>
-\begin{aligned}
-    p(x,y,z)&=p(y)p(x|y)p(z|y) \\
-    &=p(x,y)p(z|y) \\
-    &=p(x|y)p(y,z)
-\end{aligned}
-</d-math>
-Probability distributions could be used as potential functions. However, in this case, we cannot let all potentials be either marginal probabilities or conditional probabilities. So the potential function for this graph cannot be probability distributions.
+Syntax highlighting is provided within `<d-code>` tags.
+An example of inline code snippets: `<d-code language="html">let x = 10;</d-code>`.
+For larger blocks of code, add a `block` attribute:
 
-### Gibbs Distribution
-Definition: an undirected graphical model represents a distribution $$P(X_1, ..., X_n)$$ defined by an undirected graph $$H$$, and a set of positive potential functions $$\psi_C$$ associated with cliques of $$H$$, such that
-<d-math block>
-\begin{aligned}
-p(x_1,...,x_n)=\frac{1}{Z}\prod_{c\in C}{\psi_c(\bold{x_c})} \\
-Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}
-\end{aligned}
-</d-math>
-$$Z$$ is also known as the partition function. Upper case $$C$$ is the set of all cliques. Lower case $$c$$ is a clique associated with a set of random variables $$\bold{x}$$.
+<d-code block language="javascript">
+  var x = 25;
+  function(x) {
+    return x * x;
+  }
+</d-code>
 
-### Example UGM Models <d-footnote>Depending on the question of interest, different representations may be more appropriate. Different models do not change the independence assertions made by the model.</d-footnote>
-<figure id="UGM-clique-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example.PNG' | relative_url }}" />
-        </div>
-    </div>
-  <figcaption>
-    <strong>An example graph used to illustrate UGM.</strong>
-    </figcaption>
-</figure>
-#### Using Max Cliques
-<figure id="UGM-clique-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example_max_clique.PNG' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-<d-math block>
-\begin{aligned}
-  P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
-  Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)
-\end{aligned}
-</d-math>
-For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
-#### Using Pairwise Cliques
-<figure id="UGM-clique-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example_sub_clique.PNG' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-<d-math block>
-\begin{aligned}
-  P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
-  Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
-\end{aligned}
-</d-math>
-For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
-#### Using Canonical Representation
-Even if we use fine-grained representation, the Mrkov network is often overparameterized. For any given distribution, there are multiple choices of parameters to describe in the model. Consider a pair of cliques $$\{A, B\}$$ and $$\{B, C\}$$, the information about $$B$$ can be placed in either of the two cliques, resulting in ambiguities.
+***
 
-The canonical representation provides a natural approach to avoid this problem. It is defined over all non-empty cliques as shown below.<d-footnote>Please refer to Koller and Friedman Texbook Ch.4, page 129 for details.</d-footnote> The formula performs an inclusion-exclusion computation to make sure that each random variable contributes exactly once to the overall function.
-<d-math block>
-\begin{aligned}
-    P'''(A,B,C,D)&=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
-    & \times\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
-    & \times\psi_c(A)\psi_c(B)\psi_c(C)\psi_c(D)
-\end{aligned}
-</d-math>
-<d-math block>
-\begin{aligned}
-    Z&=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D) \\
-    & \times\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
-    & \times\psi_c(A)\psi_c(B)\psi_c(C)\psi_c(D)
-\end{aligned}
-</d-math> 
+## Layouts
 
-## Qualitative Specification
-### Global Markov Independency
-Given the following UGM, denoted by $$H$$.
-<figure id="global-markov-example" class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/global_markov_independence.PNG' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-Y separates X and Z if every path from a node in X to a node in Z passes through a node in Y.
+The main text column is referred to as the body.
+It is the assumed layout of any direct descendants of the `d-article` element.
 
+<div class="fake-img l-body">
+  <p>.l-body</p>
+</div>
+
+For images you want to display a little larger, try `.l-page`:
+
+<div class="fake-img l-page">
+  <p>.l-page</p>
+</div>
+
+All of these have an outset variant if you want to poke out from the body text a little bit.
+For instance:
+
+<div class="fake-img l-body-outset">
+  <p>.l-body-outset</p>
+</div>
+
+<div class="fake-img l-page-outset">
+  <p>.l-page-outset</p>
+</div>
+
+Occasionally you’ll want to use the full browser width.
+For this, use `.l-screen`.
+You can also inset the element a little from the edge of the browser by using the inset variant.
+
+<div class="fake-img l-screen">
+  <p>.l-screen</p>
+</div>
+<div class="fake-img l-screen-inset">
+  <p>.l-screen-inset</p>
+</div>
+
+The final layout is for marginalia, asides, and footnotes.
+It does not interrupt the normal flow of `.l-body` sized text except on mobile screen sizes.
+
+<div class="fake-img l-gutter">
+  <p>.l-gutter</p>
+</div>
+
+***
+
+## Arbitrary $$\LaTeX$$ (experimental)
+
+In fact, you can write entire blocks of LaTeX using `<latex-js>...</latex-js>` tags.
+Below is an example:<d-footnote>If you don't see anything, it means that your browser does not support Shadow DOM.</d-footnote>
+
+<latex-js style="border: 1px dashed #aaa;">
+This document will show most of the supported features of \LaTeX.js.
+
+\section{Characters}
+
+It is possible to input any UTF-8 character either directly or by character code
+using one of the following:
+
+\begin{itemize}
+    \item \texttt{\textbackslash symbol\{"00A9\}}: \symbol{"00A9}
+    \item \verb|\char"A9|: \char"A9
+    \item \verb|^^A9 or ^^^^00A9|: ^^A9 or ^^^^00A9
+\end{itemize}
+
+\bigskip
+
+\noindent
+Special characters, like those:
+\begin{center}
+\$ \& \% \# \_ \{ \} \~{} \^{} \textbackslash % \< \>  \"   % TODO cannot be typeset
+\end{center}
+%
+have to be escaped.
+
+More than 200 symbols are accessible through macros. For instance: 30\,\textcelsius{} is
+86\,\textdegree{}F.
+</latex-js>
+
+Note that you can easily interleave latex blocks with the standard markdown.
+
+<latex-js style="border: 1px dashed #aaa;">
+\section{Environments}
+
+\subsection{Lists: Itemize, Enumerate, and Description}
+
+The \texttt{itemize} environment is suitable for simple lists, the \texttt{enumerate} environment for
+enumerated lists, and the \texttt{description} environment for descriptions.
+
+\begin{enumerate}
+    \item You can nest the list environments to your taste:
+        \begin{itemize}
+            \item But it might start to look silly.
+            \item[-] With a dash.
+        \end{itemize}
+    \item Therefore remember: \label{remember}
+        \begin{description}
+            \item[Stupid] things will not become smart because they are in a list.
+            \item[Smart] things, though, can be presented beautifully in a list.
+        \end{description}
+    \item Technical note: Viewing this in Chrome, however, will show too much vertical space
+        at the end of a nested environment (see above). On top of that, margin collapsing for inline-block
+        boxes is not allowed. Maybe using \texttt{dl} elements is too complicated for this and a simple nested
+        \texttt{div} should be used instead.
+\end{enumerate}
+%
+Lists can be deeply nested:
+%
+\begin{itemize}
+  \item list text, level one
+    \begin{itemize}
+      \item list text, level two
+        \begin{itemize}
+          \item list text, level three
+
+            And a new paragraph can be started, too.
+            \begin{itemize}
+              \item list text, level four
+
+                And a new paragraph can be started, too.
+                This is the maximum level.
+
+              \item list text, level four
+            \end{itemize}
+
+          \item list text, level three
+        \end{itemize}
+      \item list text, level two
+    \end{itemize}
+  \item list text, level one
+  \item list text, level one
+\end{itemize}
+
+\section{Mathematical Formulae}
+
+Math is typeset using KaTeX. Inline math:
+$
+f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \, d\xi
+$
+as well as display math is supported:
 $$
-sep_H(X;Z|Y)
+f(n) = \begin{cases} \frac{n}{2}, & \text{if } n\text{ is even} \\ 3n+1, & \text{if } n\text{ is odd} \end{cases}
 $$
 
-A probability distribution satisfies the global Markov property if for any disjoint X,Y,Z such that Y separates X and Z, X is independent of Z given Y.
+</latex-js>
 
-$$
-\mathcal{I}(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}
-$$
+Full $$\LaTeX$$ blocks are supported through [LaTeX JS](https://latex.js.org/){:target="\_blank"} library, which is still under development and supports only limited functionality (which is still pretty cool!) and does not allow fine-grained control of the layout, fonts, etc.
 
-### Local Markov Independency
-For each node $$X_i\in \bold{V}$$, there is a unique Markov blanket of $$X_i$$, denoted $$MB_{X_i}$$, which is the set of neighbors of $$X_i$$ in the graph.
-Definition: The local Markov independencies ($$\mathcal{I}_l$$) associated with $$H$$ is:
+*Note: We do not recommend using using LaTeX JS for writing lecture notes at this stage.*
 
-$$
-\mathcal{I}_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}
-$$
+***
 
-In other words, $$X_i$$ is independent of the rest of the nodes given its immediate neighbors $$MB_{X_i}$$.
+## Print
 
-## Soundness and Completeness of Global Markov Property
-
-The global Markov property for UGMs is similar to its variant for DGMs, in the sense that they both attain similar soundness and completeness results.
-
-### Soundness
-
-Let $$P$$ be a distribution over $$\mathcal{X}$$, and $$\mathcal{G}$$ a Markov network structure over $$\mathcal{X}$$. If $$P$$ is a Gibbs distribution that factorizes over $$\mathcal{G}$$, then $$\mathcal{G}$$ is an I-map for $$P$$.
-
-**Proof**: let $$X,Y,Z$$ be an three disjoint subsets in $$\mathcal{X}$$ such that $$Z$$ separates $$X$$ and $$Y$$ in $$\mathcal{G}$$. We will show that $$P\models (X\perp Y\vert Z)$$. 
-
-First, we observe that there is no direct edge from $$X$$ to $$Y$$. Assuming that $$(X,Y,Z)$$ is a partition of $$\mathcal{X}$$, we know that any clique in $$\mathcal{G}$$ is fully attained in either $$X\cup Z$$ or $$Y\cup Z$$. Let $$\mathcal{I}_{X}$$ be the indices of the set of cliques that are contained in $$X\cup Z$$, and $$\mathcal{I}_{Y}$$ be the set defined for $$Y\cup Z$$. We know that
-
-$$
-P(X_1,\cdots,X_n) = \frac{1}{Z}\prod_{i\in \mathcal{I}_X}\phi_i (D_i)\cdot \prod_{i\in \mathcal{I}_Y}\phi_i (D_i).
-$$
-
-None of the terms in the first product contains variable from the latter. Hence, we can rewrite this product in the form:
-
-$$
-P(X_1,\cdots,X_n) = \frac{1}{Z}f(X,Z)g(Y,Z),
-$$
-
-and we observe that independence follows.
-
-If $$X\cup Y\cup Z$$ is a strict subset of $$\mathcal{X}$$. Let $$U = \mathcal{X}\setminus (X\cup Y\cup Z)$$. We can partition $$U$$ into two disjoint sets $$U_1$$ and $$U_2$$ such that $$Z$$ separates $$X\cup U_1$$ from $$Y\cup U_2$$ in $$\mathcal{G}$$. Using our argument from the partition case, we have that $$\big((X\cup U_1)\perp ((Y\cup U_2)\vert Z$$. Apply decomposition property of probability we attain that $$P\models (X\perp Y\vert Z)$$.
-
-### Completeness (Hammesley-Clifford theorem)
-
-Let $$P$$ be a positive distribution over $$\mathcal{X}$$, and $$\mathcal{G}$$ a Markov network graph over $$\mathcal{X}$$. If $$\mathcal{G}$$ is an I-map for $$P$$, then $$P$$ is a Gibbs distribution that factorizes over $$\mathcal{G}$$.
-
-This result shows that, for positive distributions, the global independencies imply that the distribution factorizes according to the network structure. Thus, for this class of distributions, we have that a distribution $P$ factorizes over a Markov network $$\mathcal{G}$$ if and only if $$\mathcal{G}$$ is an I-map for $$P$$.
-
-## Other Markov Properties
-
-For UGMs, we defined I-maps in terms of global Markov properties. We will now define local independence. Intuitively, when two variables are not directly linked, there must be some way of rendering them conditionally independent. Specifically, we can require that $X$ and $Y$ be independent given all other nodes in the graph.
-
-### Definition: Pairwise Independencies
-
-Let $$\mathcal{G}$$ be a Markov network. We define the pairwise independencies associated with $$\mathcal{G}$$ to be
-
-$$
-\mathcal{I}_P(\mathcal{G}) = \{(X\perp Y\vert \mathcal{X}-\{X,Y\}): X-Y\notin \mathcal{G}\}
-$$
-
-<figure id="pairwise-indep" class="l-body">
-  <div class="row">
-    <div class="col two">
-      <img src="{{ 'assets/img/notes/lecture-03/graph_local_example.png' | relative_url }}" />
-    </div>
-  </div>
-  <figcaption>
-    <strong>Example of pairwise independence</strong>
-  </figcaption>
-</figure>
-
-The figure above demonstrates that $$A\perp B\vert \{B,C,D\}$$. 
-
-Using the definition of pairwise independence and local independence, we attain that
-
-### Proposition
-
-For any Markov network $$\mathcal{G}$$ and any distribution $$P$$, we have that if $$P\models \mathcal{I}_l(\mathcal{G})$$  then $$P\models \mathcal{I}_P(\mathcal{G})$$.
-
-### Proposition
-
-For any Markov network $$\mathcal{G}$$ and any distribution $$P$$, we have that if $$P\models \mathcal{I}(\mathcal{G})$$ then $$P\models \mathcal{I}_l(\mathcal{G})$$.
-
-Finally, we reach at the following conclusion
-
-### Proposition
-
-Let $$P$$ be a positive distribution. If $$P$$ satisfies $$\mathcal{I}_P(\mathcal{G})$$, then $$P$$ satisfies $$\mathcal{I}(\mathcal{G})$$.
-
-### Theorem
-
-The followings are equivalent:
-
-#### $$P\models \mathcal{I}_l(\mathcal{G})$$
-#### $$P\models \mathcal{I}_P(\mathcal{G})$$
-#### $$P\models \mathcal{I}(\mathcal{G})$$
-
-## Exponential Form
-Since we don't want to constraint the clique potentials to be positive in all situations, exponential form is used to to represent a clique potential $$\phi_c(x_c)$$ in an unconstrained form using a real-value "energy" funtion $$\phi_c(x_c)$$:
-
-$$\Phi_c(x_c)=\exp\bigg\{-\phi_c(x_c)\bigg\}$$
-
-This then gives the joint probability a nice additive structure
-
-$$p(x)=\frac{1}{Z}\exp\bigg\{-\sum_{c\in C}\phi_c(x_c)\bigg\}=\frac{1}{Z}\exp\bigg\{-H(x)\bigg\}$$
-
-Where we call the sum in the exponent the "free energy":
-
-$$H(x) = \sum_{c\in C}\phi_c(x_c)$$
-
-This form of representation is is called the "Boltzmann distribution" in physics, and called a log-linear model in statstics.
-
-## Undirected Graph Exmples
-Several well-known undirected graphical models are presented in the class and as 
-follows: Boltzmann Machine (BM), Ising model, Restricted Boltzmann Machine (RBM), and Conditional Random Field (CRF).
-### Boltzmann Machine (BM)
-Boltzmann Machine is a fully connected graph with pairwise (edge) potentials on binary-valued nodes. One example is shown in the following figure:
-
-<figure class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/BM.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-
-The probability distribution could be written as:
-
-$$p(x_1,x_2,x_3,x_4)=\frac{1}{Z}\exp\bigg\{\sum_{ij}\phi_{ij}(x_i,x_j)\bigg\}$$
-
-It could be written in a quadratic way:
-
-$$p(x_1,x_2,x_3,x_4)=\frac{1}{Z}\exp\bigg\{\sum_{ij}\theta_{ij}x_ix_j+\sum_i\alpha_ix_i+C\bigg\}$$
-
-Note that we have a $$C$$ have representing constant in the qudratic form. The over free energy function then has the form:
-
-$$H(x)=\sum_{ij}(x_i-\mu)\Theta_{ij}(x_j-\mu)=(x-\mu)^T\Theta(x-\mu)$$
-
-which can then be solved using quadratic programming.
-
-### Ising model
-In the Ising model, nodes are arranged in a regular topology (often a regular packing grid) and connected only to their geometric neighbors. It is like a sparse Boltzmann Machine. There are also multi-state Ising model, called Potts Model, in which nodes could take multiple values instead of just binary values. One example of Ising model is shown in the figure:
-
-<figure class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/IS.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-
-The probability distribution could be written as
-
-$$p(X)=\frac{1}{Z}\exp\bigg\{\sum_{i,j\in N_i}\theta_{ij}X_iX_j+\sum_i \theta_{i0}X_i\bigg\}$$
-
-### Restricted Boltzmann Machine (RBM)
-The graph of a Restricted Bolzmann Machine is bipartite. One could think of at if as formulated by one layer of hidden units and one layer of visibal units. Hidden units are only connected with visible units. Visible units are only connected with hidden units. One example is shown in the figure:
-
-<figure class="l-body">
-    <div class="row">
-        <div class="col two">
-            <img src="{{ 'assets/img/notes/lecture-03/RBM.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-
-The probability distribution could be written as
-
-$$p(x,h|\theta)=\exp\bigg\{\sum_i\theta_i\phi_i(x_i) + \sum_j\theta_j\phi_j(h_j) + \sum_{i,j}\theta_{i,j}\phi_{i,j}(x_i,h_j)-A(\theta)\bigg\}$$
-
-RBM has some appealing properties, such as factors are marginally dependent and factors are conditionally independent given observations on the visible nodes. They enable one to use iterative Gibbs sampling for inference and learning on RBM. We have dicussed that if the egdes in RBM are directed, there would be plenty of V-structures in the graph (lots of dependences), that increases the inference difficulty.
-
-### Conditional Random Field (CRF)
-Conditional random field is an analogy form of HMM in undirected case. It allows arbitrary dependencies on input. For example, when labeling $$X_i$$, future observations are taken into account. An example of CRF is shown in the figure:
-
-<figure class="l-body">
-    <div class="row">
-        <div class="col one">
-            <img src="{{ 'assets/img/notes/lecture-03/CRF.png' | relative_url }}" />
-        </div>
-    </div>
-</figure>
-
-The probability distribution could be written as
-
-$$p_\theta(y|x)=\frac{1}{Z(\theta,x)}\exp\bigg\{\sum_c\theta_cf_c(x,y_c)\bigg\}$$
+Finally, you can easily get a PDF or printed version of the notes by simply hitting `ctrl+P` (or `⌘+P` on macOS).
