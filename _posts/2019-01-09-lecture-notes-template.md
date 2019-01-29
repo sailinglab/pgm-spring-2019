@@ -274,24 +274,20 @@ Given the following UGM, denoted by $$H$$.
     </div>
 </figure>
 Y separates X and Z if every path from a node in X to a node in Z passes through a node in Y.
-<d-math block>
-  \begin{aligned}
+$$
 sep_H(X;Z|Y)
-  \end{aligned}
-</d-math>
+$$
 A probability distribution satisfies the global Markov property if for any disjoint X,Y,Z such that Y separates X and Z, X is independent of Z given Y.
-<d-math block>
-  \begin{aligned}
+$$
 \mathcal{I}(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}
-  \end{aligned}
-</d-math>
+$$
 
 ### Local Markov Independency
 For each node $$X_i\in \bold{V}$$, there is a unique Markov blanket of $$X_i$$, denoted $$MB_{X_i}$$, which is the set of neighbors of $$X_i$$ in the graph.
 Definition: The local Markov independencies ($$\mathcal{I}_l$$) associated with $$H$$ is:
-<d-math block>
+$$
 \mathcal{I}_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}
-</d-math>
+$$
 In other words, $$X_i$$ is independent of the rest of the nodes given its immediate neighbors $$MB_{X_i}$$.
 
 ## Soundness and Completeness of Global Markov Property
