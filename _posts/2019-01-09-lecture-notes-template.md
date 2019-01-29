@@ -157,25 +157,25 @@ $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of al
 
 ### Example UGM Models
 Img5
-#### Using max cliques
+#### Using Max Cliques
 Img6
 <d-math block>
-  \begin{aligned}
-P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
-Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)
-  \end{aligned}
-<\d-math>
+\begin{aligned}
+  P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
+  Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)
+\end{aligned}
+</d-math>
 For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
-#### Using pairwise cliques
+#### Using Pairwise Cliques
 Img7
 <d-math block>
-  \begin{aligned}
-P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
-Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
-  \end{aligned}
-<\d-math>
+\begin{aligned}
+  P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
+  Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
+\end{aligned}
+</d-math>
 For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
-### Using canonical representation
+### Using Canonical Representation
 Img8
 <d-math block>
 \begin{aligned}
