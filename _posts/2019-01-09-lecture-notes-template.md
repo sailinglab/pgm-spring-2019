@@ -206,7 +206,7 @@ Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}
 </d-math>
 $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of all cliques. Lower case $$c$$ is a clique associated with a set of random variables $$\bold{x}$$.
 
-### Example UGM Models
+### Example UGM Models <d-footnote>Depending on the question of interest, different representations may be more appropriate. Different models do not change the independence assertions made by the model.</d-footnote>
 <figure id="UGM-clique-example" class="l-body">
     <div class="row">
         <div class="col one">
@@ -248,7 +248,6 @@ For discrete nodes, we only need to represent it by two 3D tables instead of one
 </d-math>
 For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
 ### Using Canonical Representation
-Img8
 <d-math block>
 \begin{aligned}
     P'''(A,B,C,D)&=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
@@ -262,7 +261,7 @@ Img8
     & \times\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
     & \times\psi_c(A)\psi_c(B)\psi_c(C)\psi_c(D)
 \end{aligned}
-</d-math>
+</d-math> 
 
 ## Qualitative Specification
 ### Global Markov Independency
@@ -283,15 +282,15 @@ sep_H(X;Z|Y)
 A probability distribution satisfies the global Markov property if for any disjoint X,Y,Z such that Y separates X and Z, X is independent of Z given Y.
 <d-math block>
   \begin{aligned}
-I(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}
+\mathcal{I}(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}
   \end{aligned}
 </d-math>
 
 ### Local Markov Independency
 For each node $$X_i\in \bold{V}$$, there is a unique Markov blanket of $$X_i$$, denoted $$MB_{X_i}$$, which is the set of neighbors of $$X_i$$ in the graph.
-Definition: The local Markov independencies ($$I_l$$) associated with $$H$$ is:
+Definition: The local Markov independencies ($$\mathcal{I}_l$$) associated with $$H$$ is:
 <d-math block>
-I_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}
+\mathcal{I}_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}
 </d-math>
 In other words, $$X_i$$ is independent of the rest of the nodes given its immediate neighbors $$MB_{X_i}$$.
 
