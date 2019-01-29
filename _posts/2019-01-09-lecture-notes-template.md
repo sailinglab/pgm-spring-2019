@@ -148,8 +148,10 @@ We cannot let all potentials be either marginal probabilities or conditional pro
 ### Gibbs Distribution
 Definition: an undirected graphical model represents a distribution $$P(X_1, ..., X_n)$$ defined by an undirected graph $$H$$, and a set of positive potential functions $$\psi_C$$ associated with cliques of $$H$$, such that
 <d-math block>
-p(x_1,...,x_n)=\frac{1}{Z}\prod_{c\in C}{\psi_c(\bold{x_c})}
+\begin{aligned}
+p(x_1,...,x_n)=\frac{1}{Z}\prod_{c\in C}{\psi_c(\bold{x_c})} \\
 Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}
+\end{aligned}
 </d-math>
 $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of all cliques. Lower case $$c$$ is a clique associated with a set of random variables $$\bold{x}$$.
 
@@ -158,15 +160,19 @@ Img5
 #### Using max cliques
 Img6
 <d-math block>
-$$P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D)$$
-$$Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)$$
+  \begin{aligned}
+P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
+Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)
+  \end{aligned}
 <\d-math block>
 For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
 #### Using pairwise cliques
 Img7
 <d-math block>
-P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
+  \begin{aligned}
+P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
 Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
+  \end{aligned}
 <\d-math block>
 For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
 ### Using canonical representation
@@ -191,14 +197,24 @@ Img8
 Given the following UGM, denoted by $$H$$.
 Img9
 Y separates X and Z if every path from a node in X to a node in Z passes through a node in Y.
-$$sep_H(X;Z|Y)$$
+<d-math block>
+  \begin{aligned}
+sep_H(X;Z|Y)
+  \end{aligned}
+</d-math>
 A probability distribution satisfies the global Markov property if for any disjoint X,Y,Z such that Y separates X and Z, X is independent of Z given Y.
-$$I(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}$$
+<d-math block>
+  \begin{aligned}
+I(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}
+  \end{aligned}
+</d-math>
 
 ### Local Markov Independency
 For each node $$X_i\in \bold{V}$$, there is a unique Markov blanket of $$X_i$$, denoted $$MB_{X_i}$$, which is the set of neighbors of $$X_i$$ in the graph.
 Definition: The local Markov independencies ($$I_l$$) associated with $$H$$ is:
-$$I_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}$$
+<d-math block>
+I_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}
+</d-math>
 In other words, $$X_i$$ is independent of the rest of the nodes given its immediate neighbors $$MB_{X_i}$$.
 
 ## Soundness and Completeness of Global Markov Property
