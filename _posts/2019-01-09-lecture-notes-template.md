@@ -100,6 +100,101 @@ Arbitrary distribution $$P$$'s, however, do not necessarily attain perfect maps 
 
 The left example entails $$A\perp C\vert \{B,D\}$$ and $$B\perp D\vert \{A,C\}$$, and the right is a v-structure.
 
+## Undirected Graphical Models - Overview
+
+* There can only be symmetric relationships between a pair of nodes (random variables). In other words, there is no causal effect from one random variable to another.
+* The model can represent properties and configurations of a distribution, but it cannot generate samples explicitly.
+* Each node has strong correlations with its neighbors.
+
+### Example
+
+Img1
+
+Let each node represents an image patch. It is impossible to tell what is inside this image patch by isolating it from others. However, when we look at its neighboring image patches, we can see that it’s an image patch of water. Due to the fact that the relationships between neighboring image patches should be symmetric, an image is best represented by an undirected graphical model. This particular undirected graphical model is also known as the grid model.
+
+## Quantitative Specification
+### Cliques
+* Cliques are subgraphs that are fully connected.
+* A maximal clique is a clique such that any superset (any bigger subgraph that contains this subgraph) is not complete.
+* A sub-clique is a not-necessarily-maximal clique.
+#### Example
+Img2.1
+Img2.2
+Img2.3
+
+### Potential Functions
+Each clique can be associated with a potential function. The potential function can be understood as a provisional function of its arguments by assigning a pre-probabilistic score of their joint distribution. This potential function can be somewhat arbitrary.
+
+Why cliques? Each component of the clique contributes to the overall potential function.
+#### Example
+Img3.1
+For $$\psi_c(X_1, X_2)$$
+Img3.2
+
+In general, potential functions have to be positive non-zero.
+
+Potential functions are not necessarily probabilistic:
+Img4
+This model implies that $$X \perp Y | Z$$ So this graph factorizes as:
+<d-math block>
+\begin{aligned}
+    p(x,y,z)&=p(y)p(x|y)p(z|y) \\
+    &=p(x,y)p(z|y) \\
+    &=p(x|y)p(y,z)
+\end{aligned}
+</d-math>
+We cannot let all potentials be either marginal probabilities or conditional probabilities. So the potential function for this graph cannot be probability distributions.
+
+### Gibbs Distribution
+Definition: an undirected graphical model represents a distribution $$P(X_1, ..., X_n)$$ defined by an undirected graph $$H$$, and a set of positive potential functions $$\psi_C$$ associated with cliques of $$H$$, such that
+$$p(x_1,...,x_n)=\frac{1}{Z}\prod_{c\in C}{\psi_c(\bold{x_c})}$$
+$$Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}$$
+$$Z$$ is also known as the partition function. Upper case $$C$$ is the set of all cliques. Lower case $$c$$ is a clique associated with a set of random variables $$\bold{x}$$.
+
+### Example UGM Models
+Img5
+#### Using max cliques
+Img6
+$$P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D)$$
+$$Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)$$
+For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
+#### Using pairwise cliques
+Img7
+$$P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)$$
+$$Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)$$
+For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
+### Using canonical representation
+Img8
+<d-math block>
+\begin{aligned}
+    P'''(A,B,C,D)&=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
+    & \times\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
+    & \times\psi_c(A)\psi_c(B)\psi_c(C)\psi_c(D)
+\end{aligned}
+</d-math>
+<d-math block>
+\begin{aligned}
+    Z&=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D) \\
+    & \times\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
+    & \times\psi_c(A)\psi_c(B)\psi_c(C)\psi_c(D)
+\end{aligned}
+</d-math>
+
+## Qualitative Specification
+### Global Markov Independency
+Given the following UGM, denoted by $$H$$.
+Img9
+Y separates X and Z if every path from a node in X to a node in Z passes through a node in Y.
+$$sep_H(X;Z|Y)$$
+A probability distribution satisfies the global Markov property if for any disjoint X,Y,Z such that Y separates X and Z, X is independent of Z given Y.
+$$I(H)=\{X\perp Z | Y:sep_H(X;Z|Y)\}$$
+
+### Local Markov Independency
+For each node $$X_i\in \bold{V}$$, there is a unique Markov blanket of $$X_i$$, denoted $$MB_{X_i}$$, which is the set of neighbors of $$X_i$$ in the graph.
+Definition: The local Markov independencies ($$I_l$$) associated with $$H$$ is:
+$$I_l(H):\{X_i \perp (\bold{V}-\{X_i\}-MB_{X_i})|MB_{X_i}:\forall i\}$$
+In other words, $$X_i$$ is independent of the rest of the nodes given its immediate neighbors $$MB_{X_i}$$.
+
 ## Soundness and Completeness of Global Markov Property
 
 The global Markov property for UGMs is similar to its variant for DGMs, in the sense that they both attain similar soundness and completeness results.
