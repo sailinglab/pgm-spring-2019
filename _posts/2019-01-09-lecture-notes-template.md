@@ -164,7 +164,7 @@ Img6
 P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
 Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)
   \end{aligned}
-<\d-math block>
+<\d-math>
 For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
 #### Using pairwise cliques
 Img7
@@ -173,7 +173,7 @@ Img7
 P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
 Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
   \end{aligned}
-<\d-math block>
+<\d-math>
 For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
 ### Using canonical representation
 Img8
