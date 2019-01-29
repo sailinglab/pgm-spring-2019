@@ -157,6 +157,9 @@ Why cliques? Each component of the clique contributes to the overall potential f
             <img src="{{ 'assets/img/notes/lecture-03/potential_func_example.PNG' | relative_url }}" />
         </div>
     </div>
+    <figcaption>
+    <strong>An example used to illustrate potential functions. Both X1 and X2 are binary.</strong>
+    </figcaption>
 </figure>
 For $$\psi_c(X_1, X_2)$$
 <figure id="potential-example" class="l-body">
@@ -165,6 +168,9 @@ For $$\psi_c(X_1, X_2)$$
             <img src="{{ 'assets/img/notes/lecture-03/potential_func_table.PNG' | relative_url }}" />
         </div>
     </div>
+    <figcaption>
+    <strong>This table represents the potential function values given combinations of random variable inputs.</strong>
+    </figcaption>
 </figure>
 
 In general, potential functions have to be positive non-zero.
@@ -176,6 +182,9 @@ Potential functions are not necessarily probabilistic:
             <img src="{{ 'assets/img/notes/lecture-03/potential_func_illustration.PNG' | relative_url }}" />
         </div>
     </div>
+    <figcaption>
+    <strong>Another example used to illustrate potential functions.</strong>
+    </figcaption>
 </figure>
 This model implies that $$X \perp Y | Z$$ So this graph factorizes as:
 <d-math block>
@@ -185,7 +194,7 @@ This model implies that $$X \perp Y | Z$$ So this graph factorizes as:
     &=p(x|y)p(y,z)
 \end{aligned}
 </d-math>
-We cannot let all potentials be either marginal probabilities or conditional probabilities. So the potential function for this graph cannot be probability distributions.
+Probability distributions could be used as potential functions. However, in this case, we cannot let all potentials be either marginal probabilities or conditional probabilities. So the potential function for this graph cannot be probability distributions.
 
 ### Gibbs Distribution
 Definition: an undirected graphical model represents a distribution $$P(X_1, ..., X_n)$$ defined by an undirected graph $$H$$, and a set of positive potential functions $$\psi_C$$ associated with cliques of $$H$$, such that
@@ -204,6 +213,9 @@ $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of al
             <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example.PNG' | relative_url }}" />
         </div>
     </div>
+  <figcaption>
+    <strong>An example graph used to illustrate UGM.</strong>
+    </figcaption>
 </figure>
 #### Using Max Cliques
 <figure id="UGM-clique-example" class="l-body">
