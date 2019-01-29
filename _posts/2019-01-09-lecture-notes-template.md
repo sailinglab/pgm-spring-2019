@@ -115,7 +115,7 @@ Let each node represents an image patch. It is impossible to tell what is inside
 ## Quantitative Specification
 ### Cliques
 * Cliques are subgraphs that are fully connected.
-* A maximal clique is a clique such that any superset (any bigger subgraph that contains this subgraph) is not complete.
+* A maximal clique is a clique such that any superset (any bigger subgraph that contains this subgraph) is not a complete graph.
 * A sub-clique is a not-necessarily-maximal clique.
 #### Example
 Img2.1
@@ -147,21 +147,27 @@ We cannot let all potentials be either marginal probabilities or conditional pro
 
 ### Gibbs Distribution
 Definition: an undirected graphical model represents a distribution $$P(X_1, ..., X_n)$$ defined by an undirected graph $$H$$, and a set of positive potential functions $$\psi_C$$ associated with cliques of $$H$$, such that
-$$p(x_1,...,x_n)=\frac{1}{Z}\prod_{c\in C}{\psi_c(\bold{x_c})}$$
-$$Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}$$
+<d-math block>
+p(x_1,...,x_n)=\frac{1}{Z}\prod_{c\in C}{\psi_c(\bold{x_c})}
+Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}
+</d-math>
 $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of all cliques. Lower case $$c$$ is a clique associated with a set of random variables $$\bold{x}$$.
 
 ### Example UGM Models
 Img5
 #### Using max cliques
 Img6
+<d-math block>
 $$P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D)$$
 $$Z=\sum_{A,B,C,D}\psi_c(A,B,D)\psi_c(B,C,D)$$
+<\d-math block>
 For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
 #### Using pairwise cliques
 Img7
-$$P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)$$
-$$Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)$$
+<d-math block>
+P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
+Z=\sum_{A,B,C,D}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D)
+<\d-math block>
 For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
 ### Using canonical representation
 Img8
