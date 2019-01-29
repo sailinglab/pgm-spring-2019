@@ -126,7 +126,7 @@ Let each node represents an image patch. It is impossible to tell what is inside
 #### Example
 <figure id="clique-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/clique_example.PNG' | relative_url }}" />
         </div>
     </div>
@@ -153,7 +153,7 @@ Why cliques? Each component of the clique contributes to the overall potential f
 #### Example
 <figure id="potential-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/potential_func_example.PNG' | relative_url }}" />
         </div>
     </div>
@@ -161,7 +161,7 @@ Why cliques? Each component of the clique contributes to the overall potential f
 For $$\psi_c(X_1, X_2)$$
 <figure id="potential-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/potential_func_table.PNG' | relative_url }}" />
         </div>
     </div>
@@ -172,7 +172,7 @@ In general, potential functions have to be positive non-zero.
 Potential functions are not necessarily probabilistic:
 <figure id="potential-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/potential_func_illustration.PNG' | relative_url }}" />
         </div>
     </div>
@@ -200,7 +200,7 @@ $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of al
 ### Example UGM Models
 <figure id="UGM-clique-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example.PNG' | relative_url }}" />
         </div>
     </div>
@@ -208,7 +208,7 @@ $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of al
 #### Using Max Cliques
 <figure id="UGM-clique-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example_max_clique.PNG' | relative_url }}" />
         </div>
     </div>
@@ -223,7 +223,7 @@ For discrete nodes, we only need to represent it by two 3D tables instead of one
 #### Using Pairwise Cliques
 <figure id="UGM-clique-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example_sub_clique.PNG' | relative_url }}" />
         </div>
     </div>
@@ -257,7 +257,7 @@ Img8
 Given the following UGM, denoted by $$H$$.
 <figure id="global-markov-example" class="l-body">
     <div class="row">
-        <div class="col two">
+        <div class="col">
             <img src="{{ 'assets/img/notes/lecture-03/global_markov_independence.PNG' | relative_url }}" />
         </div>
     </div>
