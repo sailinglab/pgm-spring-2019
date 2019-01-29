@@ -108,7 +108,13 @@ The left example entails $$A\perp C\vert \{B,D\}$$ and $$B\perp D\vert \{A,C\}$$
 
 ### Example
 
-Img1
+<figure id="UGM-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/UGM_example.png' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 
 Let each node represents an image patch. It is impossible to tell what is inside this image patch by isolating it from others. However, when we look at its neighboring image patches, we can see that it’s an image patch of water. Due to the fact that the relationships between neighboring image patches should be symmetric, an image is best represented by an undirected graphical model. This particular undirected graphical model is also known as the grid model.
 
@@ -118,23 +124,59 @@ Let each node represents an image patch. It is impossible to tell what is inside
 * A maximal clique is a clique such that any superset (any bigger subgraph that contains this subgraph) is not a complete graph.
 * A sub-clique is a not-necessarily-maximal clique.
 #### Example
-Img2.1
-Img2.2
-Img2.3
+<figure id="clique-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/clique_example.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
+<figure id="clique-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/clique_example_max_clique.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
+<figure id="clique-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/clique_example_sub_clique.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 
 ### Potential Functions
 Each clique can be associated with a potential function. The potential function can be understood as a provisional function of its arguments by assigning a pre-probabilistic score of their joint distribution. This potential function can be somewhat arbitrary.
 
 Why cliques? Each component of the clique contributes to the overall potential function.
 #### Example
-Img3.1
+<figure id="potential-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/potential_func_example.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 For $$\psi_c(X_1, X_2)$$
-Img3.2
+<figure id="potential-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/potential_func_table.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 
 In general, potential functions have to be positive non-zero.
 
 Potential functions are not necessarily probabilistic:
-Img4
+<figure id="potential-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/potential_func_illustration.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 This model implies that $$X \perp Y | Z$$ So this graph factorizes as:
 <d-math block>
 \begin{aligned}
@@ -156,9 +198,21 @@ Z=\sum_{x_1,...,x_n}\prod_{c\in C}{\psi_c(\bold{x_c})}
 $$Z$$ is also known as the partition function. Upper case $$C$$ is the set of all cliques. Lower case $$c$$ is a clique associated with a set of random variables $$\bold{x}$$.
 
 ### Example UGM Models
-Img5
+<figure id="UGM-clique-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 #### Using Max Cliques
-Img6
+<figure id="UGM-clique-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example_max_clique.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 <d-math block>
 \begin{aligned}
   P'(A,B,C,D)=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
@@ -167,7 +221,13 @@ Img6
 </d-math>
 For discrete nodes, we only need to represent it by two 3D tables instead of one 4D table.
 #### Using Pairwise Cliques
-Img7
+<figure id="UGM-clique-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/UGM_clique_example_sub_clique.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 <d-math block>
 \begin{aligned}
   P''(A,B,C,D)=\frac{1}{Z}\psi_c(A,B)\psi_c(A,D)\psi_c(B,C)\psi_c(B,D)\psi_c(C,D) \\
@@ -195,7 +255,13 @@ Img8
 ## Qualitative Specification
 ### Global Markov Independency
 Given the following UGM, denoted by $$H$$.
-Img9
+<figure id="global-markov-example" class="l-body">
+    <div class="row">
+        <div class="col two">
+            <img src="{{ 'assets/img/notes/lecture-03/global_markov_independence.PNG' | relative_url }}" />
+        </div>
+    </div>
+</figure>
 Y separates X and Z if every path from a node in X to a node in Z passes through a node in Y.
 <d-math block>
   \begin{aligned}
