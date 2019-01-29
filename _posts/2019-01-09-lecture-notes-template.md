@@ -247,7 +247,10 @@ For discrete nodes, we only need to represent it by two 3D tables instead of one
 \end{aligned}
 </d-math>
 For discrete nodes, we only need to represent it by five 2D tables instead of one 4D table.
-### Using Canonical Representation
+#### Using Canonical Representation
+Even if we use fine-grained representation, the Mrkov network is often overparameterized. For any given distribution, there are multiple choices of parameters to describe in the model. Consider a pair of cliques $$\{A, B\}$$ and $$\{B, C\}$$, the information about $$B$$ can be placed in either of the two cliques, resulting in ambiguities.
+
+
 <d-math block>
 \begin{aligned}
     P'''(A,B,C,D)&=\frac{1}{Z}\psi_c(A,B,D)\psi_c(B,C,D) \\
