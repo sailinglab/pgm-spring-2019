@@ -113,6 +113,20 @@ We may add more project suggestions down the road.
 #### Big DAGs with NO TEARS: scalable Bayesian network structure learning
 **Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
 
-#### Optimization-based decoding for improved machine translation
+#### Optimization-based decoding for improved neural machine translation
+
+Encoder-decoder[^seq2seq] with attention[^attention] is a typical architecture of modern neural machine translation (NMT) systems.
+Arguably, the quality of the decoder (as well as the decoding process itself) significantly affects translation and often requires large amounts of parallel training data.
+
+In this project, your goal would be to explore the potential of building more efficient decoders using pre-trained target language models (LMs).
+The idea is inspired by a recent technique used in model-based reinforcement learning:[^upn]
+*Given a sentence in the source language and a pre-trained target LM, generate a sequence of words in the target language by starting from a random sequence and iteratively refining it to increase its likelihood under the given LM.*
+The challenge is to ensure that by optimizing the language model (that represents an unconditional distribution), the generated sentence is a valid translation (i.e., preserves the meaning of the source sentence).
+
 **Contact person:** [Maruan Al-Shedivat](https://www.cs.cmu.edu/~mshediva/){:target="\_blank"}
 
+**References**
+
+[^seq2seq]: Sutskever, Vinyals, Le. [Sequence to sequence learning with neural networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learnin){:target="\_blank"}. NIPS 2014.
+[^attention]: Bahdanau, Cho, Bengio. [Neural machine translation by jointly learning to align and translate](https://arxiv.org/abs/1409.0473){:target="\_blank"}. ICLR 2015.
+[^upn]: Srinivas, Jabri, Abbeel, Levine, Finn. [Universal Planning Networks](https://arxiv.org/abs/1804.00645){:target="\_blank"}. ICML 2018.
