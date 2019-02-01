@@ -101,13 +101,19 @@ We may add more project suggestions down the road.
 
 ***
 
-#### Deep generative models for video, text, and audio generation
-**Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
-
-#### Deep generative models for multimodal representation learning
-**Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
-
 #### Deep generative models for disentangled representation learning
+**Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
+
+Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data. For example, when we learn a generative model for shapes, it would be ideal if each latent variables would correspond to the shapes pose, shadow, rotations, lighting etc. This improves interpretability of our learned representations and allows flexible generation from latent variables. You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), as well as new applications of disentangled representation learning to improve performance on NLP, vision, and multimodal tasks.
+
+**References**
+
+[Papers in NIPS 2017 workshop on disentangled representation learning](https://sites.google.com/view/disentanglenips2017){:target="\_blank"}.
+Denton et al., [Unsupervised Learning of Disentangled Representations from Video](https://papers.nips.cc/paper/7028-unsupervised-learning-of-disentangled-representations-from-video){:target="\_blank"}. NIPS 2017.
+Chen et al., [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2016.
+Kulkarni et al., [Deep Convolutional Inverse Graphics Network](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2015.
+
+#### Deep generative models for video, text, and audio generation
 **Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
 
 #### Big DAGs with NO TEARS: scalable Bayesian network structure learning
