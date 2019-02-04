@@ -104,38 +104,84 @@ We may add more project suggestions down the road.
 #### Deep generative models for disentangled representation learning
 **Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
 
-Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data. For example, when we learn a generative model for shapes, it would be ideal if each latent variables would correspond to the shapes pose, shadow, rotations, lighting etc. This improves interpretability of our learned representations and allows flexible generation from latent variables. You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), as well as new applications of disentangled representation learning to improve performance on NLP, vision, and multimodal tasks.
+Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data.[^disentagled][^infogan]
+For example, when we learn a generative model for shapes, it would be ideal if each latent variables would correspond to the shapes pose, shadow, rotations, lighting etc.[^invgraphics]
+This improves interpretability of our learned representations and allows flexible generation from latent variables.
+You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), as well as new applications of disentangled representation learning to improve performance on NLP, vision,[^disvideo] and multimodal tasks.
 
-**References**
 
-[Papers in NIPS 2017 workshop on disentangled representation learning](https://sites.google.com/view/disentanglenips2017){:target="\_blank"}.
+[^disentagled]: [Papers in NIPS 2017 workshop on disentangled representation learning](https://sites.google.com/view/disentanglenips2017){:target="\_blank"}.
+[^disvideo]: Denton et al., [Unsupervised Learning of Disentangled Representations from Video](https://papers.nips.cc/paper/7028-unsupervised-learning-of-disentangled-representations-from-video){:target="\_blank"}. NIPS 2017.
+[^infogan]: [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2016.
+[^invgraphics]: Kulkarni et al., [Deep Convolutional Inverse Graphics Network](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2015.
 
-Denton et al., [Unsupervised Learning of Disentangled Representations from Video](https://papers.nips.cc/paper/7028-unsupervised-learning-of-disentangled-representations-from-video){:target="\_blank"}. NIPS 2017.
-
-Chen et al., [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2016.
-
-Kulkarni et al., [Deep Convolutional Inverse Graphics Network](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2015.
+***
 
 #### Deep generative models for video, text, and audio generation
 **Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
 
+***
+
 #### Big DAGs with NO TEARS: scalable Bayesian network structure learning
 **Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
 
+***
+
 #### Optimization-based decoding for improved neural machine translation
+**Contact person:** [Maruan Al-Shedivat](https://www.cs.cmu.edu/~mshediva/){:target="\_blank"}
 
 Encoder-decoder[^seq2seq] with attention[^attention] is a typical architecture of modern neural machine translation (NMT) systems.
 Arguably, the quality of the decoder (as well as the decoding process itself) significantly affects translation and often requires large amounts of parallel training data.
 
 In this project, your goal would be to explore the potential of building more efficient decoders using pre-trained target language models (LMs).
 The idea is inspired by a recent technique used in model-based reinforcement learning:[^upn]
-*Given a sentence in the source language and a pre-trained target LM, generate a sequence of words in the target language by starting from a random sequence and iteratively refining it to increase its likelihood under the given LM.*
+
+> Given a sentence in the source language and a pre-trained target LM, generate a sequence of words in the target language by starting from a random sequence and iteratively refining it to increase its likelihood under the given LM.
+
 The challenge is to ensure that by optimizing the language model (that represents an unconditional distribution), the generated sentence is a valid translation (i.e., preserves the meaning of the source sentence).
-
-**Contact person:** [Maruan Al-Shedivat](https://www.cs.cmu.edu/~mshediva/){:target="\_blank"}
-
-**References**
 
 [^seq2seq]: Sutskever, Vinyals, Le. [Sequence to sequence learning with neural networks](http://papers.nips.cc/paper/5346-sequence-to-sequence-learnin){:target="\_blank"}. NIPS 2014.
 [^attention]: Bahdanau, Cho, Bengio. [Neural machine translation by jointly learning to align and translate](https://arxiv.org/abs/1409.0473){:target="\_blank"}. ICLR 2015.
 [^upn]: Srinivas, Jabri, Abbeel, Levine, Finn. [Universal Planning Networks](https://arxiv.org/abs/1804.00645){:target="\_blank"}. ICML 2018.
+
+***
+
+#### Learning contextual models for personalization, interpretability, and beyond
+**Contact person:** [Maruan Al-Shedivat](https://www.cs.cmu.edu/~mshediva/){:target="\_blank"}
+
+Oftentimes, we would like the models of our data to be not only accurate, but also human-interpretable.
+A recently developed class of models, called Contextual Explanation Networks (CENs)[^cen], provides a flexible way to achieve this: on a high level, it allows to learn families of contextualized simple/interpretable models (e.g., sparse linear), called explanations, which are 'glued' together via deep neural networks.
+In essence, CENs model conditional probability distributions of the form $$P(Y \mid X, C)$$, distinguishing between semantic (or interpretable) features $$X$$ and non-semantic features $$C$$.
+There is a number of interesting directions one could take CEN further.
+
+1. **Beyond linear explanations.** <br>
+The original paper[^cen] developed CEN with only linear explanations (for scalar and structured output spaces).
+Is it possible to use other types of simple models?
+For instance, lists of rules[^rules] or their causal version[^causal-rules] is a popular method when it comes to interpretability.
+However, is it possible to integrate such models into the CEN framework and make them trainable end-to-end?
+Applications of ML in the healthcare domain may significantly benefit from such models.
+
+2. **Beyond conditional models.** <br>
+CEN was designed to represent conditional distributions, i.e., directly answer queries such as, *What is the probability of $$Y$$ given $$X$$ and $$C$$?*
+The problem is that the model always requires having access to *two modalities* of the input ($$X$$ and $$C$$), which is a limitation, since in a real-world scenario, certain data modalities might be missing or hard to obtain.
+Hence, is it possible to build a CEN model that works with missing or latent $$X$$ or $$C$$ variables?
+Is building a contextual model for the join distribution over $$X, C, Y$$ the right way to go?
+
+3. **CEN for few-shot learning and/or meta-learning.** <br>
+Note the CEN framework technically uses DNNs to generate parameters for simpler models (to contextualize them).
+More generally, part of the model is used to 'modulate' another part of the model, which has been successful in a number of areas,[^fimled-nets] including zero-shot learning, multilingual translation,[^cpg] etc.
+Multitask few-shot learning and meta-learning[^maml] pose a new interesting setup, in which contextual/conditional models could work very well.[^cnp]
+Another direction to explore in your projects is the design and implementation of CEN-like models for these new tasks.
+
+
+[^cen]: Al-Shedivat, Dubey, Xing. [Contextual explanation networks](){:target="\_blank"}. arXiv 2017.
+[^rules]: Wang, Rudin. [Falling rule lists](https://arxiv.org/abs/1411.5899){:target="\_blank"}. AISTATS 2015.
+[^causal-rules]: Wang, Rudin. [Causal falling rule lists](https://arxiv.org/abs/1510.05189){:target="\_blank"}. FATML workshop 2017.
+[^fimled-nets]: Dumoulin et al. [Feature-wise transformations](https://distill.pub/2018/feature-wise-transformations/){:target="\_blank"}. Distill 2018.
+[^cpg]: Platanios et al. [Contextual parameter generation for neural machine translation](https://blog.ml.cmu.edu/2019/01/14/contextual-parameter-generation-for-universal-neural-machine-translation/){:target="\_blank"}. EMNLP 2018.
+[^maml]: Finn, Abbeel, Levine. [Model-agnostic meta-learning for fast adaptation of neural networks](https://arxiv.org/abs/1703.03400){:target="\_blank"}. ICML 2017.
+[^cnp]: Garnelo et al. [Conditional neural processes](https://arxiv.org/abs/1807.01613){:target="\_blank"}. ICML 2018.
+
+***
+
+**References**
