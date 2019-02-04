@@ -66,7 +66,7 @@
     - Maximum Likelihood Estimation (MLE) <br />
     - Markov Models
   slides: "https://www.dropbox.com/s/mycn78k6k0saxr5/lecture5-LearningObs.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
+  video:
   notes:
   readings:
     - Jordan Textbook, Ch. 8, 9 (Sec. 9.1 - 9.2)
@@ -83,7 +83,7 @@
     - Hidden Markov Models (HMMs) <br />
     - The EM algorithm
   slides: "https://www.dropbox.com/s/firdpiojui2o4s5/lecture6-EM-maruan.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
   notes:
   readings:
     - Jordan Textbook, Ch. 11
@@ -97,7 +97,7 @@
   title: >
     <strong>Parameter learning in fully observable Markov networks (CRF)</strong>
   slides:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
   notes:
   readings:
   logistics:
@@ -107,7 +107,7 @@
   title: >
     <strong>Causal discovery and inference</strong>
   slides:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
   notes:
   readings:
   logistics:
@@ -117,7 +117,7 @@
   title: >
     <strong>Gaussian graphical models, Ising model, Modeling networks</strong>
   slides:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
   notes:
   readings:
   logistics: >
@@ -130,7 +130,7 @@
     - Discrete Hidden State (HMM vs. CRF) <br />
     - Continuous Hidden State (Kalman Filter)
   slides:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
   notes:
   readings:
   logistics: >
@@ -143,7 +143,7 @@
   title: >
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
   notes:
   readings:
   logistics: >
