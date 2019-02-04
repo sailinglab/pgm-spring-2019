@@ -59,7 +59,7 @@
     <span class="event">HW1 out (Mon, 1/28)</span>
 
 - date: 1/30
-  lecturer: Eric
+  lecturer: skipped
   title: >
     <strong>Parameter learning in fully observable Bayesian Networks</strong> <br />
     - Generalized Linear Models (GLIMs) <br />
@@ -76,13 +76,13 @@
   logistics:
 
 - date: 2/4
-  lecturer: Eric
+  lecturer: Maruan
   title: >
     <strong>Parameter Learning of partially observed BN</strong> <br />
     - Mixture models <br />
     - Hidden Markov Models (HMMs) <br />
     - The EM algorithm
-  slides:
+  slides: "https://www.dropbox.com/s/firdpiojui2o4s5/lecture6-EM-maruan.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
   notes:
   readings:
