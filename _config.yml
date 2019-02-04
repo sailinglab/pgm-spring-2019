@@ -25,7 +25,7 @@ rss:  # notes rss
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: Course Notes
-blog_description: Course notes written by students and edited by instructors
+blog_description: The notes written by students and edited by instructors
 
 # Pagination
 paginate: 4
