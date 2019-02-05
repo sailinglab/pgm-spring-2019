@@ -185,7 +185,7 @@ Another direction to explore in your projects is the design and implementation o
 
 ***
 
-#### Improving Efficiency of Reinforcement Learning
+#### Hierarchical RL & Maximum Entropy RL
 
 **Contact person:** [Lisa Lee](http://leelisa.com){:target="\_blank"}
 
