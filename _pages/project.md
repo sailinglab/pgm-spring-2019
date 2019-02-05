@@ -182,6 +182,41 @@ Another direction to explore in your projects is the design and implementation o
 [^maml]: Finn, Abbeel, Levine. [Model-agnostic meta-learning for fast adaptation of neural networks](https://arxiv.org/abs/1703.03400){:target="\_blank"}. ICML 2017.
 [^cnp]: Garnelo et al. [Conditional neural processes](https://arxiv.org/abs/1807.01613){:target="\_blank"}. ICML 2018.
 
+
+***
+
+#### Improving Efficiency of Reinforcement Learning
+
+**Contact person:** [Lisa Lee](http://leelisa.com){:target="\_blank"}
+
+Reinforcement learning (RL) is typically formulated as a Markov decision process of an agent interacting with the environment to maximize its cumulative reward. In the last several years, deep learning has helped achieve major breakthroughs in RL by enabling methods to automatically learn features from high-dimensional observations (e.g., raw image pixels). These advances have especially benefited vision-based RL problems and robotic manipulation methods.
+
+Despite the progress, several key challenges limit the applicability and scalability of deep RL algorithms. For example, efficient exploration and long-term credit assignment remain core problems, especially in settings with sparse or delayed rewards. Another challenge is that the data inefficiency of deep RL algorithms makes training computationally expensive and difficult to scale in the complexity and number of tasks.
+
+One framework to tackle these challenges is *hierarchical RL (HRL)*, which enables temporal abstraction by learning hierarchical policies operating at different timescales and decomposing tasks into smaller subtasks. Another interesting line of work is *maximum entropy RL* which encourages agents to learn diverse behaviors agnostic of the task.
+
+I'd be happy to share more specific project ideas and advise students. Please feel free to stop by office hours if interested.
+
+
+**Some relevant works:**
+
+1. [Feudal Reinforcement Learning (1993)](http://www.cs.toronto.edu/~fritz/absps/dh93.pdf){:target="\_blank"}
+
+2. [Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning (1999)](https://www.sciencedirect.com/science/article/pii/S0004370299000521){:target="\_blank"}
+
+3. [FeUdal Networks for Hierarchical Reinforcement Learning (2017)](https://arxiv.org/abs/1703.01161){:target="\_blank"}
+
+4. [Hierarchical Deep Reinforcement Learning:Integrating Temporal Abstraction andIntrinsic Motivation (2016)](http://papers.nips.cc/paper/6233-hierarchical-deep-reinforcement-learning-integrating-temporal-abstraction-and-intrinsic-motivation.pdf){:target="\_blank"}
+
+5. [Learning Diverse Skills via Maximum Entropy Deep Reinforcement Learning (2017)](https://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/){:target="\_blank"}
+
+6. [Modular Multitask Reinforcement Learning with Policy Sketch (2017)](https://arxiv.org/pdf/1611.01796.pdf){:target="\_blank"}
+
+7. [On the Complexity of Exploration in Goal-Driven Navigation (2018)](https://arxiv.org/abs/1811.06889){:target="\_blank"}
+
+8. [Learning Self-Imitating Diverse Policies (2018)](https://arxiv.org/abs/1805.10309){:target="\blank"}
+
+
 ***
 
 **References**
