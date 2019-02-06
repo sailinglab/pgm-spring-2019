@@ -104,7 +104,7 @@ We may add more project suggestions down the road.
 #### Deep generative models for disentangled representation learning
 **Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
 
-Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data.[^disentagled][^infogan]
+Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data.[^disentagled],[^infogan]
 For example, when we learn a generative model for shapes, it would be ideal if each latent variables would correspond to the shapes pose, shadow, rotations, lighting etc.[^invgraphics]
 This improves interpretability of our learned representations and allows flexible generation from latent variables.
 You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), as well as new applications of disentangled representation learning to improve performance on NLP, vision,[^disvideo] and multimodal tasks.
