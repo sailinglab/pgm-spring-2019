@@ -100,6 +100,9 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
   notes:
   readings:
+    - Jordan Textbook, Ch. 9 (Sec. 9.3-9.5), Ch. 20
+    - Friedman, Hastie, Tibshirani. <a href="http://statweb.stanford.edu/~tibs/glasso/" target="_blank">Sparse inverse covariance estimation with the graphical lasso</a>.
+    - Lafferty et al., <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.803&rep=rep1&type=pdf" target="_blank">Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data</a>.
   logistics:
 
 - date: 2/11
