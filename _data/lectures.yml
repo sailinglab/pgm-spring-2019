@@ -95,8 +95,8 @@
 - date: 2/6
   lecturer: Eric
   title: >
-    <strong>Parameter learning in fully observable Markov networks (CRF)</strong>
-  slides:
+    <strong>Maximum likelihood learning of undirected GM</strong>
+  slides: "https://www.dropbox.com/s/jvuh05ure5i47ca/lecture7-LearningObsMRF.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
   notes:
   readings:
