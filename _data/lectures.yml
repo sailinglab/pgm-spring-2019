@@ -113,6 +113,9 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
   notes:
   readings:
+    - J. Pearl, M. Glymour, and N. P. Jewell. <a href="http://bayes.cs.ucla.edu/PRIMER/" target="_blank">Causal Inference in Statistics: A Primer</a> (concepts related to causality and identification of causal effects)
+    - P. Spirtes, C. Glymour, and R. Scheines. <a href="https://www.researchgate.net/publication/242448131_Causation_Prediction_and_Search" target="_blank">Causation, Prediction, and Search</a>. Pages 80-89 and 125-123-136. (traditional methods for causal discovery, including the PC and FCI algorithms)
+    - K. Zhang, B. Schöklopf, P. Spirtes, and C. Glymour. <a href="https://academic.oup.com/nsr/article/5/1/26/4638533" target="_blank">Learning causality and causality-related learning</a> (brief review of recent methods for causal discovery)
   logistics:
 
 - date: 2/13
