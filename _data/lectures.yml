@@ -49,7 +49,7 @@
     - Sum product algorithm
   slides: "https://www.dropbox.com/s/yyo1t7d48kzxlqu/lecture4-ExactInference.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61db95f2-aec1-415d-9180-a9d0012992fe"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-04/"
   readings:
     - Jordan Textbook, Ch. <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf" target="_blank">3</a> and <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter4.pdf" target="_blank">4</a>
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch9.1-9.4.pdf" target="_blank">Ch. 9</a>, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch10.1-10.3.pdf" target="_blank">Ch. 10</a>
