@@ -218,5 +218,70 @@ I'd be happy to share more specific project ideas and advise students. Please fe
 
 
 ***
+#### Large-scale (scalable) Machine Learning
 
-**References**
+**Contact person:** [Hao Zhang](http://www.cs.cmu.edu/~hzhang2/){:target="\_blank"}
+
+Machine Learning nowadays has been applied in extremely large dataset, posing many challenges on existing models and algorithms -- lack of scalability, lack of guarantee of convergence, inefficient inference, difficulty of programming over big data and big models, etc. This topic will allow us to explore different directions in large-scale machine learning to address the aforementioned problems:
+
+- **Data parallelism and model parallelism** [1-4]
+- **Large batch SGD, SGD with staleness** [3, 4, 5, 7]
+- **Efficient Training/inference of Dynamic Neural Networks** [6, 8]
+- **Scalable ML Systems** [1-8]
+
+**References**:
+
+1. [Large Scale Distributed Deep Networks](https://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf){:target="\_blank"}.
+2. [Intro to Distributed Deep Learning Systems](https://medium.com/@Petuum/intro-to-distributed-deep-learning-systems-a2e45c6b8e7){:target="\_blank"}.
+3. [More Effective Distributed ML via a Stale Synchronous Parallel Parameter Server](https://www.petuum.com/pdf/SSPTable_NIPS2013.pdf){:target="\_blank"}.
+4. [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/abs/1706.02677){:target="\_blank"}.
+5. [An Empirical Model of Large-Batch Training](https://arxiv.org/abs/1812.06162){:target="\_blank"}.
+6. [Cavs: An Efficient Runtime System for Dynamic Neural Networks](https://www.usenix.org/system/files/conference/atc18/atc18-xu-shizhen.pdf){:target="\_blank"}.
+7. [Toward Understanding the Impact of Staleness in Distributed Machine Learning](https://arxiv.org/abs/1810.03264){:target="\_blank"}.
+8. [On-the-fly Operation Batching in Dynamic Computation Graphs](https://arxiv.org/abs/1705.07860){:target="\_blank"}.
+
+
+***
+#### Machine Learning on/with Graphs
+
+**Contact person:** [Hao Zhang](http://www.cs.cmu.edu/~hzhang2/){:target="\_blank"}
+
+Machine learning on graphs is an important and ubiquitous task with applications ranging from drug design to friendship recommendation in social networks. The primary challenge in this domain is finding a way to represent, or encode, graph structure so that it can be easily exploited by machine learning models. Traditionally, machine learning approaches relied on user-defined heuristics to extract features encoding structural information about a graph (e.g., degree statistics or kernel functions). However, recent years have seen a surge in approaches that automatically learn to encode graph structure into low-dimensional embeddings, using techniques based on deep learning and nonlinear dimensionality reduction. Below are a few interesting topics that have been developed very actively in recently years and worth some explorations in the class:
+
+- **Deep Generative Models for Graphs** [1, 2, 4]
+- **Combing Graphical Models with Neural Networks** [1-5]
+- **Semi-supervised Learning on Graph-structured Data** [3, 5]
+
+
+**References**:
+
+1. [Learning Deep Generative Models of Graphs](https://arxiv.org/abs/1803.03324){:target="\_blank"}.
+2. [GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models](https://cs.stanford.edu/people/jure/pubs/graphrnn-icml18.pdf){:target="\_blank"}.
+3. [Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/abs/1609.02907){:target="\_blank"}.
+4. [Learning Multimodal Graph-to-graph Translation for Molecular Optimization](https://arxiv.org/pdf/1812.01070.pdf){:target="\_blank"}.
+5. [Representation Learning on Graphs: Methods and Applications](https://arxiv.org/pdf/1709.05584.pdf){:target="\_blank"}.
+
+
+***
+#### Automated Machine Learning
+
+**Contact person:** [Hao Zhang](http://www.cs.cmu.edu/~hzhang2/){:target="\_blank"}
+
+ 
+The goal of AutoML is to make machine learning more accessible by automatically generating a data analysis pipeline that can include data pre-processing, feature selection, and feature engineering methods along with machine learning methods and parameter settings that are optimized for your data. Recently we have witnessed very active development toward a few directions such as hyperparameter searching, neural architecture search, etc. However, most of the existing methods only address a very small component from an end-to-end ML pipeline (from data to values), and they usually exhibit unsatisfactory efficiency and scalability.
+
+- **Efficient Search for Better Model Architectures, Optimization Methods, or Both** [1-5, 7, 8, 9]
+- **Searching for Better End-to-end ML Pipelines** [7]
+- **AutoML (for) Systems** [6, 9]
+
+**References**:
+
+1. [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware](https://arxiv.org/abs/1812.00332){:target="\_blank"}.
+2. [AutoLoss: Learning Discrete Schedules for Alternate Optimization](https://openreview.net/pdf?id=BJgK6iA5KX){:target="\_blank"}.
+3. [DARTS: Differentiable Architecture Search](https://arxiv.org/abs/1806.09055){:target="\_blank"}.
+4. [Neural Optimizer Search with Reinforcement Learning](https://arxiv.org/abs/1709.07417){:target="\_blank"}.
+5. [Neural Architecture Search with Bayesian Optimisation and Optimal Transport](https://arxiv.org/pdf/1802.07191.pdf){:target="\_blank"}.
+6. [Ray: A Distributed Framework for Emerging AI Applications](https://www.usenix.org/system/files/osdi18-moritz.pdf){:target="\_blank"}.
+7. [AutoAugment: Learning Augmentation Policies from Data](https://arxiv.org/pdf/1805.09501.pdf){:target="\_blank"}.
+8. [MnasNet: Platform-Aware Neural Architecture Search for Mobile](https://arxiv.org/abs/1807.11626){:target="\_blank"}.
+9. [Device Placement Optimization with Reinforcement Learning](https://arxiv.org/abs/1706.04972){:target="\_blank"}.
