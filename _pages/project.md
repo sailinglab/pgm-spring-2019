@@ -130,7 +130,12 @@ You can explore new methods of learning disentangled representations in both sup
 
 ***
 
-#### Big DAGs with NO TEARS: scalable Bayesian network structure learning
+#### Big & NO TEARS: scalable Bayesian network structure learning
+**Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
+
+***
+
+#### Neural network compression with $$L_1$$ penalty
 **Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
 
 ***
