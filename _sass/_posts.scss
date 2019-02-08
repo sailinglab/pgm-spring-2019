@@ -28,6 +28,9 @@
     // @include media-query($on-laptop) {
     //     font-size: 36px;
     // }
+    b {
+        color: $theme-color;
+    }
 }
 .post-description {
     font-size: 20px;
