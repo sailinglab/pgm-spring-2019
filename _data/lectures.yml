@@ -121,11 +121,16 @@
 - date: 2/13
   lecturer: Eric
   title: >
-    <strong>Gaussian graphical models, Ising model, Modeling networks</strong>
-  slides:
+    <strong>Modeling networks</strong> <br>
+    - Gaussian graphical models <br>
+    - Ising models
+  slides: "https://www.dropbox.com/s/yfip5ig21g4qxhn/lecture9-NetworkLearning.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
   notes:
   readings:
+    - Meinshausen and Buhlmann, <a href="https://projecteuclid.org/euclid.aos/1152540754" target="_blank">High-Dimensional Graphs and Variable Selection with the Lasso</a>.
+    - Kolar et al., <a href="https://www.cs.cmu.edu/~epxing/papers/2010/kolar_song_xing_aoas10.pdf" target="_blank">Estimating Time-Varying Networks</a>.
+    - Dempster, <a href="https://www.jstor.org/stable/2528966?origin=JSTOR-artinfo&seq=1#page_scan_tab_contents" target="_blank">Covariance Selection</a>.
   logistics: >
     <span class="deadline">HW1 due (Wed, 2/13)</span>
 
