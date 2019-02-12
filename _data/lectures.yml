@@ -4,7 +4,7 @@
   lecturer: Eric
   title: >
     <strong>Introduction to GM</strong>
-  slides: "https://www.dropbox.com/s/noxer7mbtvalj0t/lecture1-Introduction.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/y2p85ehk5j7igl9/lecture1-Introduction-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-01/"
   readings:
@@ -16,7 +16,7 @@
   lecturer: Eric
   title: >
     <strong>Representation: Directed GMs (BNs)</strong>
-  slides: "https://www.dropbox.com/s/q53gmhc056zob8e/lecture2-BNrepresentation.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/fp340t7exxzch7g/lecture2-BNrepresentation-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-02/"
   readings:
@@ -31,7 +31,7 @@
   lecturer: Eric
   title: >
     <strong>Representation: Undirected GMs (MRFs)</strong>
-  slides: "https://www.dropbox.com/s/a22z8io0nuxnp5o/lecture3-MRFrepresentation.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/ujbe8vcfc0jf0kz/lecture3-MRFrepresentation-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=702de16d-fb04-4906-9014-a9d0012983e2"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-03/"
   readings:
@@ -47,7 +47,7 @@
     - Elimination <br />
     - Message passing <br />
     - Sum product algorithm
-  slides: "https://www.dropbox.com/s/yyo1t7d48kzxlqu/lecture4-ExactInference.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/49w8lflglvpcmn2/lecture4-ExactInference-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61db95f2-aec1-415d-9180-a9d0012992fe"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-04/"
   readings:
@@ -109,7 +109,7 @@
   lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a> @ Department of Philosophy
   title: >
     <strong>Causal discovery and inference</strong>
-  slides:
+  slides: "https://www.dropbox.com/s/9clh12j85c8smgb/lecture8-Causality.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
   notes:
   readings:
@@ -121,11 +121,16 @@
 - date: 2/13
   lecturer: Eric
   title: >
-    <strong>Gaussian graphical models, Ising model, Modeling networks</strong>
-  slides:
+    <strong>Modeling networks</strong> <br>
+    - Gaussian graphical models <br>
+    - Ising models
+  slides: "https://www.dropbox.com/s/yfip5ig21g4qxhn/lecture9-NetworkLearning.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
   notes:
   readings:
+    - Meinshausen and Buhlmann, <a href="https://projecteuclid.org/euclid.aos/1152540754" target="_blank">High-Dimensional Graphs and Variable Selection with the Lasso</a>.
+    - Kolar et al., <a href="https://www.cs.cmu.edu/~epxing/papers/2010/kolar_song_xing_aoas10.pdf" target="_blank">Estimating Time-Varying Networks</a>.
+    - Dempster, <a href="https://www.jstor.org/stable/2528966?origin=JSTOR-artinfo&seq=1#page_scan_tab_contents" target="_blank">Covariance Selection</a>.
   logistics: >
     <span class="deadline">HW1 due (Wed, 2/13)</span>
 
