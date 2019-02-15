@@ -140,7 +140,7 @@
     <strong>Sequential models</strong> <br />
     - Discrete Hidden State (HMM vs. CRF) <br />
     - Continuous Hidden State (Kalman Filter)
-  slides:
+  slides: "https://www.dropbox.com/s/xtsksb4t04a5gu1/lecture10-SequentialModels.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
   notes:
   readings:
