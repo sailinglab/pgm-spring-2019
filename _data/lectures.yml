@@ -148,8 +148,7 @@
     - Ng, <a href="http://cs229.stanford.edu/notes/cs229-notes9.pdf" target="_blank">Lecture notes on factor analysis</a>.
     - Welch and Bishop, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.6578&rep=rep1&type=pdf" target="_blank">An Introduction to the Kalman Filter</a>.
     - <a href="https://people.cs.umass.edu/~wallach/technical_reports/wallach04conditional.pdf" target="_blank">Conditional Random Fields - An Introduction</a>.
-  logistics: >
-    <span class="event">HW2 out (Mon, 2/18)</span>
+  logistics:
 
 - title: "Module 2: Approximate Inference"
 
@@ -162,6 +161,7 @@
   notes:
   readings:
   logistics: >
+    <span class="event">HW2 out (Wed, 2/20)</span> <br>
     <span class="deadline">Project proposal due (Fri, 2/22)</span>
 
 - date: 2/25
@@ -210,7 +210,7 @@
   notes:
   readings:
   logistics: >
-    <span class="deadline">HW2 due</span>, <span class="event">HW3 out</span> (Wed, 3/6)
+    <span class="deadline">HW2 due (Fri, 3/8)</span>
 
 - date: 3/11
   title: No classes (Spring break)
@@ -230,7 +230,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="event">HW3 out (Mon, 3/18)</span>
 
 - date: 3/20
   lecturer: Eric
@@ -271,8 +272,7 @@
   video:
   notes:
   readings:
-  logistics: >
-    <span class="deadline">HW3 due (Wed, 3/27)</span>
+  logistics:
 
 - title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
 
@@ -287,9 +287,7 @@
   notes:
   readings:
   logistics: >
-    <span class="event">HW4 out</span>,
-    <span class="deadline">Midway report due</span>
-    (Mon, 4/1)
+    <span class="deadline">Midway report due (Mon, 4/1)</span>
 
 - date: 4/3
   lecturer: Maruan
@@ -304,7 +302,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">HW3 due (Wed, 4/3)</span>
 
 - title: "Module 5: Nonparametric methods"
 
@@ -320,7 +319,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="event">HW4 out (Mon, 4/8)</span>
 
 - date: 4/10
   lecturer: Maruan
@@ -354,8 +354,7 @@
   video:
   notes:
   readings:
-  logistics: >
-    <span class="deadline">HW4 due (Wed, 4/17)</span>
+  logistics:
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
@@ -367,7 +366,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">HW4 due (Mon, 4/22)</span>
 
 - date: 4/24
   lecturer: Eric
