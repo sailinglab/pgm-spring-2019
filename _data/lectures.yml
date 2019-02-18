@@ -142,8 +142,12 @@
     - Continuous Hidden State (Kalman Filter)
   slides: "https://www.dropbox.com/s/xtsksb4t04a5gu1/lecture10-SequentialModels.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
-  notes:
+  notes: 
   readings:
+    - Jordan Textbook, Ch. 14, Ch. 15
+    - Ng, <a href="http://cs229.stanford.edu/notes/cs229-notes9.pdf" target="_blank">Lecture notes on factor analysis</a>.
+    - Welch and Bishop, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.6578&rep=rep1&type=pdf" target="_blank">An Introduction to the Kalman Filter</a>.
+    - <a href="https://people.cs.umass.edu/~wallach/technical_reports/wallach04conditional.pdf" target="_blank">Conditional Random Fields - An Introduction</a>.
   logistics: >
     <span class="event">HW2 out (Mon, 2/18)</span>
 
