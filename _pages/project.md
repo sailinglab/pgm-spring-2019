@@ -209,7 +209,7 @@ Another direction to explore in your projects is the design and implementation o
 
 **References:**
 
-1. Al-Shedivat, Dubey, Xing. [Contextual explanation networks](){:target="\_blank"}. arXiv 2017.
+1. Al-Shedivat, Dubey, Xing. [Contextual explanation networks](https://arxiv.org/abs/1705.10301){:target="\_blank"}. arXiv 2017.
 2. Wang, Rudin. [Falling rule lists](https://arxiv.org/abs/1411.5899){:target="\_blank"}. AISTATS 2015.
 3. Wang, Rudin. [Causal falling rule lists](https://arxiv.org/abs/1510.05189){:target="\_blank"}. FATML workshop 2017.
 4. Dumoulin et al. [Feature-wise transformations](https://distill.pub/2018/feature-wise-transformations/){:target="\_blank"}. Distill 2018.
