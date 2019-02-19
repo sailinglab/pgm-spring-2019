@@ -141,13 +141,21 @@ You can explore new applications of deep generative models, improve the theoreti
 
 ***
 
-#### Big & NO TEARS: scalable Bayesian network structure learning
+#### Squeezing NO TEARS: scalable Bayesian network structure learning
 **Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
 
-***
+Estimating Bayesian network structure from data is one of the fundamental problems in graphical models. 
+A similar problem of estimating Markov network structure has efficient solutions such as the graphical lasso [1]. 
+However, compared to Markov networks, estimating Bayesian networks involves extra challenges: 1) the adjacency matrix is not symmetric; 2) the acyclicity constraint is combinatorial. 
+Recently [2] proposed a smooth characterization of directed acyclic graphs, enabling continuous optimization for Bayesian network structure learning, similar to graphical lasso for Markov networks. 
 
-#### Neural network compression with $$L_1$$ penalty
-**Contact person:** [Xun Zheng](https://www.cs.cmu.edu/~xunzheng/){:target="\_blank"}
+In this project, your goal would be to scale up the algorithm of [2] to thousands of nodes. 
+Some computation can be saved by exploiting the problem structure, and some computation can be made more efficient using various approximation techniques. 
+
+**References:**
+
+1. Friedman, J., Hastie, T., & Tibshirani, R. (2008). Sparse inverse covariance estimation with the graphical lasso. Biostatistics.
+2. Zheng, X., Aragam, B., Ravikumar, P., & Xing, E. P. (2018). DAGs with NO TEARS: Continuous Optimization for Structure Learning. In Advances in Neural Information Processing Systems.
 
 ***
 
