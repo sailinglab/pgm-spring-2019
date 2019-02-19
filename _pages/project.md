@@ -114,19 +114,30 @@ We may add more project suggestions down the road.
 Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data.
 For example, when we learn a generative model for shapes, it would be ideal if each latent variables would correspond to the shapes pose, shadow, rotations, lighting etc.
 This improves interpretability of our learned representations and allows flexible generation from latent variables.
-You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), as well as new applications of disentangled representation learning to improve performance on NLP, vision, and multimodal tasks.
+You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), design metrics for improved evaluation of disentanglement in models, as well as new applications of disentangled representation learning to improve performance on NLP, vision, and multimodal tasks.
 
 **References:**
 
 1. [Papers in NIPS 2017 workshop on disentangled representation learning](https://sites.google.com/view/disentanglenips2017){:target="\_blank"}.
 2. Denton et al., [Unsupervised Learning of Disentangled Representations from Video](https://papers.nips.cc/paper/7028-unsupervised-learning-of-disentangled-representations-from-video){:target="\_blank"}. NIPS 2017.
-3. [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2016.
+3. Chen et al., [InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets](https://arxiv.org/abs/1606.03657){:target="\_blank"}. NIPS 2016.
 4. Kulkarni et al., [Deep Convolutional Inverse Graphics Network](https://arxiv.org/abs/1503.03167){:target="\_blank"}. NIPS 2015.
 
 ***
 
 #### Deep generative models for video, text, and audio generation
 **Contact person:** [Paul Liang](https://www.cs.cmu.edu/~pliang/){:target="\_blank"}
+
+Generative models are important for probabilistic reasoning within graphical models. Recent advancements in parameterizing these models using deep neural networks and optimizating using gradient-based techniques have enabled large scale modeling of high-dimensional, real-world data. Deep generative models have been successfully been applied for image, text, and audio generation.
+You can explore new applications of deep generative models, improve the theoretical understanding and empirical optimization of deep generative models, design metrics for improved evaluation of deep generative models, and other new directions. 
+
+**References:**
+
+1. [IJCAI Tutorial on Deep Generative Models by Aditya Grover and Stefano Ermon](https://ermongroup.github.io/generative-models/){:target="\_blank"}.
+2. [ICML Workshop on Deep Generative Models](https://sites.google.com/view/tadgm/home){:target="\_blank"}.
+3. Brock et al., [Large Scale GAN Training for High Fidelity Natural Image Synthesis](https://arxiv.org/abs/1809.11096){:target="\_blank"}. ICLR 2019.
+4. Hu et al., [Toward Controlled Generation of Text](https://arxiv.org/pdf/1703.00955.pdf){:target="\_blank"}. ICML 2017.
+5. van den Oord et al., [WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499){:target="\_blank"}. arXiv 2016.
 
 ***
 
