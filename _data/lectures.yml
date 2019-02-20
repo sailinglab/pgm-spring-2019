@@ -54,7 +54,7 @@
     - Jordan Textbook, Ch. <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf" target="_blank">3</a> and <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter4.pdf" target="_blank">4</a>
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch9.1-9.4.pdf" target="_blank">Ch. 9</a>, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch10.1-10.3.pdf" target="_blank">Ch. 10</a>
     - Tom Minka, <a href="https://www.seas.harvard.edu/courses/cs281/papers/minka-divergence.pdf" target="_blank">Divergence measures and message passing</a>
-    
+
   logistics: >
     <span class="event">HW1 out (Mon, 1/28)</span>
 
@@ -142,7 +142,7 @@
     - Continuous Hidden State (Kalman Filter)
   slides: "https://www.dropbox.com/s/xtsksb4t04a5gu1/lecture10-SequentialModels.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
-  notes: 
+  notes:
   readings:
     - Jordan Textbook, Ch. 14, Ch. 15
     - Ng, <a href="http://cs229.stanford.edu/notes/cs229-notes9.pdf" target="_blank">Lecture notes on factor analysis</a>.
@@ -160,6 +160,9 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
   notes:
   readings:
+    - Yedidia et al., <a href="http://papers.nips.cc/paper/1832-generalized-belief-propagation.pdf" target="_blank">Generalized Belief Propagation</a>.
+    - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
+    - <a href="https://media.nips.cc/Conferences/2016/Slides/6199-Slides.pdf" target="_blank">Variational inference tutorial (NIPS 2016)</a>
   logistics: >
     <span class="event">HW2 out (Wed, 2/20)</span> <br>
     <span class="deadline">Project proposal due (Fri, 2/22)</span>
@@ -172,6 +175,8 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
   notes:
   readings:
+    - Wainwright and Jordan, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.4581&rep=rep1&type=pdf" target="_blank">Variational Inference in Graphical Models - The View from the Marginal Polytope</a>.
+    - Wainwright and Jordan, <a href="http://www.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf" target="_blank">Graphical Models, Exponential Families, and Variational Inference</a> (Sec. 3 and 4).
   logistics:
 
 - date: 2/27
@@ -219,7 +224,7 @@
   title: No classes (Spring break)
 
 - date: 3/18
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>Building blocks of DL</strong> <br />
     - RNN and LSTM <br />
@@ -248,7 +253,7 @@
   logistics:
 
 - date: 3/25
-  lecturer: Maruan or <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>Deep generative models (part 2)</strong> <br />
     - Variational Autoencoders (VAE) <br />
@@ -262,7 +267,7 @@
   logistics:
 
 - date: 3/27
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>A unified view of deep generative models</strong> <br />
     - New formulations of deep generative models <br />
