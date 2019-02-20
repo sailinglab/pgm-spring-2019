@@ -187,6 +187,8 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
   notes:
   readings:
+    - Jordan Textbook, Ch. 21
+    - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.1-29.3).
   logistics:
 
 - date: 3/4
@@ -200,6 +202,9 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
   notes:
   readings:
+    - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.4-29.10).
+    - Neal, <a href="https://arxiv.org/pdf/1206.1901.pdf" target="_blank">MCMC using Hamiltonian dynamics</a>.
+    - Patterson and Teh, <a href="http://papers.nips.cc/paper/4883-stochastic-gradient-riemannian-langevin-dynamics-on-the-probability-simplex.pdf" target="_blank">Stochastic Gradient Riemannian Langevin Dynamics on the Probability Simplex</a>.
   logistics:
 
 - title: "Module 3: Deep Learning &amp; Generative Models"
