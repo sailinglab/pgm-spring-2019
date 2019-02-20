@@ -169,7 +169,7 @@
   title: >
     <strong>Theory of Variational Inference: Inner and Outer Approximations</strong>
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
   notes:
   readings:
   logistics:
@@ -179,7 +179,7 @@
   title: >
     <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
   notes:
   readings:
   logistics:
@@ -192,7 +192,7 @@
     - Hamiltonian Monte Carlo <br />
     - Langevin Dynamics
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
   notes:
   readings:
   logistics:
@@ -206,7 +206,7 @@
     - Insight into DL <br />
     - Connections to GM
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=caa6ce42-b7b9-4145-bc4c-a9d0012ce923"
   notes:
   readings:
   logistics: >
