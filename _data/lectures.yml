@@ -156,7 +156,7 @@
   lecturer: Eric
   title: >
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
-  slides:
+  slides: "https://www.dropbox.com/s/gfyfs3tx71j1xhl/lecture11b-MeanFieid.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
   notes:
   readings:
