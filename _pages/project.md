@@ -51,7 +51,7 @@ The grading breakdown for the proposal is as follows:
 - 10% for plan of activities
 - 10% for quality of writing
 
-The project proposal will be due by **11:59 PM on Friday, February 22th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project proposal will be due at **11:59 PM on Friday, February 22th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### Midway Report
 
@@ -67,7 +67,7 @@ The grading breakdown for the midway report is as follows:
 - 10% for data collection and preliminary results
 - 10% for quality of writing
 
-The project midway report will be due on **11:59 PM on Monday, April 1st**, and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project midway report will be due at **11:59 PM on Monday, April 1st**, and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### Final Report
 
@@ -92,7 +92,7 @@ The grading breakdown for the final report is as follows:
 - 10% for empirical and theoretical analysis of results and methods
 - 20% for quality of writing (clarity, organization, flow, etc.)
 
-The project final report will be due on **11:59 PM on Monday, May 8th** (tentative), and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project final report will be due at **11:59 PM on Monday, May 8th** (tentative), and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### Presentation
 
