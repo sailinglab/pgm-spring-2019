@@ -51,7 +51,7 @@ The grading breakdown for the proposal is as follows:
 - 10% for plan of activities
 - 10% for quality of writing
 
-The project proposal will be due by **7 PM on Friday, February 22th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project proposal will be due at **11:59 PM on Friday, February 22th**, and should be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### Midway Report
 
@@ -67,7 +67,7 @@ The grading breakdown for the midway report is as follows:
 - 10% for data collection and preliminary results
 - 10% for quality of writing
 
-The project midway report will be due on **Monday, April 1st**, and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project midway report will be due at **11:59 PM on Friday, March 29th**, and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### Final Report
 
@@ -92,7 +92,7 @@ The grading breakdown for the final report is as follows:
 - 10% for empirical and theoretical analysis of results and methods
 - 20% for quality of writing (clarity, organization, flow, etc.)
 
-The project final report will be due on **Monday, May 8th** (tentative), and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
+The project final report will be due at **11:59 PM on Friday, May 10th** (tentative), and must be submitted via [Gradescope](https://www.gradescope.com/courses/36025).
 
 ### Presentation
 
@@ -217,7 +217,6 @@ Another direction to explore in your projects is the design and implementation o
 6. Finn, Abbeel, Levine. [Model-agnostic meta-learning for fast adaptation of neural networks](https://arxiv.org/abs/1703.03400){:target="\_blank"}. ICML 2017.
 7. Garnelo et al. [Conditional neural processes](https://arxiv.org/abs/1807.01613){:target="\_blank"}. ICML 2018.
 
-
 ***
 
 #### Hierarchical RL & Maximum Entropy RL
@@ -267,8 +266,8 @@ Machine Learning nowadays has been applied in extremely large dataset, posing ma
 7. [Toward Understanding the Impact of Staleness in Distributed Machine Learning](https://arxiv.org/abs/1810.03264){:target="\_blank"}.
 8. [On-the-fly Operation Batching in Dynamic Computation Graphs](https://arxiv.org/abs/1705.07860){:target="\_blank"}.
 
-
 ***
+
 #### Machine Learning on/with Graphs
 
 **Contact person:** [Hao Zhang](http://www.cs.cmu.edu/~hzhang2/){:target="\_blank"}
@@ -279,7 +278,6 @@ Machine learning on graphs is an important and ubiquitous task with applications
 - **Combing Graphical Models with Neural Networks** [1-5]
 - **Semi-supervised Learning on Graph-structured Data** [3, 5]
 
-
 **References**:
 
 1. [Learning Deep Generative Models of Graphs](https://arxiv.org/abs/1803.03324){:target="\_blank"}.
@@ -288,13 +286,12 @@ Machine learning on graphs is an important and ubiquitous task with applications
 4. [Learning Multimodal Graph-to-graph Translation for Molecular Optimization](https://arxiv.org/pdf/1812.01070.pdf){:target="\_blank"}.
 5. [Representation Learning on Graphs: Methods and Applications](https://arxiv.org/pdf/1709.05584.pdf){:target="\_blank"}.
 
-
 ***
+
 #### Automated Machine Learning
 
 **Contact person:** [Hao Zhang](http://www.cs.cmu.edu/~hzhang2/){:target="\_blank"}
 
- 
 The goal of AutoML is to make machine learning more accessible by automatically generating a data analysis pipeline that can include data pre-processing, feature selection, and feature engineering methods along with machine learning methods and parameter settings that are optimized for your data. Recently we have witnessed very active development toward a few directions such as hyperparameter searching, neural architecture search, etc. However, most of the existing methods only address a very small component from an end-to-end ML pipeline (from data to values), and they usually exhibit unsatisfactory efficiency and scalability.
 
 - **Efficient Search for Better Model Architectures, Optimization Methods, or Both** [1-5, 7, 8, 9]

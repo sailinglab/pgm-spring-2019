@@ -126,7 +126,7 @@
     - Ising models
   slides: "https://www.dropbox.com/s/yfip5ig21g4qxhn/lecture9-NetworkLearning.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-09/"
   readings:
     - Meinshausen and Buhlmann, <a href="https://projecteuclid.org/euclid.aos/1152540754" target="_blank">High-Dimensional Graphs and Variable Selection with the Lasso</a>.
     - Kolar et al., <a href="https://www.cs.cmu.edu/~epxing/papers/2010/kolar_song_xing_aoas10.pdf" target="_blank">Estimating Time-Varying Networks</a>.
@@ -156,7 +156,7 @@
   lecturer: Eric
   title: >
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
-  slides:
+  slides: "https://www.dropbox.com/s/gfyfs3tx71j1xhl/lecture11b-MeanFieid.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
   notes:
   readings:
@@ -164,7 +164,7 @@
     - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
     - <a href="https://media.nips.cc/Conferences/2016/Slides/6199-Slides.pdf" target="_blank">Variational inference tutorial (NIPS 2016)</a>
   logistics: >
-    <span class="event">HW2 out (Wed, 2/20)</span> <br>
+    <span class="event">HW2 out (Fri, 2/22)</span> <br>
     <span class="deadline">Project proposal due (Fri, 2/22)</span>
 
 - date: 2/25
@@ -282,7 +282,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">Midway report due (Fri, 3/29)</span>
 
 - title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
 
@@ -296,8 +297,7 @@
   video:
   notes:
   readings:
-  logistics: >
-    <span class="deadline">Midway report due (Mon, 4/1)</span>
+  logistics:
 
 - date: 4/3
   lecturer: Maruan
