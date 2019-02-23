@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: [lecture notes template]
-description: an example of a distill-style lecture notes that showcases the main elements
+title: Lecture Notes Template
+description: An example of a distill-style lecture notes that showcases the main elements.
 date: 2019-01-09
 
 lecturers:

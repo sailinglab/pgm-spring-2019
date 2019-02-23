@@ -7,7 +7,7 @@
     list-style: none;
 
     > li {
-        border-bottom: 1px solid $light-gray;
+        border-bottom: 1px solid $grey-color-light;
         padding-bottom: $space-3;
         padding-top: $space-3;
 
@@ -28,6 +28,9 @@
     // @include media-query($on-laptop) {
     //     font-size: 36px;
     // }
+    b {
+        color: $theme-color;
+    }
 }
 .post-description {
     font-size: 20px;

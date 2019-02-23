@@ -4,7 +4,6 @@ html {
 
 body {
     color: $text-color;
-    font-weight: 100;
 }
 
 abbr {
@@ -14,7 +13,22 @@ abbr {
 
 p {
     color: #333;
-    line-height: 1.5;
+    // line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    body {
+        font-weight: 100;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 100;
+    }
 }
 
 small,
@@ -26,10 +40,6 @@ sup {
     position: relative;
     vertical-align: middle;
     top: -0.9ex;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 100;
 }
 
 div.equation {

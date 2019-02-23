@@ -4,9 +4,9 @@
   lecturer: Eric
   title: >
     <strong>Introduction to GM</strong>
-  slides: "https://www.dropbox.com/s/noxer7mbtvalj0t/lecture1-Introduction.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/y2p85ehk5j7igl9/lecture1-Introduction-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-01/"
   readings:
     - Jordan, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/reading/graphical_model_Jordan.pdf" target="_blank">Graphical Models</a>
     - E. Airoldi, <a href="https://dash.harvard.edu/bitstream/handle/1/2757496/Airoldi_GettingStarted.pdf" target="_blank">Getting Started in Probabilistic Graphical Models</a>
@@ -16,9 +16,9 @@
   lecturer: Eric
   title: >
     <strong>Representation: Directed GMs (BNs)</strong>
-  slides: "https://www.dropbox.com/s/q53gmhc056zob8e/lecture2-BNrepresentation.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/fp340t7exxzch7g/lecture2-BNrepresentation-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-02/"
   readings:
     - Jordan Textbook, <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf" target="_blank">Ch. 2</a> (Sec. 2.1)
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%203.pdf" target="_blank">Ch. 3</a>
@@ -31,9 +31,9 @@
   lecturer: Eric
   title: >
     <strong>Representation: Undirected GMs (MRFs)</strong>
-  slides: "https://www.dropbox.com/s/a22z8io0nuxnp5o/lecture3-MRFrepresentation.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/ujbe8vcfc0jf0kz/lecture3-MRFrepresentation-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=702de16d-fb04-4906-9014-a9d0012983e2"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-03/"
   readings:
     - Jordan Textbook, Ch. 2 (Sec. 2.2 - end)
     - Koller and Friedman Textbook, <a href="http://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%204.pdf" target="_blank">Ch. 4</a>
@@ -47,71 +47,90 @@
     - Elimination <br />
     - Message passing <br />
     - Sum product algorithm
-  slides:
+  slides: "https://www.dropbox.com/s/49w8lflglvpcmn2/lecture4-ExactInference-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61db95f2-aec1-415d-9180-a9d0012992fe"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-04/"
   readings:
     - Jordan Textbook, Ch. <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf" target="_blank">3</a> and <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter4.pdf" target="_blank">4</a>
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch9.1-9.4.pdf" target="_blank">Ch. 9</a>, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch10.1-10.3.pdf" target="_blank">Ch. 10</a>
     - Tom Minka, <a href="https://www.seas.harvard.edu/courses/cs281/papers/minka-divergence.pdf" target="_blank">Divergence measures and message passing</a>
-    
+
   logistics: >
     <span class="event">HW1 out (Mon, 1/28)</span>
 
 - date: 1/30
-  lecturer: Eric
+  lecturer: skipped
   title: >
     <strong>Parameter learning in fully observable Bayesian Networks</strong> <br />
     - Generalized Linear Models (GLIMs) <br />
     - Maximum Likelihood Estimation (MLE) <br />
     - Markov Models
-  slides:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
+  slides: "https://www.dropbox.com/s/mycn78k6k0saxr5/lecture5-LearningObs.pdf?dl=0"
+  video:
   notes:
   readings:
+    - Jordan Textbook, Ch. 8, 9 (Sec. 9.1 - 9.2)
+    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch17.1-17.4.pdf" target="_blank">Ch. 17 (Sections 17.1 - 17.4)</a>
+    - Geiger and Heckerman, <a href="https://projecteuclid.org/euclid.aos/1035844981" target="_blank">Parameter priors for directed acyclic graphical models and the characterization of several probability distributions</a>
+    - Geiger and Heckerman, <a href="https://projecteuclid.org/euclid.aos/1069362752" target="_blank">A characterization of the Dirichlet distribution through global and local parameter independence</a>
   logistics:
 
 - date: 2/4
-  lecturer: Eric
+  lecturer: Maruan
   title: >
     <strong>Parameter Learning of partially observed BN</strong> <br />
     - Mixture models <br />
     - Hidden Markov Models (HMMs) <br />
     - The EM algorithm
-  slides:
-  video:
+  slides: "https://www.dropbox.com/s/firdpiojui2o4s5/lecture6-EM-maruan.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
   notes:
   readings:
+    - Jordan Textbook, Ch. 11
+    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch19.1-19.4.pdf" target="_blank">Ch. 19.1-19.4</a>
+    - Bowman, <a href="https://www.cs.utah.edu/~piyush/teaching/EM_algorithm.pdf">The EM algorithm (A short tutorial)</a>
+    - <a href="http://www.cs.toronto.edu/~hinton/absps/emk.pdf" target="_blank">Some interesting aspects of the EM algorithm</a> (Neal and Hinton)
   logistics:
 
 - date: 2/6
   lecturer: Eric
   title: >
-    <strong>Parameter learning in fully observable Markov networks (CRF)</strong>
-  slides:
-  video:
+    <strong>Maximum likelihood learning of undirected GM</strong>
+  slides: "https://www.dropbox.com/s/jvuh05ure5i47ca/lecture7-LearningObsMRF.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
   notes:
   readings:
+    - Jordan Textbook, Ch. 9 (Sec. 9.3-9.5), Ch. 20
+    - Friedman, Hastie, Tibshirani. <a href="http://statweb.stanford.edu/~tibs/glasso/" target="_blank">Sparse inverse covariance estimation with the graphical lasso</a>.
+    - Lafferty et al., <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.803&rep=rep1&type=pdf" target="_blank">Conditional Random Fields - Probabilistic Models for Segmenting and Labeling Sequence Data</a>.
   logistics:
 
 - date: 2/11
-  lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a>
+  lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a> @ Department of Philosophy
   title: >
     <strong>Causal discovery and inference</strong>
-  slides:
-  video:
+  slides: "https://www.dropbox.com/s/9clh12j85c8smgb/lecture8-Causality.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
   notes:
   readings:
+    - J. Pearl, M. Glymour, and N. P. Jewell. <a href="http://bayes.cs.ucla.edu/PRIMER/" target="_blank">Causal Inference in Statistics A Primer</a>. Concepts related to causality and identification of causal effects.
+    - P. Spirtes, C. Glymour, and R. Scheines. <a href="https://www.researchgate.net/publication/242448131_Causation_Prediction_and_Search" target="_blank">Causation, Prediction, and Search</a>. Pages 80-89 and 125-123-136. Traditional methods for causal discovery, including the PC and FCI algorithms.
+    - K. Zhang, B. Schöklopf, P. Spirtes, and C. Glymour. <a href="https://academic.oup.com/nsr/article/5/1/26/4638533" target="_blank">Learning causality and causality-related learning</a>. Brief review of recent methods for causal discovery.
   logistics:
 
 - date: 2/13
   lecturer: Eric
   title: >
-    <strong>Gaussian graphical models, Ising model, Modeling networks</strong>
-  slides:
-  video:
-  notes:
+    <strong>Modeling networks</strong> <br>
+    - Gaussian graphical models <br>
+    - Ising models
+  slides: "https://www.dropbox.com/s/yfip5ig21g4qxhn/lecture9-NetworkLearning.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-09/"
   readings:
+    - Meinshausen and Buhlmann, <a href="https://projecteuclid.org/euclid.aos/1152540754" target="_blank">High-Dimensional Graphs and Variable Selection with the Lasso</a>.
+    - Kolar et al., <a href="https://www.cs.cmu.edu/~epxing/papers/2010/kolar_song_xing_aoas10.pdf" target="_blank">Estimating Time-Varying Networks</a>.
+    - Dempster, <a href="https://www.jstor.org/stable/2528966?origin=JSTOR-artinfo&seq=1#page_scan_tab_contents" target="_blank">Covariance Selection</a>.
   logistics: >
     <span class="deadline">HW1 due (Wed, 2/13)</span>
 
@@ -121,12 +140,15 @@
     <strong>Sequential models</strong> <br />
     - Discrete Hidden State (HMM vs. CRF) <br />
     - Continuous Hidden State (Kalman Filter)
-  slides:
-  video:
+  slides: "https://www.dropbox.com/s/xtsksb4t04a5gu1/lecture10-SequentialModels.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
   notes:
   readings:
-  logistics: >
-    <span class="event">HW2 out (Mon, 2/18)</span>
+    - Jordan Textbook, Ch. 14, Ch. 15
+    - Ng, <a href="http://cs229.stanford.edu/notes/cs229-notes9.pdf" target="_blank">Lecture notes on factor analysis</a>.
+    - Welch and Bishop, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.6578&rep=rep1&type=pdf" target="_blank">An Introduction to the Kalman Filter</a>.
+    - <a href="https://people.cs.umass.edu/~wallach/technical_reports/wallach04conditional.pdf" target="_blank">Conditional Random Fields - An Introduction</a>.
+  logistics:
 
 - title: "Module 2: Approximate Inference"
 
@@ -134,11 +156,15 @@
   lecturer: Eric
   title: >
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
-  slides:
-  video:
+  slides: "https://www.dropbox.com/s/gfyfs3tx71j1xhl/lecture11b-MeanFieid.pdf?dl=0"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
   notes:
   readings:
+    - Yedidia et al., <a href="http://papers.nips.cc/paper/1832-generalized-belief-propagation.pdf" target="_blank">Generalized Belief Propagation</a>.
+    - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
+    - <a href="https://media.nips.cc/Conferences/2016/Slides/6199-Slides.pdf" target="_blank">Variational inference tutorial (NIPS 2016)</a>
   logistics: >
+    <span class="event">HW2 out (Fri, 2/22)</span> <br>
     <span class="deadline">Project proposal due (Fri, 2/22)</span>
 
 - date: 2/25
@@ -146,9 +172,11 @@
   title: >
     <strong>Theory of Variational Inference: Inner and Outer Approximations</strong>
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
   notes:
   readings:
+    - Wainwright and Jordan, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.4581&rep=rep1&type=pdf" target="_blank">Variational Inference in Graphical Models - The View from the Marginal Polytope</a>.
+    - Wainwright and Jordan, <a href="http://www.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf" target="_blank">Graphical Models, Exponential Families, and Variational Inference</a> (Sec. 3 and 4).
   logistics:
 
 - date: 2/27
@@ -156,9 +184,11 @@
   title: >
     <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
   notes:
   readings:
+    - Jordan Textbook, Ch. 21
+    - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.1-29.3).
   logistics:
 
 - date: 3/4
@@ -169,9 +199,12 @@
     - Hamiltonian Monte Carlo <br />
     - Langevin Dynamics
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
   notes:
   readings:
+    - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.4-29.10).
+    - Neal, <a href="https://arxiv.org/pdf/1206.1901.pdf" target="_blank">MCMC using Hamiltonian dynamics</a>.
+    - Patterson and Teh, <a href="http://papers.nips.cc/paper/4883-stochastic-gradient-riemannian-langevin-dynamics-on-the-probability-simplex.pdf" target="_blank">Stochastic Gradient Riemannian Langevin Dynamics on the Probability Simplex</a>.
   logistics:
 
 - title: "Module 3: Deep Learning &amp; Generative Models"
@@ -183,11 +216,11 @@
     - Insight into DL <br />
     - Connections to GM
   slides:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=caa6ce42-b7b9-4145-bc4c-a9d0012ce923"
   notes:
   readings:
   logistics: >
-    <span class="deadline">HW2 due</span>, <span class="event">HW3 out</span> (Wed, 3/6)
+    <span class="deadline">HW2 due (Mon, 3/11)</span>
 
 - date: 3/11
   title: No classes (Spring break)
@@ -196,7 +229,7 @@
   title: No classes (Spring break)
 
 - date: 3/18
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>Building blocks of DL</strong> <br />
     - RNN and LSTM <br />
@@ -207,7 +240,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="event">HW3 out (Mon, 3/18)</span>
 
 - date: 3/20
   lecturer: Eric
@@ -224,7 +258,7 @@
   logistics:
 
 - date: 3/25
-  lecturer: Maruan or <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>Deep generative models (part 2)</strong> <br />
     - Variational Autoencoders (VAE) <br />
@@ -238,7 +272,7 @@
   logistics:
 
 - date: 3/27
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a> [TBC]
+  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>A unified view of deep generative models</strong> <br />
     - New formulations of deep generative models <br />
@@ -249,7 +283,7 @@
   notes:
   readings:
   logistics: >
-    <span class="deadline">HW3 due (Wed, 3/27)</span>
+    <span class="deadline">Midway report due (Fri, 3/29)</span>
 
 - title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
 
@@ -263,10 +297,7 @@
   video:
   notes:
   readings:
-  logistics: >
-    <span class="event">HW4 out</span>,
-    <span class="deadline">Midway report due</span>
-    (Mon, 4/1)
+  logistics:
 
 - date: 4/3
   lecturer: Maruan
@@ -281,7 +312,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">HW3 due (Wed, 4/3)</span>
 
 - title: "Module 5: Nonparametric methods"
 
@@ -297,7 +329,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="event">HW4 out (Mon, 4/8)</span>
 
 - date: 4/10
   lecturer: Maruan
@@ -331,8 +364,7 @@
   video:
   notes:
   readings:
-  logistics: >
-    <span class="deadline">HW4 due (Wed, 4/17)</span>
+  logistics:
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
@@ -344,7 +376,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">HW4 due (Mon, 4/22)</span>
 
 - date: 4/24
   lecturer: Eric

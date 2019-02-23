@@ -51,7 +51,15 @@ To submit the notes for review, please do the following:
 
 ## FAQ
 
-**Q:** When I go to `<your-github-username>.github.io/pgm-spring-2019/`, I get 404 error. What should I do?
+1. **Q:** When I go to `<your-github-username>.github.io/pgm-spring-2019/`, I get 404 error. What should I do?
 
-**A:** Please make sure you followed the preliminary steps and GitHub Pages source points to the `master` branch.
+   **A:** Please make sure you followed the preliminary steps and GitHub Pages source points to the `master` branch.
 Note that it takes a few minutes for the website to start rendering.
+
+2. **Q:** What is expected from lecture notes? What should they cover?
+
+   **A:** The notes should be well-written, stand alone reference, so that the reader does not need to go back to the lecture video or slides.
+
+3. **Q:** Do we need to scribe reading materials?
+
+   **A:** Highlighting important points from the reading material is encouraged (especially, if your scribe team is 3-4 people). Please make sure notes from readings coherently fit into the lecture notes (e.g., you can use footnotes to expand on some relevant points that were not covered in the lecture).

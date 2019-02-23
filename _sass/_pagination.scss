@@ -1,8 +1,16 @@
 .pagination {
   font-size: 1rem;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .pagination {
+        font-weight: 100;
+    }
 }
 
 .pagination a, .pagination .disabled {
