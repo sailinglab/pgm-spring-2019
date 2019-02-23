@@ -1,6 +1,7 @@
 options = {
 	"macros":{
 		"\\abs":"\\left\\lvert #1 \\right\\rvert",
+		"\\norm":"\\left\\lVert #1 \\right\\rVert",
 		"\\parens":"\\left( #1 \\right)",
 		"\\squareb":"\\left[ #1 \\]",
 		"\\curlyb":"\\left\\{ #1 \\right\\}",
