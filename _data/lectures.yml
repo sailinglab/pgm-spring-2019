@@ -84,7 +84,7 @@
     - The EM algorithm
   slides: "https://www.dropbox.com/s/firdpiojui2o4s5/lecture6-EM-maruan.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-06/"
   readings:
     - Jordan Textbook, Ch. 11
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch19.1-19.4.pdf" target="_blank">Ch. 19.1-19.4</a>
