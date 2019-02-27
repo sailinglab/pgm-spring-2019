@@ -13,7 +13,7 @@ authors:
     url: "#"  # optional URL to the author's homepage
   - name: Author 2
     url: "#"
-  - name: Author 3
+  - name: Bingqing Chen
     url: "#"
 
 editors:
@@ -23,6 +23,23 @@ editors:
 abstract: >
   An example abstract block.
 ---
+
+## Motivating Example: Probabilistic Topic Model
+Probabilistic topic model is used here to demonstrate the challenge with inference on graphic models and the necessity of approximate inference. 
+
+### Problem Motivation: 
+It is difficult for human to handle a large number of textual documents. It would be helpful to automate some of such processes, such as search, browse or measure similarity.
+
+A specific task is **document embedding**, i.e. finding low-dimensional representation of documents. Furthermore, it is desirable that the latent representation corresponds to semantic meaning, such as topics. One approach to such a representation is to look at frequent words that corresponds to a topic. 
+
+Using the embedding, one application is to study the evolution of documents over time. Another application is to track user interest based on his/her posts on social media.
+
+### Representation:
+**Bag of words** representation is used for topic modeling. Specifically, each document is represented as a vector in word space, i.e. count of each word in the dictionary. 
+
+The main advantage of this method is simplicity. The limitation is that the ordering of words is neglected. To give an example: two documents of different length is not directly comparable under a representation based on word ordering. The longer document tends to have smaller likelihood, simply by taking the product of a long sequence. Under the **bag of words** representation, any two documents would be vectors of same length and thus comparable.
+
+ 
 
 ## Equations
 
