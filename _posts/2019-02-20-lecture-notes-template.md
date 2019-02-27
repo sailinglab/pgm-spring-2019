@@ -37,24 +37,49 @@ Using the embedding, one application is to study the evolution of documents over
 ### Representation:
 **Bag of words** representation is the starting point of topic modeling. Specifically, each document is represented as a vector in word space, i.e. count of each word in the dictionary. 
 
-The main advantage of this method is simplicity. The limitation is that the ordering of words is neglected. To give an example: two documents of different length is not directly comparable under a representation based on word ordering. The longer document tends to have smaller likelihood, simply by taking the product of a long sequence. Under the **bag of words** representation, any two documents would be vectors of same length and thus comparable.
+The main advantage of this method is simplicity. The limitation is that the ordering of words is neglected. To give an example: two documents of different length is not comparable under a representation based on word ordering. The longer document has smaller likelihood by taking the product of a longer sequence. Under the **bag of words** representation, any two documents would be vectors of same length and thus comparable.
 
-Documents are usually represented as very long vectors under **bag of words**, due to the large size of the dictionary.
+Documents are usually represented as very long vectors under **bag of words**, due to the large size of the dictionary. The representation can be more compact with topic modeling. 
 
-To model semantic meaning in a document, one look at keywords that correspond to a specific topic. Furthermore, one can assign strength to each topic. 
+To model semantic meaning in a document, one look at keywords that correspond to a specific topic. Figure 1 provides a concrete example. Keywords such as "source", "target" and "BLEU" show that the document is about machine translation. The document also contains vocabulary associated with topic such as syntax and learning.
+ 
+Furthermore, one can assign probability to each topic. In this example, keywords on machine translation are most frequent, so we assign a larger probability. There is some mention related to syntax and learning, so we assign some probability based on word frequency.
 
-To sum up, a document is first represented with bag of words, i.e. a long vector of word counts in the dictionary. Then, the bag of words representation is transformed into strength on topics, which is a very condensed representation.  
+<figure id="example-figure" class="l-body-outset">
+  <div class="row">
+    <div class="col one">
+      <img src="{{ 'assets/img/lecture-11/example.png' | relative_url }}" />
+    </div>
+  </div>
+  <figcaption>
+    <strong>Figure 1 Example of Topic Model Architecture</strong>
+  </figcaption>
+</figure>
+
+
+To sum up, a document is first represented with bag of words. Then, the bag of words representation is transformed into strength on topics, which is a very compact representation.  
  
 ### Topic Models:
 The probability of each word in a document, $P(w)$, can be decomposed into the distribution of topics in a document, $P(z)$, and the probability of a word given the topic, $P(w|z)$.
+
 $$P(w) = P(w|z)P(z)$$
 
-A related concept is **latent semantic indexing (LSI)**. LSI decomposes matrix with linear algebra-based method. However, the drawback of LSI, which involves matrix inversion, is computational cost.  
+A related concept is **latent semantic indexing (LSI)**. LSI decomposes matrix with linear algebra-based method. However, the drawback of LSI, which involves matrix inversion, is high computational cost.  
 
-To sample a document, one first draw a topic distribution $\theta$ based on the prior. For a document with $N_d$ words, one first draw topic indicators, z. Then one draws words, w, from word-frequency distribution, K, conditioning on the topic indicator, z. 
 
-z - Topic Indicator
-$\theta$ - Topic Weight Vector
+The architecture of topic model is shown in Figure 2. To sample from a document, one first draw a topic distribution $\theta$ based on the prior. For a document with $N_d$ words, one first draw topic indicators, z, from topic distribution, $\theta$. Then one draws words, w, from word-frequency distribution, K, conditioning on the topic indicator, z. 
+
+<figure id="example-figure" class="l-body-outset">
+  <div class="row">
+    <div class="col one">
+      <img src="{{ 'assets/img/lecture-11/Architecture.png' | relative_url }}" />
+    </div>
+  </div>
+  <figcaption>
+    <strong>Figure 2 Architecture of Topic Model Architecture</strong>
+  </figcaption>
+</figure>
+
 
 ## Equations
 
