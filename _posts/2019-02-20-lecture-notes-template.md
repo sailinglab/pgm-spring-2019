@@ -35,11 +35,26 @@ A specific task is **document embedding**, i.e. finding low-dimensional represen
 Using the embedding, one application is to study the evolution of documents over time. Another application is to track user interest based on his/her posts on social media.
 
 ### Representation:
-**Bag of words** representation is used for topic modeling. Specifically, each document is represented as a vector in word space, i.e. count of each word in the dictionary. 
+**Bag of words** representation is the starting point of topic modeling. Specifically, each document is represented as a vector in word space, i.e. count of each word in the dictionary. 
 
 The main advantage of this method is simplicity. The limitation is that the ordering of words is neglected. To give an example: two documents of different length is not directly comparable under a representation based on word ordering. The longer document tends to have smaller likelihood, simply by taking the product of a long sequence. Under the **bag of words** representation, any two documents would be vectors of same length and thus comparable.
 
+Documents are usually represented as very long vectors under **bag of words**, due to the large size of the dictionary.
+
+To model semantic meaning in a document, one look at keywords that correspond to a specific topic. Furthermore, one can assign strength to each topic. 
+
+To sum up, a document is first represented with bag of words, i.e. a long vector of word counts in the dictionary. Then, the bag of words representation is transformed into strength on topics, which is a very condensed representation.  
  
+### Topic Models:
+The probability of each word in a document, $P(w)$, can be decomposed into the distribution of topics in a document, $P(z)$, and the probability of a word given the topic, $P(w|z)$.
+$$P(w) = P(w|z)P(z)$$
+
+A related concept is **latent semantic indexing (LSI)**. LSI decomposes matrix with linear algebra-based method. However, the drawback of LSI, which involves matrix inversion, is computational cost.  
+
+To sample a document, one first draw a topic distribution $\theta$ based on the prior. For a document with $N_d$ words, one first draw topic indicators, z. Then one draws words, w, from word-frequency distribution, K, conditioning on the topic indicator, z. 
+
+z - Topic Indicator
+$\theta$ - Topic Weight Vector
 
 ## Equations
 
