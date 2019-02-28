@@ -35,6 +35,71 @@ Kalman filtering is a technique to perform efficient inference in the forward al
     <strong>Figure 1: State Space Model</strong>
   </figcaption>
 </figure>
+As we can see, this model consists of a sequence of hidden states, with each hidden state emitting an observation. To perform inference efficiently on this model, we can define a recursive algorithm as follows:
+1. Compute $ P(X_t \vert Y_{1...t}) $
+2. Compute $ P(X_t+1 \vert Y_{1...t+1}) $ from the previous probability after adding the observation $ Y_{t+1} $
+
+Kalman filtering provides a way of performing this recursion. It breaks the computation into two steps:
+1. Predict Step: Compute $P(X_{t+1} \vert Y_{1...t})$ (prediction) from $ P(X_t \vert Y_{1...t}) $ (prior belief) and $P(X_{t+1} \vert X_t)$ (dynamical model)
+2. Update Step: Compute $P(X_{t+1} \vert Y_{1...t+1})$ from $P(X_{t+1} \vert Y_{1...t})$ (prediction), $Y_{t+1}$ (observation) and $P(Y_{t+1} \vert X_{t+1})$ (observation model)
+
+The predict and update steps are also called the time update and measurement update steps respectively.
+We will now derive equations for both steps for our state-space model. Remember that all hidden states and observations in the model are drawn from Gaussian distributions since they are computed via linear transformations. This means that all conditional and marginal probabilites in the model are also Gaussian distributions.
+
+### Predict Step Derivation
+Remember that the dynamical model is defined as $X_{t+1} = AX_t + GW_t$, where $W_t \sim \mathcal{N}(0,Q)$
+We can compute the mean and variance for this Gaussian distribution as follows:
+<d-math block>
+\begin{aligned}
+\hat X_{t+1 \vert t} &= E(X_{t+1} \vert Y_1...Y_t) = E(AX_t + GW_t) = A\hat X_{t|t} \\
+P_{t+1 \vert t} &= E((X_{t+1} - \hat X_{t+1 \vert t})(X_{t+1} - \hat X_{t+1 \vert t})^T \vert Y_1...Y_t) \\
+&= E((AX_t + GW_t - \hat X_{t+1 \vert t})(AX_t + GW_t - \hat X_{t+1 \vert t})^T \vert Y_1...Y_t) \\
+&= AP_{t \vert t}A + GQG^T
+\end{aligned}
+</d-math>
+
+For the observation model, which is defined as $Y_{t} = CX_t + \nu_t$, where $\nu \sim \mathcal{N}(0,R)$, we can compute the mean and variance as follows:
+<d-math block>
+\begin{aligned}
+E(Y_{t+1} \vert Y_1...Y_t ) &= E(CX_{t+1} + \nu_{t+1} \vert Y_1...Y_t ) = C\hat X_{t+1|t} \\
+E((Y_{t+1} - \hat Y_{t+1 \vert t})(Y_{t+1} - \hat Y_{t+1 \vert t})^T \vert Y_1...Y_t) &= CP_{t+1|t}C^T + R\\
+\end{aligned}
+</d-math>
+
+Finally, we can also derive the following:
+$$ E((Y_{t+1} - \hat Y_{t+1 \vert t})(X_{t+1} - \hat X_{t+1 \vert t})^T \vert Y_1...Y_t) = CP_{t+1|t} $$
+
+### Update Step Derivation
+Recall that for two gaussian distributions $X_1, X_2$, their joint distribution is a Gaussian with the following mean and variance:
+<d-math block>
+\begin{aligned}
+\mu &=
+  \begin{bmatrix}
+    \mu_1 \\
+    \mu_2
+  \end{bmatrix} \\
+\sum &=
+  \begin{bmatrix}
+    \sum_{11} & \sum_{12} \\
+    \sum_{21} & \sum_{22}
+  \end{bmatrix}
+\end{aligned}
+</d-math>
+Using this result in combination with the derivations from the predict step, we can deduce that $P(X_{t+1}, Y_{t+1} \vert Y_1...Y_t) \sim \mathcal{N}(M_{t+1}, V_{t+1})$, where
+<d-math block>
+\begin{aligned}
+M_{t+1} &=
+  \begin{bmatrix}
+    \hat X_{t+1|t} \\
+    C\hat X_{t+1|t}
+  \end{bmatrix} \\
+V_{t+1} &=
+  \begin{bmatrix}
+    P_{t+1|t} & P_{t+1|t}C^T \\
+    CP_{t+1|t} & CP_{t+1|t}C^T + R
+  \end{bmatrix}
+\end{aligned}
+</d-math>
 
 ## Motivating Example: Probabilistic Topic Model
 Probabilistic topic model is used here to demonstrate the challenge with inference on graphic models and the necessity of approximate inference. 
