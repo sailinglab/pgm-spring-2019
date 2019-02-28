@@ -1,15 +1,15 @@
 ---
 layout: distill
-title: Lecture Notes Template
-description: An example of a distill-style lecture notes that showcases the main elements.
-date: 2019-01-09
+title: Lecture 10
+description: Kalman Filtering and Topic Models
+date: 2019-02-20
 
 lecturers:
   - name: Eric Xing
     url: "https://www.cs.cmu.edu/~epxing/"
 
 authors:
-  - name: Author 1  # author's full name
+  - name: Aakanksha Naik
     url: "#"  # optional URL to the author's homepage
   - name: Author 2
     url: "#"
@@ -23,6 +23,18 @@ editors:
 abstract: >
   An example abstract block.
 ---
+## Kalman Filtering 
+Kalman filtering is a technique to perform efficient inference in the forward algorithm for state-space models. Consider the following state-space model:
+<figure id="ssm-figure" class="l-body-outset">
+  <div class="row">
+    <div class="col one">
+      <img src="{{ 'assets/img/lecture-11/ssm.png' | relative_url }}" />
+    </div>
+  </div>
+  <figcaption>
+    <strong>Figure 1: State Space Model</strong>
+  </figcaption>
+</figure>
 
 ## Motivating Example: Probabilistic Topic Model
 Probabilistic topic model is used here to demonstrate the challenge with inference on graphic models and the necessity of approximate inference. 
