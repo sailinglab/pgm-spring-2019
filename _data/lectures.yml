@@ -183,7 +183,7 @@
   lecturer: Eric
   title: >
     <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
-  slides:
+  slides: "https://www.dropbox.com/s/8l0wgnxtxouq5f3/lecture13-MC.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
   notes:
   readings:
