@@ -143,7 +143,7 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 [comment]: I believe this is  where Aakanksha stopped, roughly 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start: 27:07  , stop: 
+[comment]: dcbayani section. Time in video: start: 27:07  , stop: 45:40
 [comment]:-----------------------------------------------------------------------------------
 
 ## Dicussion of Where the A, G, and C Matrix Come From 
@@ -225,6 +225,8 @@ the modeling and processing is done, results may be evaluated to get a sense
 of how well our methods are doing. In general, it is best to handle each 
 step of this process one at a time. This is part of the art of modeling.
 
+[comment]: ended around 45:40
+
 
 [comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
 
@@ -296,7 +298,7 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  , stop: 
+[comment]: dcbayani section. Time in video: start:  70 minutes, stop: 83 minutes, 12 seconds
 [comment]:-----------------------------------------------------------------------------------
 
 
