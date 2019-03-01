@@ -141,10 +141,89 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 [comment]: I believe this is  where Aakanksha stopped, roughly 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  , stop: 
+[comment]: dcbayani section. Time in video: start: 27:07  , stop: 45:40
 [comment]:-----------------------------------------------------------------------------------
 
+## Dicussion of Where the A, G, and C Matrix Come From 
+[comment]: starts around 29 minutes, ends around 31 minutes
+Up to this point, we have discussed inference in the Kalmann filter model; given the 
+model up-front, tell me something about the data. This leaves open where the matrices A, G, and
+C come from, however. This is a similar situation we were in for HMMs: to find the necessary 
+matrices, we must do learning. Using approaches like EM we can interleave learning and inference
+to come across the parameters of interest.
 
+Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us to perform "exact off-line inference in an LDS", and is essentially a "Guassian analog of the forwards-backwards" algorithm.
+
+## Learning SSMs
+[comment]: starts around minute 31, ends around 32:52....
+In order to learn the necessary parameters for the Kalmann filter, 
+we calculate the complete data liklihood:
+<d-math block>
+\begin{aligned}
+$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = (\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =\\
+f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
+f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $\\
+\end{aligned}
+</d-math>
+This is very similar to what we saw in factor analysis, except there, we 
+computed this for each individual time-step, whereas here we do it 
+for all time-steps. From here, we proceed as usual in EM:
+in the E-step, we estimate $X_tX_{t-1}^{T}$, $X_tX_t^{T}$, and $X_t$
+by taking their expectation in respect to the observation, and in the 
+M-step we use MLE in the typical fashion. 
+
+## Non-Linear Systems
+
+The approaches discussed thus far are designed to handle linear systems.
+In order to handle a non-linear system, an approximation must be made. 
+For example, for non-linear differentiable systems, Taylor expansion
+allows us to use linear terms to approximate non-linear curves.
+
+With that, we close the modeling section of the course and move on to the 
+next subject.
+
+### Approximate Inference and Topic Models: Mean Field and Loopy Belief Prop
+
+Thus far in the course, we have covered the elimination algorithm, message passing, and
+algorithms that are powered based on those principles. These techniques allowed for 
+exact inference, and while they have been shown useful, they cannot cope with many of 
+the settings and problems we wish to explore. This motivates uses of approximate
+techniques, which we will begin discussing in this lecture.
+
+
+[comment]: from roughly 41:00 to 43:00, Dr. Xing discussed the general thought process and
+[comment]:     art of modeling, leading up to discussion of probabilistic topic models.
+
+## Some Discussion of a Task, and How to Tackle It with Appropraite Modeling
+
+With contemporary excitement about ML and particularly Deep Models, it is not 
+uncommon for students to want to select a model that interests them and try
+to apply it to some difficult tasks. It is typically more appropraite and sound
+to go the other way - find the righ model and methods to handle a task at hand.
+
+To begin discussion of the next subject and motive its development, we consider
+the problem of trying to given someone a summary, a "bird's-eye view", or one
+million or more documents. That is our task - we know at some point, to get a 
+handle on it, we have to convert it to mathematical language. To do this, we 
+have to consider a framework to put it in mathematically. Is this a classification
+task? No, we have not even discussed labels. Is it a clustering task? Maybe, 
+but the cluster-label itself would be very weakly informative of what is actually
+going on in the documents. Embeddings, representing each document as a point
+in a space or plane? Maybe. One has to decide on this matter to move forward.
+
+Another point to decide is representation of the data. We want to deal with 
+text ultimately, which is a sequence of words. How do we want to represent that?
+Binary vectors? Counts? This is a design choice one must consider. 
+
+After deciding the task and the data representation, one may consider a model
+to fit these. From there, one can consider how inference can be done on the 
+model. After that, how learning can be accomplished may be considered so that
+parameters to the model may be filled in an informed fashion. Finally, after all
+the modeling and processing is done, results may be evaluated to get a sense
+of how well our methods are doing. In general, it is best to handle each 
+step of this process one at a time. This is part of the art of modeling.
+
+[comment]: ended around 45:40
 
 
 [comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
@@ -216,7 +295,7 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  , stop: 
+[comment]: dcbayani section. Time in video: start:  70 minutes, stop: 83 minutes, 12 seconds
 [comment]:-----------------------------------------------------------------------------------
 
 
