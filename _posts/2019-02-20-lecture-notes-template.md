@@ -324,28 +324,28 @@ that itself is too hard to handle. Thus, we begin by lower-bounding the data lik
 with a term known as the "free-energy".
 
 
-We start by introducing another distribution , $Q_{\theta}$ which is a distribution on the 
-same set of random variables. The goal, eventually, is to have $Q_{\theta}$ be a distribution
+We start by introducing another distribution , $Q_{\phi}$ which is a distribution on the 
+same set of random variables. The goal, eventually, is to have $Q_{\phi}$ be a distribution
 that is easier to work with than $p$ but is sufficiently "close" to serve as a reasonable 
 surrogate in calculations. 
 
 Using this, we want to maximize the lower bound for the log-likelihood:
 
 $$\log(p(x)) = 
-KL(Q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z Q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{Q_{\theta}(z | x)}dz 
-\ge \int_z Q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{Q_{\theta}(z | x)}dz
+KL(Q_{\phi}(z | x) || p_{\theta}(z | x)) + \int_z Q_{\phi}(z | x)\log\frac{p_{\theta}(x, z)}{Q_{\phi}(z | x)}dz 
+\ge \int_z Q_{\phi}(z | x)\log\frac{p_{\theta}(x, z)}{Q_{\phi}(z | x)}dz
 := \mathscr{L}(\theta, \phi ; x)$$
 
 Equivalently, we can minimize the aforementioned "free-energy" of the system:
 
 
-$$F(\theta, \phi ; x) = -\log(p(x)) + KL(Q_{\theta}(z | x) || p_{\theta}(z | x))$$
+$$F(\theta, \phi ; x) = -\log(p(x)) + KL(Q_{\phi}(z | x) || p_{\theta}(z | x))$$
 
 Intuitively, the connection between $$\mathscr{L}(\theta, \phi ; x)$$ and $$F(\theta, \phi ; x)$$ is that the $$KL$$ divergence measures the gap between the lowerbound on the likelyhood ($$\mathscr{L}$$) and the real likliehood ($$\log(p(x))$$) - both the minimization and the maximization noted above try to close that gap.
 
 
 We call $$\mathscr{L}(\theta, \phi ; x)$$ above the variational lower bound.
-Often it is written as $$\mathscr{L}(\theta, \phi ; x) = \log(p(x)) - KL(Q_{\theta}(z | x) || p_{\theta}(z | x))$$, which simply is $$\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$$ .
+Often it is written as $$\mathscr{L}(\theta, \phi ; x) = \log(p(x)) - KL(Q_{\phi}(z | x) || p_{\theta}(z | x))$$, which simply is $$\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$$ .
 
 
 
@@ -358,18 +358,21 @@ $$p(\beta, \theta, z | w) = \frac{p(\beta, \theta, z, w)}{p(w)}$$
 Suppose that in $$Q$$ (our approximation to $$p$$) we could break dependancies in the jiont by assuming
 a so-called "fully-factorized" distribution is followed, i.e.:
 
-[comment]: -- Q depends on theta below, or w...?
 $$Q(\beta, \theta, z) = \Pi_{k}Q(\beta_k)\Pi_{d}Q(\theta_d)\Pi_{n}Q(z_{d_n})$$
 
 Notice that in this fully-factored model, each factor is a term of an unconditional distribution - 
 this is unlike the factorization we say over Bayes Nets before, where conditional 
 distributions appear, complicating the marginalization process. As such, if we need to answer a query of form $$Q(z_d)$$, 
 marginalizing across $$Q(\beta, \theta, z)$$ is trivial since we now that moving the
-sums into the product, $$\sum_{\beta, \theta}\Pi_{k}Q(\beta_k)\Pi_{d}Q(\theta_d) = 1$$.
+sums into the product, $$\sum_{\theta, \beta}\Pi_{k}Q(\beta_k)\Pi_{d}Q(\theta_d) = 1$$, allowing
+us to answer the query using only the marginals for $$z_d$$ under $$Q$$ that we suppose 
+we already have on hand. That is, marginalizing variables out under distribution $$Q$$ no longer
+becomes necessary in many or all cases- we know a priori that the jiont over such a $$Q$$ 
+of any subset of the variables will simply be the produce of those variables' marginals.
 
 In general with variational methods, the true posterior for our target distribution, $$p$$,
- might not exist in the family of $$Q$$ we consider - we buy tractability with the cost
- of approximation error.
+ might not exist in the family of $$Q$$ we consider - we buy tractability at the cost
+ of irreducible approximation error.
 
 
 
