@@ -24,9 +24,12 @@ abstract: >
   An example abstract block.
 ---
 ## Note on Lecture Content
-Due to the previous lecture running over, the actual
-material covered in the lecture deviated from what the title of the lecture
-on the course homepage suggests. 
+Due to the previous lecture running over, the actual material covered in the lecture deviated from what the title of the lecture on the course homepage suggests. 
+
+## Introduction
+In the previous lecture, we introduced **State Space Models** which can be visualized as sequential FA (Factor Analysis) models or HMMs (Hidden Markov Models) where both hidden states and outputs are drawn from continuous distributions. State space models are linear dynamic systems. However, due to time constraints, we were unable to discuss techniques to perform efficient inference on these models.
+
+In this lecture, we pick up from the previous lecture and first cover **Kalman Filtering**, a recursive algorithm for inference in State space models and derive equations for this technique. We then look at an example of Kalman Filtering on a toy 1-D problem and gain a deeper understanding of the intuition behind it. Finally, we take a brief look at how to perform parameter learning for state space models and how to deal with non-linearity in these systems. After this, we move on to the topic of approximate inference (the originally intended topic for today's lecture). So far, all inference techniques we have seen through the course have been exact inference techniques. However, in this portion of the lecture, we discuss a setting where exact inference is unfeasible: **Topic Models**. We describe the motivation behind building topic models and develop a mathematical representation for these models. From our representation, we see that performing exact inference on these models is super-exponential and so we introduce two approximate inference techniques to handle this: **Variational Inference** and **Markov Chain Monte Carlo**. This lecture only covers variational inference and the mean-field assumption in topic models.
 
 ## Kalman Filtering 
 Kalman filtering is a technique to perform efficient inference in the forward algorithm for state-space models. Consider the following state-space model:
