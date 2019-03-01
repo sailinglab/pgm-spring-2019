@@ -17,7 +17,7 @@ authors:
     url: "#"
 
 editors:
-  - name: Editor 1  # editor's full name
+  - name: Paul Liang
     url: "#"  # optional URL to the editor's homepage
 
 abstract: >
@@ -156,7 +156,7 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 Note: content from this section is from a two-minute digression 
 from Dr. Xing responding to a student's question. As such, it is not in
 depth but only meant to add context. For more details about learning in this situation, 
-see the sections that follow, and previous lectures on EM.
+see the sections that follow, and previous lectures on EM.  
 
 Up to this point, we have discussed inference in the Kalmann filter model; given the 
 model up-front, tell me something about the data. This leaves open where the matrices A, G, and
@@ -164,13 +164,15 @@ C come from, however. This is a similar situation we were in for HMMs: to find t
 matrices, we must do learning. Using approaches like EM we can interleave learning and inference
 to come across the parameters of interest.
 
-Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us to perform "exact off-line inference in an LDS", and is essentially a "Guassian analog of the forwards-backwards" algorithm.
+Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us to perform "exact off-line inference in an LDS", and is essentially a "Guassian analog of the forwards-backwards" algorithm. While it is good to know of the existance
+of this latter algorithm, we will not cover it in detail in this course, since the principles are very
+similar to before, and appropraite resources exist for those interested in learning more.
 
-## Learning SSMs
+## Learning State Space Models (SSMs)
 In order to learn the necessary parameters for the Kalmann filter, 
 we calculate the complete data likelihood:
 $$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = $$
-$$(\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =$$
+$$(\sum_n \log(p(x_1))) + (\sum_n\sum_t \log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t \log(p(y_{n,t} | x_{n, t}))) =$$
 $$f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
 f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $$
 
@@ -203,7 +205,7 @@ techniques, which we will begin discussing in this lecture.
 
 
 
-## Some Discussion of a Task, and How to Tackle It with Appropriate Modeling
+## Appropriately Modeling Different Tasks
 
 With contemporary excitement about ML and particularly Deep Models, it is not 
 uncommon for students to want to select a model that interests them and try
@@ -329,21 +331,21 @@ surrogate in calculations.
 
 Using this, we want to maximize the lower bound for the log-likelihood:
 
-$$log(p(x)) = 
-KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
-\ge \int_z q_{\theta}(z | x)log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
+$$\log(p(x)) = 
+KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
+\ge \int_z q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
 := \mathscr{L}(\theta, \phi ; x)$$
 
 Equivalently, we can minimize the aforementioned "free-energy" of the system:
 
 
-$$F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$
+$$F(\theta, \phi ; x) = -\log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$
 
 Intuitively, the connection between $$\mathscr{L}(\theta, \phi ; x)$$ and $$F(\theta, \phi ; x)$$ is that the $$KL$$ divergence measures the gap between the lowerbound on the likelyhood ($$\mathscr{L}$$) and the real likliehood ($$log(p(x))$$) - both the minimization and the maximization noted above try to close that gap.
 
 
 We call $$\mathscr{L}(\theta, \phi ; x)$$ above the variational lower bound.
-Often it is written as $$\mathscr{L}(\theta, \phi ; x) = log(p(x)) - KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$, which simply is $$\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$$ .
+Often it is written as $$\mathscr{L}(\theta, \phi ; x) = \log(p(x)) - KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$, which simply is $$\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$$ .
 
 
 
@@ -358,9 +360,9 @@ a so-called "fully-factorized" distribution is followed, i.e.:
 
 $$q(\beta, \theta, z) = \Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d)\Pi_{n}q(z_{d_n})$$
 
-Notice that in this fully-factored model, each factor is a term of a distribution - 
+Notice that in this fully-factored model, each factor is a term of an unconditional distribution - 
 this is unlike the factorization we say over Bayes Nets before, where conditional 
-distributions appear. As such, if we need to answer a query of form $$q(z_d)$$, 
+distributions appear, complicating the marginalization process. As such, if we need to answer a query of form $$q(z_d)$$, 
 marginalizing across $$q(\beta, \theta, z)$$ is trivial since we now that moving the
 sums into the product, $$\sum_{\beta, \theta}\Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d) = 1$$.
 
