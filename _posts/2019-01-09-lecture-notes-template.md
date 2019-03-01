@@ -316,3 +316,4 @@ Full $$\LaTeX$$ blocks are supported through [LaTeX JS](https://latex.js.org/){:
 ## Print
 
 Finally, you can easily get a PDF or printed version of the notes by simply hitting `ctrl+P` (or `⌘+P` on macOS).
+
