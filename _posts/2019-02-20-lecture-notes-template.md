@@ -354,6 +354,35 @@ $F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$
 Intuitively, the connection between $\mathscr{L}(\theta, \phi ; x)$ and $F(\theta, \phi ; x)$ is that the $KL$ divergence measures the gap between the lowerbound on the likelyhood ($mathscr{L}$) and the real likliehood ($log(p(x))$) - both the minimization and the maximization noted above try to close that gap.
 
 
+We call $\mathscr{L}(\theta, \phi ; x)$ above the variational lower bound.
+Often it is written as $\mathscr{L}(\theta, \phi ; x) = log(p(x)) - KL(q_{\theta}(z | x) || p_{\theta}(z | x))$, which simply is $\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$ .
+
+
+
+## Mean-Field Assumption (In Topic Models)
+
+Recall the form of the true posterior :
+<d-math block>
+\begin{aligned}
+$p(\beta, \theta, z | w) = \frac{p(\beta, \theta, z, w)}{p(w)}
+\end{aligned}
+</d-math>
+Suppose that in q (our approximation to p) we could break dependancies in the jiont by assuming
+a so-called "fully-factorized" distribution is followed, i.e.:
+<d-math block>
+\begin{aligned}
+$q(\beta, \theta, z) = \Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d)\Pi_{n}q(z_{d_n})$
+\end{aligned}
+</d-math>
+Notice that in this fully-factored model, each factor is a term of a distribution - 
+this is unlike the factorization we say over Bayes Nets before, where conditional 
+distributions appear. As such, if we need to answer a query of form $q(z_d)$, 
+marginalizing across $q(\beta, \theta, z)$ is trivial since we now that moving the
+sums into the product, $\sum_{\beta, \theta}\Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d) = 1$.
+
+In general with variational methods, the true posterior might not exist in the 
+family of $q$ we consider - we buy tractability with the cost of approximation error.
+
 
 
 
