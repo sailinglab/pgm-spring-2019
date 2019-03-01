@@ -106,8 +106,6 @@ V_{t+1} &=
 \end{aligned}
 </d-math>
 
-<<<<<<< HEAD
-=======
 Given a joint distribution of two Gaussian random variables $X_1, X_2$, recall that their conditional and marginal probability distributions are defined as follows:\\
 $$ P(X_2) = \mathcal{N}(M_2^m, V_2^m) $$ \\
 $$ M_2^m = \mu_2 $$ \\
@@ -140,19 +138,10 @@ $P_{t+1 \vert t+1} = \frac{(\sigma_t + \sigma_x) \sigma_z}{\sigma_t + \sigma_x +
 ### Understanding the intuition behind Kalman Filtering
 In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t})$, the term $(Z_{t+1} - C \hat X_{t+1 \vert t})$ is called the **innovation** term. We can see that the update equation for new belief is a convex weighted combination of updates from prior and observation, with the Kalman Gain matrix acting as the weight. From the equation for the Kalman Gain matrix, we can see that if observations are noisy ($\sigma_z$ or $R$ is large), then the KG matrix is small and updates rely more on prior. On the other hand if the process is unpredictable (large $\sigma_x$) or prior is unreliable (large $\sigma_t$), the KG matrix is higher and we rely more on the observation. 
 
-<<<<<<< HEAD
-[comment]: I believe this is  where Aakanksha stopped, roughly 
-
-[comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start: 27:07  , stop: 45:40
-[comment]:-----------------------------------------------------------------------------------
 
 ## Discussion of Where the A, G, and C Matrix Come From 
-[comment]: starts around 29 minutes, ends around 31 minutes
-=======
-## Dicussion of Where the A, G, and C Matrix Come From 
 
->>>>>>> 0d5b355... Committing state of _posts/2019-02-20-lecture-notes-template.md after making some changes to improve rendering.
+
 Up to this point, we have discussed inference in the Kalmann filter model; given the 
 model up-front, tell me something about the data. This leaves open where the matrices A, G, and
 C come from, however. This is a similar situation we were in for HMMs: to find the necessary 
@@ -163,31 +152,13 @@ Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us 
 
 ## Learning SSMs
 In order to learn the necessary parameters for the Kalmann filter, 
-<<<<<<< HEAD
 we calculate the complete data likelihood:
-<d-math block>
-=======
-we calculate the complete data liklihood:
-<<<<<<< HEAD
-[comment]:<d-math block>
->>>>>>> 41e2a5a... Committing lecture 11 notes after doing some work to get the markdown to work.
-\begin{aligned}
-$$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = (\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =\\
-f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
-f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $$\\
-\end{aligned}
-[comment]:</d-math>
-=======
 $$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = $$
 $$(\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =$$
 $$f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
 f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $$
-<<<<<<< HEAD
->>>>>>> 0d5b355... Committing state of _posts/2019-02-20-lecture-notes-template.md after making some changes to improve rendering.
-=======
 
 
->>>>>>> 3c163a8... Committing state of _posts/2019-02-20-lecture-notes-template.md after doing minor change to improve rendering .
 This is very similar to what we saw in factor analysis, except there, we 
 computed this for each individual time-step, whereas here we do it 
 for all time-steps. From here, we proceed as usual in EM:
@@ -247,7 +218,6 @@ step of this process one at a time. This is part of the art of modeling.
 
 
 
->>>>>>> cf93b48... Removed bottom text, added some comments to help oragnize the sections (at leat for me it helps).
 ## Motivating Example: Probabilistic Topic Model
 Probabilistic topic model is used here to demonstrate the challenge with inference on graphic models and the necessity of approximate inference. 
 
@@ -304,19 +274,9 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
   </figcaption>
 </figure>
 
-<<<<<<< HEAD
-[comment]: Above is Bingqing's section - I believe it was said more content is to 
-[comment]: come. 
 
 Having decided on the architecture, we need to make more specific modeling choices, i.e. the distributions to sample from. In typical implementation, we draw z from a multinomial distribution, parameterized by $\theta$. The word distribution conditioned on topic is also drawn from a multinomial distribution, parameterized by $\beta$. The most commonly used prior is Dirichlet, because it is a conjugate prior of multinomial distribution. One limitation of Dirichlet is that it does not allow for modeling the relationship between different topics. An alternate approach is to use a logistic-normal as prior.
 
-
-[comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  69 minutes 51 seconds, stop: 83 minutes, 12 seconds
-[comment]:-----------------------------------------------------------------------------------
-=======
-
->>>>>>> 0d5b355... Committing state of _posts/2019-02-20-lecture-notes-template.md after making some changes to improve rendering.
 
 ## Doing Inference on Topic Models
 
@@ -346,54 +306,24 @@ that itself is too hard to handle. Thus, we begin by lower-bounding the data lik
 with a term known as the "free-energy".
 
 
-<<<<<<< HEAD
 We start by introducing another distribution , $Q_{\theta}$ which is a distribution on the 
 same set of random variables. The goal, eventually, is to have $Q_{\theta}$ be a distribution
 that is easier to work with than $p$ but is sufficiently "close" to serve as a reasonable 
 surrogate in calculations. 
 
 Using this, we want to maximize the lower bound for the log-likelihood:
-<d-math block>
-\begin{aligned}
-$log(p(x)) = 
-=======
-We start by introducing another distribution , $$Q_{\theta}$$ which is a distribution on the 
-same set of random variables. The goal, eventually, is to have $$Q_{\theta}$$ be a distribtution
-that is easier to work with than $$p$$ but is sufficiantly "close" to serve as a reasonable 
-surrogate in calculations. 
-
-Using this, we want to maximize the lower bound for the log-liklihood:
 
 $$log(p(x)) = 
-<<<<<<< HEAD
->>>>>>> 41e2a5a... Committing lecture 11 notes after doing some work to get the markdown to work.
-KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
-\ge \int_z q_{\theta}(z | x)\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
-=======
 KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
 \ge \int_z q_{\theta}(z | x)log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
->>>>>>> 0d5b355... Committing state of _posts/2019-02-20-lecture-notes-template.md after making some changes to improve rendering.
 := \mathscr{L}(\theta, \phi ; x)$$
 
 Equivalently, we can minimize the aforementioned "free-energy" of the system:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<d-math block>
-\begin{aligned}
-$F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$
-\end{aligned}
-</d-math>
-Intuitively, the connection between $\mathscr{L}(\theta, \phi ; x)$ and $F(\theta, \phi ; x)$ is that the $KL$ divergence measures the gap between the lower bound on the likelihood ($mathscr{L}$) and the real likelihood ($log(p(x))$) - both the minimization and the maximization noted above try to close that gap.
-=======
-[comment]:<d-math block>
-[comment]:\begin{aligned}
-=======
 
->>>>>>> 0d5b355... Committing state of _posts/2019-02-20-lecture-notes-template.md after making some changes to improve rendering.
+
 $$F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$
 
 Intuitively, the connection between $$\mathscr{L}(\theta, \phi ; x)$$ and $$F(\theta, \phi ; x)$$ is that the $$KL$$ divergence measures the gap between the lowerbound on the likelyhood ($$\mathscr{L}$$) and the real likliehood ($$log(p(x))$$) - both the minimization and the maximization noted above try to close that gap.
->>>>>>> 41e2a5a... Committing lecture 11 notes after doing some work to get the markdown to work.
 
 
 We call $$\mathscr{L}(\theta, \phi ; x)$$ above the variational lower bound.
