@@ -109,14 +109,17 @@ V_{t+1} &=
 \end{aligned}
 </d-math>
 
-Given a joint distribution of two Gaussian random variables $X_1, X_2$, recall that their conditional and marginal probability distributions are defined as follows:\\
-$$ P(X_2) = \mathcal{N}(M_2^m, V_2^m) $$ \\
-$$ M_2^m = \mu_2 $$ \\
-$$ V_2^m = \sum_{22} $$
-
-$$ P(X_{1 \vert 2}) = \mathcal{N}(M_{1 \vert 2}^m, V_{1 \vert 2}^m) $$ \\
-$$ M_{1 \vert 2}^m = \mu_1 + \sum_{12} \sum_{22}^{-1} (X_2 - \mu_2) $$ \\
-$$ V_{1 \vert 2}^m = \sum_{11} - \sum_{12} \sum_{22}^{-1} \sum_{21} $$
+Given a joint distribution of two Gaussian random variables $X_1, X_2$, recall that their conditional and marginal probability distributions are defined as follows:
+<d-math block>
+\begin{aligned}
+P(X_2) = \mathcal{N}(M_2^m, V_2^m)\\
+M_2^m = \mu_2\\
+V_2^m = \sum_{22} \\
+P(X_{1 \vert 2}) = \mathcal{N}(M_{1 \vert 2}^m, V_{1 \vert 2}^m)\\
+M_{1 \vert 2}^m = \mu_1 + \sum_{12} \sum_{22}^{-1} (X_2 - \mu_2) \\
+V_{1 \vert 2}^m = \sum_{11} - \sum_{12} \sum_{22}^{-1} \sum_{21}
+\end{aligned}
+</d-math>
 
 Using this information, we can compute the measurement update (update step) as:
 <d-math block>
@@ -128,15 +131,19 @@ P_{t+1 \vert t+1} &= P_{t+1 \vert t} - KCP_{t+1 \vert t}\\
 Here $K_{t+1} = P_{t+1 \vert t} C^T (C P_{t+1 \vert t} C^T + R)^{-1}$ and is known as the Kalman gain matrix. An interesting point to note is that $K_t$ is independent of $Y_t$ (i.e. the data), so it can be precomputed to improve efficiency.
 
 ### Example of Kalman Filtering in 1-D
-Suppose we have some noisy observations of a particle performing a random walk in 1-D. Assume our states and observations are defined as follows: \\
+Suppose we have some noisy observations of a particle performing a random walk in 1-D. Assume our states and observations are defined as follows:\\
 $ X_{t \vert t-1} = X_{t-1} + W $ where $W \sim \mathcal{N}(0,\sigma_x)$ \\
 $ Z_{t} = X_{t} + V $ where $V \sim \mathcal{N}(0,\sigma_z)$ \\
-We can compute KF updates for this model as follows:\\
-$P_{t+1 \vert t} = AP_{t \vert t}A + GQG^T = \sigma_t + \sigma_z$\\
-$\hat X_{t+1 \vert t} = A\hat X_{t|t} = \hat X_{t|t}$\\
-$K_{t+1} = P_{t+1 \vert t} C^T (C P_{t+1 \vert t} C^T + R)^{-1} = (\sigma_t + \sigma_x)(\sigma_t + \sigma_x + \sigma_z)$\\
-$\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t}) = \frac{(\sigma_t + \sigma_x)Z_t + \sigma_z \hat X_{t|t}}{\sigma_t + \sigma_x + \sigma_z}$
-$P_{t+1 \vert t+1} = \frac{(\sigma_t + \sigma_x) \sigma_z}{\sigma_t + \sigma_x + \sigma_z}$
+We can compute KF updates for this model as follows:
+<d-math block>
+\begin{aligned}
+P_{t+1 \vert t} &= AP_{t \vert t}A + GQG^T = \sigma_t + \sigma_z\\
+\hat X_{t+1 \vert t} &= A\hat X_{t|t} = \hat X_{t|t}\\
+K_{t+1} &= P_{t+1 \vert t} C^T (C P_{t+1 \vert t} C^T + R)^{-1} = (\sigma_t + \sigma_x)(\sigma_t + \sigma_x + \sigma_z)\\
+\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t}) = \frac{(\sigma_t + \sigma_x)Z_t + \sigma_z \hat X_{t|t}}{\sigma_t + \sigma_x + \sigma_z}\\
+P_{t+1 \vert t+1} &= \frac{(\sigma_t + \sigma_x) \sigma_z}{\sigma_t + \sigma_x + \sigma_z}
+\end{aligned}
+</d-math>
 
 ### Understanding the intuition behind Kalman Filtering
 In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t})$, the term $(Z_{t+1} - C \hat X_{t+1 \vert t})$ is called the **innovation** term. We can see that the update equation for new belief is a convex weighted combination of updates from prior and observation, with the Kalman Gain matrix acting as the weight. From the equation for the Kalman Gain matrix, we can see that if observations are noisy ($\sigma_z$ or $R$ is large), then the KG matrix is small and updates rely more on prior. On the other hand if the process is unpredictable (large $\sigma_x$) or prior is unreliable (large $\sigma_t$), the KG matrix is higher and we rely more on the observation. 
