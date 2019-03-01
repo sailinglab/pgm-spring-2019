@@ -151,7 +151,7 @@ P_{t+1 \vert t+1} &= \frac{(\sigma_t + \sigma_x) \sigma_z}{\sigma_t + \sigma_x +
 In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t})$, the term $(Z_{t+1} - C \hat X_{t+1 \vert t})$ is called the **innovation** term. We can see that the update equation for new belief is a convex weighted combination of updates from prior and observation, with the Kalman Gain matrix acting as the weight. From the equation for the Kalman Gain matrix, we can see that if observations are noisy ($\sigma_z$ or $R$ is large), then the KG matrix is small and updates rely more on prior. On the other hand if the process is unpredictable (large $\sigma_x$) or prior is unreliable (large $\sigma_t$), the KG matrix is higher and we rely more on the observation. 
 
 
-## Discussion of Where the A, G, and C Matrix Come From 
+## High-level Discussion of Where the A, G, and C Matrix Come From 
 
 Note: content from this section is from a two-minute digression 
 from Dr. Xing responding to a student's question. As such, it is not in
@@ -332,20 +332,20 @@ surrogate in calculations.
 Using this, we want to maximize the lower bound for the log-likelihood:
 
 $$\log(p(x)) = 
-KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
-\ge \int_z q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
+KL(Q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z Q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{Q_{\theta}(z | x)}dz 
+\ge \int_z Q_{\theta}(z | x)\log\frac{p_{\theta}(x, z)}{Q_{\theta}(z | x)}dz
 := \mathscr{L}(\theta, \phi ; x)$$
 
 Equivalently, we can minimize the aforementioned "free-energy" of the system:
 
 
-$$F(\theta, \phi ; x) = -\log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$
+$$F(\theta, \phi ; x) = -\log(p(x)) + KL(Q_{\theta}(z | x) || p_{\theta}(z | x))$$
 
-Intuitively, the connection between $$\mathscr{L}(\theta, \phi ; x)$$ and $$F(\theta, \phi ; x)$$ is that the $$KL$$ divergence measures the gap between the lowerbound on the likelyhood ($$\mathscr{L}$$) and the real likliehood ($$log(p(x))$$) - both the minimization and the maximization noted above try to close that gap.
+Intuitively, the connection between $$\mathscr{L}(\theta, \phi ; x)$$ and $$F(\theta, \phi ; x)$$ is that the $$KL$$ divergence measures the gap between the lowerbound on the likelyhood ($$\mathscr{L}$$) and the real likliehood ($$\log(p(x))$$) - both the minimization and the maximization noted above try to close that gap.
 
 
 We call $$\mathscr{L}(\theta, \phi ; x)$$ above the variational lower bound.
-Often it is written as $$\mathscr{L}(\theta, \phi ; x) = \log(p(x)) - KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$, which simply is $$\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$$ .
+Often it is written as $$\mathscr{L}(\theta, \phi ; x) = \log(p(x)) - KL(Q_{\theta}(z | x) || p_{\theta}(z | x))$$, which simply is $$\mathscr{L}(\theta, \phi ; x) = -F(\theta, \phi ; x)$$ .
 
 
 
@@ -355,19 +355,21 @@ Recall the form of the true posterior :
 
 $$p(\beta, \theta, z | w) = \frac{p(\beta, \theta, z, w)}{p(w)}$$
 
-Suppose that in q (our approximation to p) we could break dependancies in the jiont by assuming
+Suppose that in $$Q$$ (our approximation to $$p$$) we could break dependancies in the jiont by assuming
 a so-called "fully-factorized" distribution is followed, i.e.:
 
-$$q(\beta, \theta, z) = \Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d)\Pi_{n}q(z_{d_n})$$
+[comment]: -- Q depends on theta below, or w...?
+$$Q(\beta, \theta, z) = \Pi_{k}Q(\beta_k)\Pi_{d}Q(\theta_d)\Pi_{n}Q(z_{d_n})$$
 
 Notice that in this fully-factored model, each factor is a term of an unconditional distribution - 
 this is unlike the factorization we say over Bayes Nets before, where conditional 
-distributions appear, complicating the marginalization process. As such, if we need to answer a query of form $$q(z_d)$$, 
-marginalizing across $$q(\beta, \theta, z)$$ is trivial since we now that moving the
-sums into the product, $$\sum_{\beta, \theta}\Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d) = 1$$.
+distributions appear, complicating the marginalization process. As such, if we need to answer a query of form $$Q(z_d)$$, 
+marginalizing across $$Q(\beta, \theta, z)$$ is trivial since we now that moving the
+sums into the product, $$\sum_{\beta, \theta}\Pi_{k}Q(\beta_k)\Pi_{d}Q(\theta_d) = 1$$.
 
-In general with variational methods, the true posterior might not exist in the 
-family of $$q$$ we consider - we buy tractability with the cost of approximation error.
+In general with variational methods, the true posterior for our target distribution, $$p$$,
+ might not exist in the family of $$Q$$ we consider - we buy tractability with the cost
+ of approximation error.
 
 
 
