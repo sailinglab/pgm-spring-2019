@@ -155,6 +155,8 @@ $$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = $$
 $$(\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =$$
 $$f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
 f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $$
+
+
 This is very similar to what we saw in factor analysis, except there, we 
 computed this for each individual time-step, whereas here we do it 
 for all time-steps. From here, we proceed as usual in EM:
