@@ -138,14 +138,8 @@ $P_{t+1 \vert t+1} = \frac{(\sigma_t + \sigma_x) \sigma_z}{\sigma_t + \sigma_x +
 ### Understanding the intuition behind Kalman Filtering
 In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t})$, the term $(Z_{t+1} - C \hat X_{t+1 \vert t})$ is called the **innovation** term. We can see that the update equation for new belief is a convex weighted combination of updates from prior and observation, with the Kalman Gain matrix acting as the weight. From the equation for the Kalman Gain matrix, we can see that if observations are noisy ($\sigma_z$ or $R$ is large), then the KG matrix is small and updates rely more on prior. On the other hand if the process is unpredictable (large $\sigma_x$) or prior is unreliable (large $\sigma_t$), the KG matrix is higher and we rely more on the observation. 
 
-[comment]: I believe this is  where Aakanksha stopped, roughly 
-
-[comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start: 27:07  , stop: 45:40
-[comment]:-----------------------------------------------------------------------------------
-
 ## Dicussion of Where the A, G, and C Matrix Come From 
-[comment]: starts around 29 minutes, ends around 31 minutes
+
 Up to this point, we have discussed inference in the Kalmann filter model; given the 
 model up-front, tell me something about the data. This leaves open where the matrices A, G, and
 C come from, however. This is a similar situation we were in for HMMs: to find the necessary 
@@ -155,16 +149,12 @@ to come across the parameters of interest.
 Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us to perform "exact off-line inference in an LDS", and is essentially a "Guassian analog of the forwards-backwards" algorithm.
 
 ## Learning SSMs
-[comment]: starts around minute 31, ends around 32:52....
 In order to learn the necessary parameters for the Kalmann filter, 
 we calculate the complete data liklihood:
-[comment]:<d-math block>
-\begin{aligned}
-$$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = (\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =\\
-f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
-f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $$\\
-\end{aligned}
-[comment]:</d-math>
+$$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = $$
+$$(\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =$$
+$$f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
+f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $$
 This is very similar to what we saw in factor analysis, except there, we 
 computed this for each individual time-step, whereas here we do it 
 for all time-steps. From here, we proceed as usual in EM:
@@ -191,8 +181,7 @@ the settings and problems we wish to explore. This motivates uses of approximate
 techniques, which we will begin discussing in this lecture.
 
 
-[comment]: from roughly 41:00 to 43:00, Dr. Xing discussed the general thought process and
-[comment]:     art of modeling, leading up to discussion of probabilistic topic models.
+
 
 ## Some Discussion of a Task, and How to Tackle It with Appropraite Modeling
 
@@ -223,13 +212,6 @@ the modeling and processing is done, results may be evaluated to get a sense
 of how well our methods are doing. In general, it is best to handle each 
 step of this process one at a time. This is part of the art of modeling.
 
-[comment]: ended around 45:40
-
-
-[comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
-
-[comment]: below is where Bingqing started , I suspect... it looks like about 40 minutes into the 
-[comment]:     video. 
 
 
 ## Motivating Example: Probabilistic Topic Model
@@ -289,14 +271,6 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
 </figure>
 
 
-[comment]: Above is Bingqing's section - I believe it was said more content is to 
-[comment]: come. 
-
-
-
-[comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  69 minutes 51 seconds, stop: 83 minutes, 12 seconds
-[comment]:-----------------------------------------------------------------------------------
 
 ## Doing Inference on Topic Models
 
@@ -305,13 +279,8 @@ the hidden and observed random variables.
 Leverging the graph structure we have for topic models, we can factorize this 
 distribution in the fashion we are used to.
 
-[comment]:<d-math block>
-[comment]:\begin{aligned}
 $$P(\beta, \theta, z, w) = \Pi_{k=1}^{K}P(\beta_k | \eta)\Pi_{d = 1}^{D}p(\theta_d | \alpha)
    \Pi_{n = 1}^{N}p(z_{d_n}|\theta_d)p(w_{d_n} | z_{d_n}, \beta)$$
-[comment]:\end{aligned}
-[comment]:</d-math>
-[comment]: consider including the plate-graph image from slide 48 of https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0 .
 
 Given a query, answering the above jiont would require marginalizing out the variables and 
 values that do no interest us - but doing so would require super-exponential work in this model,
@@ -337,20 +306,16 @@ that is easier to work with than $$p$$ but is sufficiantly "close" to serve as a
 surrogate in calculations. 
 
 Using this, we want to maximize the lower bound for the log-liklihood:
-[comment]:<d-math block>
-[comment]:\begin{aligned}
+
 $$log(p(x)) = 
-KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
-\ge \int_z q_{\theta}(z | x)\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
+KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
+\ge \int_z q_{\theta}(z | x)log\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
 := \mathscr{L}(\theta, \phi ; x)$$
-[comment]:\end{aligned}
-[comment]:</d-math>
+
 Equivalently, we can minimize the aforementioned "free-energy" of the system:
-[comment]:<d-math block>
-[comment]:\begin{aligned}
+
 $$F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$$
-[comment]:\end{aligned}
-[comment]:</d-math>
+
 Intuitively, the connection between $$\mathscr{L}(\theta, \phi ; x)$$ and $$F(\theta, \phi ; x)$$ is that the $$KL$$ divergence measures the gap between the lowerbound on the likelyhood ($$\mathscr{L}$$) and the real likliehood ($$log(p(x))$$) - both the minimization and the maximization noted above try to close that gap.
 
 
@@ -362,18 +327,14 @@ Often it is written as $$\mathscr{L}(\theta, \phi ; x) = log(p(x)) - KL(q_{\thet
 ## Mean-Field Assumption (In Topic Models)
 
 Recall the form of the true posterior :
-[comment]:<d-math block>
-[comment]:\begin{aligned}
+
 $$p(\beta, \theta, z | w) = \frac{p(\beta, \theta, z, w)}{p(w)}$$
-[comment]:\end{aligned}
-[comment]:</d-math>
+
 Suppose that in q (our approximation to p) we could break dependancies in the jiont by assuming
 a so-called "fully-factorized" distribution is followed, i.e.:
-[comment]:<d-math block>
-[comment]:\begin{aligned}
+
 $$q(\beta, \theta, z) = \Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d)\Pi_{n}q(z_{d_n})$$
-[comment]:\end{aligned}
-[comment]:</d-math>
+
 Notice that in this fully-factored model, each factor is a term of a distribution - 
 this is unlike the factorization we say over Bayes Nets before, where conditional 
 distributions appear. As such, if we need to answer a query of form $$q(z_d)$$, 
@@ -383,10 +344,6 @@ sums into the product, $$\sum_{\beta, \theta}\Pi_{k}q(\beta_k)\Pi_{d}q(\theta_d)
 In general with variational methods, the true posterior might not exist in the 
 family of $$q$$ we consider - we buy tractability with the cost of approximation error.
 
-
-
-
-[comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
 
 
 
