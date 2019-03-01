@@ -298,8 +298,38 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  70 minutes, stop: 83 minutes, 12 seconds
+[comment]: dcbayani section. Time in video: start:  69 minutes 51 seconds, stop: 83 minutes, 12 seconds
 [comment]:-----------------------------------------------------------------------------------
+
+## Doing Inference on Topic Models
+
+To perform inference on our topic models, we start by considering the jiont liklihood based on
+the hidden and observed random variables. 
+Leverging the graph structure we have for topic models, we can factorize this 
+distribution in the fashion we are used to.
+
+<d-math block>
+\begin{aligned}
+$P(\beta, \theta, z, w) = \Pi_{k=1}^{K}P(\beta_k | \eta)\Pi_{d = 1}^{D}p(\theta_d | \alpha)
+   \Pi_{n = 1}^{N}p(z_{d_n}|\theta_d)p(w_{d_n} | z_{d_n}, \beta)$
+\end{aligned}
+</d-math>
+[comment]: consider including the plate-graph image from slide 48 of https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0 .
+
+Given a query, answering the above jiont would require marginalizing out the variables and 
+values that do no interest us - but doing so would require super-exponential work in this model,
+integrating across variables that may have a large set of possible values. Thus, our typical 
+approach is not tractable here.
+
+This motivates approximate inference: we trade off exact computation for reasonable computational
+work. We will cover two major families of methods in this lecture and next:
+Variational Inference and Markov Chain Monte Carlo.
+
+
+## Variational Inference
+
+
+
 
 
 
