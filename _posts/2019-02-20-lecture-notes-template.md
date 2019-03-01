@@ -141,11 +141,18 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 [comment]: I believe this is  where Aakanksha stopped, roughly 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
-[comment]: dcbayani section. Time in video: start:  , stop: 
+[comment]: dcbayani section. Time in video: start: 27:07  , stop: 
 [comment]:-----------------------------------------------------------------------------------
 
+## Dicussion of Where the A, G, and C Matrix Come From
+29
+Up to this point, we have discussed inference in the Kalmann filter model; given the 
+model up-front, tell me something about the data. This leaves open where the matrices A, G, and
+C come from, however. This is a similar situation we were in for HMMs: to find the necessary 
+matrices, we must do learning. Using approaches like EM we can interleave learning and inference
+to come across the parameters of interest.
 
-
+Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us to perform "exact off-line inference in an LDS", and is essentially a "Guassian analog of the forwards-backwards" algorithm.
 
 [comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
 
