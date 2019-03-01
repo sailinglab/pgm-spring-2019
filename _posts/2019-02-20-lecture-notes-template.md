@@ -144,6 +144,10 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 
 ## Discussion of Where the A, G, and C Matrix Come From 
 
+Note: content from this section is from a two-minute digression 
+from Dr. Xing responding to a student's question. As such, it is not in
+depth but only meant to add context. For more details about learning in this situation, 
+see the sections that follow, and previous lectures on EM.
 
 Up to this point, we have discussed inference in the Kalmann filter model; given the 
 model up-front, tell me something about the data. This leaves open where the matrices A, G, and
