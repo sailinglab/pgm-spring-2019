@@ -144,8 +144,8 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 [comment]: dcbayani section. Time in video: start: 27:07  , stop: 
 [comment]:-----------------------------------------------------------------------------------
 
-## Dicussion of Where the A, G, and C Matrix Come From
-29
+## Dicussion of Where the A, G, and C Matrix Come From 
+[comment]: starts around 29 minutes, ends around 31 minutes
 Up to this point, we have discussed inference in the Kalmann filter model; given the 
 model up-front, tell me something about the data. This leaves open where the matrices A, G, and
 C come from, however. This is a similar situation we were in for HMMs: to find the necessary 
@@ -153,6 +153,25 @@ matrices, we must do learning. Using approaches like EM we can interleave learni
 to come across the parameters of interest.
 
 Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us to perform "exact off-line inference in an LDS", and is essentially a "Guassian analog of the forwards-backwards" algorithm.
+
+## Learning SSMs
+[comment]: starts around minute 31, ends around 32:52....
+In order to learn the necessary parameters for the Kalmann filter, 
+we calculate the complete data liklihood:
+<d-math block>
+\begin{aligned}
+$l_t(\theta, D) = \sum_{n}p(x_n, y_n) = (\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =\\
+f_1(X; \Sigma_0) + f_2(\{X_tX_{t-1}^{T}, X_tX_t^{T}, X_t: \forall t\}, A, Q, G) + 
+f_3(\{X_tX_t^{T}, X_t: \forall t\}, C, G) $\\
+\end{aligned}
+</d-math>
+This is very similar to what we saw in factor analysis, except there, we 
+computed this for each individual time-step, whereas here we do it 
+for all time-steps. From here, we proceed as usual in EM:
+in the E-step, we estimate $X_tX_{t-1}^{T}$, $X_tX_t^{T}$, and $X_t$
+by taking their expectation in respect to the observation, and in the 
+M-step we use MLE in the typical fashion. 
+
 
 [comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
 
