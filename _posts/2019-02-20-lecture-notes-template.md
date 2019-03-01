@@ -172,6 +172,57 @@ in the E-step, we estimate $X_tX_{t-1}^{T}$, $X_tX_t^{T}$, and $X_t$
 by taking their expectation in respect to the observation, and in the 
 M-step we use MLE in the typical fashion. 
 
+## Non-Linear Systems
+
+The approaches discussed thus far are designed to handle linear systems.
+In order to handle a non-linear system, an approximation must be made. 
+For example, for non-linear differentiable systems, Taylor expansion
+allows us to use linear terms to approximate non-linear curves.
+
+With that, we close the modeling section of the course and move on to the 
+next subject.
+
+### Approximate Inference and Topic Models: Mean Field and Loopy Belief Prop
+
+Thus far in the course, we have covered the elimination algorithm, message passing, and
+algorithms that are powered based on those principles. These techniques allowed for 
+exact inference, and while they have been shown useful, they cannot cope with many of 
+the settings and problems we wish to explore. This motivates uses of approximate
+techniques, which we will begin discussing in this lecture.
+
+
+[comment]: from roughly 41:00 to 43:00, Dr. Xing discussed the general thought process and
+[comment]:     art of modeling, leading up to discussion of probabilistic topic models.
+
+## Some Discussion of a Task, and How to Tackle It with Appropraite Modeling
+
+With contemporary excitement about ML and particularly Deep Models, it is not 
+uncommon for students to want to select a model that interests them and try
+to apply it to some difficult tasks. It is typically more appropraite and sound
+to go the other way - find the righ model and methods to handle a task at hand.
+
+To begin discussion of the next subject and motive its development, we consider
+the problem of trying to given someone a summary, a "bird's-eye view", or one
+million or more documents. That is our task - we know at some point, to get a 
+handle on it, we have to convert it to mathematical language. To do this, we 
+have to consider a framework to put it in mathematically. Is this a classification
+task? No, we have not even discussed labels. Is it a clustering task? Maybe, 
+but the cluster-label itself would be very weakly informative of what is actually
+going on in the documents. Embeddings, representing each document as a point
+in a space or plane? Maybe. One has to decide on this matter to move forward.
+
+Another point to decide is representation of the data. We want to deal with 
+text ultimately, which is a sequence of words. How do we want to represent that?
+Binary vectors? Counts? This is a design choice one must consider. 
+
+After deciding the task and the data representation, one may consider a model
+to fit these. From there, one can consider how inference can be done on the 
+model. After that, how learning can be accomplished may be considered so that
+parameters to the model may be filled in an informed fashion. Finally, after all
+the modeling and processing is done, results may be evaluated to get a sense
+of how well our methods are doing. In general, it is best to handle each 
+step of this process one at a time. This is part of the art of modeling.
+
 
 [comment]:^_^_^_^_^_^__^_^_^_^_^_^_^_^_^_^_^_^__^__^_^^_^^__^_^_^_^_^^__^_^__^^_^_^__^__^^_^_^
 
