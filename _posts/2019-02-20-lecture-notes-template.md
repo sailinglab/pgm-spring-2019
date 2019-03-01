@@ -328,7 +328,33 @@ Variational Inference and Markov Chain Monte Carlo.
 
 ## Variational Inference
 
+Variational inference is a techinque that allows one to convert an inference problem into an
+optimization problem. We want to maximize the data likelihood, but as we already discussed, 
+that itself is too hard to handle. Thus, we begin by lower-bounding the data likelihood
+with a term known as the "free-energy".
 
+
+We start by introducing another distribution , $Q_{\theta}$ which is a distribution on the 
+same set of random variables. The goal, eventually, is to have $Q_{\theta}$ be a distribtution
+that is easier to work with than $p$ but is sufficiantly "close" to serve as a reasonable 
+surrogate in calculations. 
+
+Using this, we want to maximize the lower bound for the log-liklihood:
+<d-math block>
+\begin{aligned}
+$log(p(x)) = 
+KL(q_{\theta}(z | x) || p_{\theta}(z | x)) + \int_z q_{\theta}(z | x)\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz 
+\ge \int_z q_{\theta}(z | x)\frac{p_{\theta}(x, z)}{q_{\theta}(z | x)}dz
+:= \mathscr{L}(\theta, \phi ; x)$
+\end{aligned}
+</d-math>
+Equivalently, we can minimize the aforementioned "free-energy" of the system:
+<d-math block>
+\begin{aligned}
+$F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$
+\end{aligned}
+</d-math>
+Intuitively, the connection between $\mathscr{L}(\theta, \phi ; x)$ and $F(\theta, \phi ; x)$ is that the $KL$ divergence measures the gap between the lowerbound on the likelyhood ($mathscr{L}$) and the real likliehood ($log(p(x))$) - both the minimization and the maximization noted above try to close that gap.
 
 
 
