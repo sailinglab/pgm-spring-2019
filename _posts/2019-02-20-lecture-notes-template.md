@@ -21,9 +21,9 @@ editors:
     url: "#"  # optional URL to the editor's homepage
 
 abstract: >
-In the previous lecture, we introduced **State Space Models** which can be visualized as sequential FA (Factor Analysis) models or HMMs (Hidden Markov Models) where both hidden states and outputs are drawn from continuous distributions. State space models are linear dynamic systems. However, due to time constraints, we were unable to discuss techniques to perform efficient inference on these models.
-
-In this lecture, we pick up from the previous lecture and first cover **Kalman Filtering**, a recursive algorithm for inference in State space models and derive equations for this technique. We then look at an example of Kalman Filtering on a toy 1-D problem and gain a deeper understanding of the intuition behind it. Finally, we take a brief look at how to perform parameter learning for state space models and how to deal with non-linearity in these systems. After this, we move on to the topic of approximate inference (the originally intended topic for today's lecture). So far, all inference techniques we have seen through the course have been exact inference techniques. However, in this portion of the lecture, we discuss a setting where exact inference is unfeasible: **Topic Models**. We describe the motivation behind building topic models and develop a mathematical representation for these models. From our representation, we see that performing exact inference on these models is super-exponential and so we introduce two approximate inference techniques to handle this: **Variational Inference** and **Markov Chain Monte Carlo**. This lecture only covers variational inference and the mean-field assumption in topic models.
+ -- In the previous lecture, we introduced **State Space Models** which can be visualized as sequential FA (Factor Analysis) models or HMMs (Hidden Markov Models) where both hidden states and outputs are drawn from continuous distributions. State space models are linear dynamic systems. However, due to time constraints, we were unable to discuss techniques to perform efficient inference on these models.
+ -- 
+ -- In this lecture, we pick up from the previous lecture and first cover **Kalman Filtering**, a recursive algorithm for inference in State space models and derive equations for this technique. We then look at an example of Kalman Filtering on a toy 1-D problem and gain a deeper understanding of the intuition behind it. Finally, we take a brief look at how to perform parameter learning for state space models and how to deal with non-linearity in these systems. After this, we move on to the topic of approximate inference (the originally intended topic for today's lecture). So far, all inference techniques we have seen through the course have been exact inference techniques. However, in this portion of the lecture, we discuss a setting where exact inference is unfeasible: **Topic Models**. We describe the motivation behind building topic models and develop a mathematical representation for these models. From our representation, we see that performing exact inference on these models is super-exponential and so we introduce two approximate inference techniques to handle this: **Variational Inference** and **Markov Chain Monte Carlo**. This lecture only covers variational inference and the mean-field assumption in topic models.
 ---
 ## Note on Lecture Content
 Due to the previous lecture running over, the actual material covered in the lecture deviated from what the title of the lecture on the course homepage suggests. 
@@ -303,11 +303,11 @@ the hidden and observed random variables.
 Leveraging the graph structure we have for topic models, we can factorize this 
 distribution in the fashion we are used to.
 
-$$P(\beta, \theta, z, w) = \Pi_{k=1}^{K}P(\beta_k | \eta)\Pi_{d = 1}^{D}p(\theta_d | \alpha)
+$$p(\beta, \theta, z, w) = \Pi_{k=1}^{K}p(\beta_k | \eta)\Pi_{d = 1}^{D}p(\theta_d | \alpha)
    \Pi_{n = 1}^{N}p(z_{d_n}|\theta_d)p(w_{d_n} | z_{d_n}, \beta)$$
 
 Given a query, answering the above joint would require marginalizing out the variables and 
-values that do no interest us - but doing so would require super-exponential work in this model,
+values that do not interest us - but doing so would require super-exponential work in this model,
 integrating across variables that may have a large set of possible values. Thus, our typical 
 approach is not tractable here.
 
@@ -367,8 +367,8 @@ marginalizing across $$Q(\beta, \theta, z)$$ is trivial since we now that moving
 sums into the product, $$\sum_{\theta, \beta}\Pi_{k}Q(\beta_k)\Pi_{d}Q(\theta_d) = 1$$, allowing
 us to answer the query using only the marginals for $$z_d$$ under $$Q$$ that we suppose 
 we already have on hand. That is, marginalizing variables out under distribution $$Q$$ no longer
-becomes necessary in many or all cases- we know a priori that the jiont over such a $$Q$$ 
-of any subset of the variables will simply be the produce of those variables' marginals.
+becomes necessary in many or all cases- we know a priori that the jiont over any subset of the 
+variables under such a $$Q$$ will simply be the produce of those variables' marginals.
 
 In general with variational methods, the true posterior for our target distribution, $$p$$,
  might not exist in the family of $$Q$$ we consider - we buy tractability at the cost
