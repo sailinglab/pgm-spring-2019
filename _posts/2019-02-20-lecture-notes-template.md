@@ -49,7 +49,7 @@ Kalman filtering provides a way of performing this recursion. It breaks the comp
 2. Update Step: Compute $P(X_{t+1} \vert Y_{1...t+1})$ from $P(X_{t+1} \vert Y_{1...t})$ (prediction), $Y_{t+1}$ (observation) and $P(Y_{t+1} \vert X_{t+1})$ (observation model)
 
 The predict and update steps are also called the time update and measurement update steps respectively.
-We will now derive equations for both steps for our state-space model. Remember that all hidden states and observations in the model are drawn from Gaussian distributions since they are computed via linear transformations. This means that all conditional and marginal probabilites in the model are also Gaussian distributions.
+We will now derive equations for both steps for our state-space model. Remember that all hidden states and observations in the model are drawn from Gaussian distributions since they are computed via linear transformations. This means that all conditional and marginal probabilities in the model are also Gaussian distributions.
 
 ### Predict Step Derivation
 Remember that the dynamical model is defined as $X_{t+1} = AX_t + GW_t$, where $W_t \sim \mathcal{N}(0,Q)$
@@ -144,7 +144,7 @@ In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \
 [comment]: dcbayani section. Time in video: start: 27:07  , stop: 45:40
 [comment]:-----------------------------------------------------------------------------------
 
-## Dicussion of Where the A, G, and C Matrix Come From 
+## Discussion of Where the A, G, and C Matrix Come From 
 [comment]: starts around 29 minutes, ends around 31 minutes
 Up to this point, we have discussed inference in the Kalmann filter model; given the 
 model up-front, tell me something about the data. This leaves open where the matrices A, G, and
@@ -157,7 +157,7 @@ Furthering this comparison to HMMs, the Rauch-Tung-Strievel algorithm allows us 
 ## Learning SSMs
 [comment]: starts around minute 31, ends around 32:52....
 In order to learn the necessary parameters for the Kalmann filter, 
-we calculate the complete data liklihood:
+we calculate the complete data likelihood:
 <d-math block>
 \begin{aligned}
 $l_t(\theta, D) = \sum_{n}p(x_n, y_n) = (\sum_n log(p(x_1))) + (\sum_n\sum_t log(p(x_{n,t} | x_{n, t-1})) + (\sum_n\sum_t log(p(y_{n,t} | x_{n, t}))) =\\
@@ -194,12 +194,12 @@ techniques, which we will begin discussing in this lecture.
 [comment]: from roughly 41:00 to 43:00, Dr. Xing discussed the general thought process and
 [comment]:     art of modeling, leading up to discussion of probabilistic topic models.
 
-## Some Discussion of a Task, and How to Tackle It with Appropraite Modeling
+## Some Discussion of a Task, and How to Tackle It with Appropriate Modeling
 
 With contemporary excitement about ML and particularly Deep Models, it is not 
 uncommon for students to want to select a model that interests them and try
-to apply it to some difficult tasks. It is typically more appropraite and sound
-to go the other way - find the righ model and methods to handle a task at hand.
+to apply it to some difficult tasks. It is typically more appropriate and sound
+to go the other way - find the right model and methods to handle a task at hand.
 
 To begin discussion of the next subject and motive its development, we consider
 the problem of trying to given someone a summary, a "bird's-eye view", or one
@@ -288,10 +288,10 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
   </figcaption>
 </figure>
 
-
 [comment]: Above is Bingqing's section - I believe it was said more content is to 
 [comment]: come. 
 
+Having decided on the architecture, we need to make more specific modeling choices, i.e. the distributions to sample from. In typical implementation, we draw z from a multinomial distribution, parameterized by $\theta$. The word distribution conditioned on topic is also drawn from a multinomial distribution, parameterized by $\beta$. The most commonly used prior is Dirichlet, because it is a conjugate prior of multinomial distribution. One limitation of Dirichlet is that it does not allow for modeling the relationship between different topics. An alternate approach is to use a logistic-normal as prior.
 
 
 [comment]:V~V~V~~V~~VV~V~V~V~V~V~VV~V~~V~~VVV~V~V~V~V~V~V~~V~V~VV~VV~VV~VV~VV~V~~V~~V~V~V~V~V
@@ -300,9 +300,9 @@ The architecture of topic model is shown in Figure 2. To sample from a document,
 
 ## Doing Inference on Topic Models
 
-To perform inference on our topic models, we start by considering the jiont liklihood based on
+To perform inference on our topic models, we start by considering the joint likelihood based on
 the hidden and observed random variables. 
-Leverging the graph structure we have for topic models, we can factorize this 
+Leveraging the graph structure we have for topic models, we can factorize this 
 distribution in the fashion we are used to.
 
 <d-math block>
@@ -313,7 +313,7 @@ $P(\beta, \theta, z, w) = \Pi_{k=1}^{K}P(\beta_k | \eta)\Pi_{d = 1}^{D}p(\theta_
 </d-math>
 [comment]: consider including the plate-graph image from slide 48 of https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0 .
 
-Given a query, answering the above jiont would require marginalizing out the variables and 
+Given a query, answering the above joint would require marginalizing out the variables and 
 values that do no interest us - but doing so would require super-exponential work in this model,
 integrating across variables that may have a large set of possible values. Thus, our typical 
 approach is not tractable here.
@@ -325,18 +325,18 @@ Variational Inference and Markov Chain Monte Carlo.
 
 ## Variational Inference
 
-Variational inference is a techinque that allows one to convert an inference problem into an
+Variational inference is a technique that allows one to convert an inference problem into an
 optimization problem. We want to maximize the data likelihood, but as we already discussed, 
 that itself is too hard to handle. Thus, we begin by lower-bounding the data likelihood
 with a term known as the "free-energy".
 
 
 We start by introducing another distribution , $Q_{\theta}$ which is a distribution on the 
-same set of random variables. The goal, eventually, is to have $Q_{\theta}$ be a distribtution
-that is easier to work with than $p$ but is sufficiantly "close" to serve as a reasonable 
+same set of random variables. The goal, eventually, is to have $Q_{\theta}$ be a distribution
+that is easier to work with than $p$ but is sufficiently "close" to serve as a reasonable 
 surrogate in calculations. 
 
-Using this, we want to maximize the lower bound for the log-liklihood:
+Using this, we want to maximize the lower bound for the log-likelihood:
 <d-math block>
 \begin{aligned}
 $log(p(x)) = 
@@ -351,7 +351,7 @@ Equivalently, we can minimize the aforementioned "free-energy" of the system:
 $F(\theta, \phi ; x) = -log(p(x)) + KL(q_{\theta}(z | x) || p_{\theta}(z | x))$
 \end{aligned}
 </d-math>
-Intuitively, the connection between $\mathscr{L}(\theta, \phi ; x)$ and $F(\theta, \phi ; x)$ is that the $KL$ divergence measures the gap between the lowerbound on the likelyhood ($mathscr{L}$) and the real likliehood ($log(p(x))$) - both the minimization and the maximization noted above try to close that gap.
+Intuitively, the connection between $\mathscr{L}(\theta, \phi ; x)$ and $F(\theta, \phi ; x)$ is that the $KL$ divergence measures the gap between the lower bound on the likelihood ($mathscr{L}$) and the real likelihood ($log(p(x))$) - both the minimization and the maximization noted above try to close that gap.
 
 
 
