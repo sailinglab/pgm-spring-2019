@@ -151,7 +151,7 @@ P_{t+1 \vert t+1} &= \frac{(\sigma_t + \sigma_x) \sigma_z}{\sigma_t + \sigma_x +
 In the KF update equation for the mean, $\hat X_{t+1 \vert t+1} &= \hat X_{t+1 \vert t} + K_{t+1} (Z_{t+1} - C \hat X_{t+1 \vert t})$, the term $(Z_{t+1} - C \hat X_{t+1 \vert t})$ is called the **innovation** term. We can see that the update equation for new belief is a convex weighted combination of updates from prior and observation, with the Kalman Gain matrix acting as the weight. From the equation for the Kalman Gain matrix, we can see that if observations are noisy ($\sigma_z$ or $R$ is large), then the KG matrix is small and updates rely more on prior. On the other hand if the process is unpredictable (large $\sigma_x$) or prior is unreliable (large $\sigma_t$), the KG matrix is higher and we rely more on the observation. 
 
 
-## High-level Discussion of Where the A, G, and C Matrix Come From 
+## High-level Discussion of the Derivation of the A, G, and C Matrices 
 
 Note: content from this section is from a two-minute digression 
 from Dr. Xing responding to a student's question. As such, it is not in
