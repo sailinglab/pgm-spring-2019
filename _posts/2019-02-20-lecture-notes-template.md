@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: Lecture 10
-description: Kalman Filtering and Topic Models
+title: Lecture 11: Kalman Filtering and Topic Models
+description: Kalman Filtering and Topic Models. See abstract. Due to the previous lecture running over, the actual material covered in the lecture deviated from what the title of the lecture on the course homepage suggests.
 date: 2019-02-20
 
 lecturers:
