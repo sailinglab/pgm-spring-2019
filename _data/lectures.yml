@@ -198,7 +198,7 @@
     - Metropolis-Hastings <br />
     - Hamiltonian Monte Carlo <br />
     - Langevin Dynamics
-  slides:
+  slides: "https://www.dropbox.com/s/i1pengffzunpfrh/lecture14-MCMC.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
   notes:
   readings:
