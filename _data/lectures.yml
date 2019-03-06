@@ -219,6 +219,10 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=caa6ce42-b7b9-4145-bc4c-a9d0012ce923"
   notes:
   readings:
+    - <a href="http://www.deeplearningbook.org/" target="_blank">Deep learning book</a>, Ch. 6.2-5, 20.3-4.
+    - Salakhutdinov and Hinton, <a href="http://www.jmlr.org/proceedings/papers/v5/salakhutdinov09a/salakhutdinov09a.pdf" target="_blank">Deep Boltzmann machines</a>.
+    - Belanger and McCallum, <a href="https://people.cs.umass.edu/~belanger/belanger_spen_icml.pdf" target="_blank">Structured prediction energy networks</a>.
+    - Ranganath et al., <a href="http://www.jmlr.org/proceedings/papers/v38/ranganath15.pdf" target="_blank">Deep exponential families</a>.
   logistics: >
     <span class="deadline">HW2 due (Mon, 3/11)</span>
 
