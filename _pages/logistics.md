@@ -78,8 +78,8 @@ You also must indicate on each homework with whom you have collaborated.
 
 #### Late Policy
 
-You will be allowed **4 total homework late days** without penalty for the entire semester.
-You may be late by up to 4 days on any homework assignment.
+You will be allowed **6 total homework late days** without penalty for the entire semester.
+You may be late by up to 6 days on any homework assignment.
 Once those days are used, you will be penalized according to the following policy:
 
 - Homework is worth full credit at the due time on the due date.
