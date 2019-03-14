@@ -98,7 +98,7 @@
     <strong>Maximum likelihood learning of undirected GM</strong>
   slides: "https://www.dropbox.com/s/jvuh05ure5i47ca/lecture7-LearningObsMRF.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-07/"
   readings:
     - Jordan Textbook, Ch. 9 (Sec. 9.3-9.5), Ch. 20
     - Friedman, Hastie, Tibshirani. <a href="http://statweb.stanford.edu/~tibs/glasso/" target="_blank">Sparse inverse covariance estimation with the graphical lasso</a>.
@@ -158,7 +158,7 @@
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
   slides: "https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
-  notes: 
+  notes:
   readings:
     - Yedidia et al., <a href="http://papers.nips.cc/paper/1832-generalized-belief-propagation.pdf" target="_blank">Generalized Belief Propagation</a>.
     - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
