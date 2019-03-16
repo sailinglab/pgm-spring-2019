@@ -28,7 +28,7 @@ blog_name: Course Notes
 blog_description: The notes written by students and edited by instructors
 
 # Pagination
-paginate: 4
+paginate: 10
 permalink: /notes/:title/
 paginate_path: /notes/page:num/
 

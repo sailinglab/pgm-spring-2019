@@ -39,6 +39,9 @@ title: Schedule
             {% else %}
               slides
             {% endif %}
+            {% if lecture.annotated %}
+              (<a href="{{ lecture.annotated }}" target="_blank">annotated</a>)
+            {% endif %}
             {% if lecture.video %}
             | <a href="{{ lecture.video }}" target="_blank">video</a>
             {% else %}

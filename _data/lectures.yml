@@ -4,7 +4,8 @@
   lecturer: Eric
   title: >
     <strong>Introduction to GM</strong>
-  slides: "https://www.dropbox.com/s/y2p85ehk5j7igl9/lecture1-Introduction-annotated.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/noxer7mbtvalj0t/lecture1-Introduction.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/y2p85ehk5j7igl9/lecture1-Introduction-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-01/"
   readings:
@@ -16,7 +17,8 @@
   lecturer: Eric
   title: >
     <strong>Representation: Directed GMs (BNs)</strong>
-  slides: "https://www.dropbox.com/s/fp340t7exxzch7g/lecture2-BNrepresentation-annotated.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/q53gmhc056zob8e/lecture2-BNrepresentation.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/fp340t7exxzch7g/lecture2-BNrepresentation-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-02/"
   readings:
@@ -31,7 +33,8 @@
   lecturer: Eric
   title: >
     <strong>Representation: Undirected GMs (MRFs)</strong>
-  slides: "https://www.dropbox.com/s/ujbe8vcfc0jf0kz/lecture3-MRFrepresentation-annotated.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/a22z8io0nuxnp5o/lecture3-MRFrepresentation.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/ujbe8vcfc0jf0kz/lecture3-MRFrepresentation-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=702de16d-fb04-4906-9014-a9d0012983e2"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-03/"
   readings:
@@ -47,7 +50,8 @@
     - Elimination <br />
     - Message passing <br />
     - Sum product algorithm
-  slides: "https://www.dropbox.com/s/49w8lflglvpcmn2/lecture4-ExactInference-annotated.pdf?dl=0"
+  slides: "https://www.dropbox.com/s/yyo1t7d48kzxlqu/lecture4-ExactInference.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/49w8lflglvpcmn2/lecture4-ExactInference-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61db95f2-aec1-415d-9180-a9d0012992fe"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-04/"
   readings:
@@ -66,6 +70,7 @@
     - Maximum Likelihood Estimation (MLE) <br />
     - Markov Models
   slides: "https://www.dropbox.com/s/mycn78k6k0saxr5/lecture5-LearningObs.pdf?dl=0"
+  annotated:
   video:
   notes:
   readings:
@@ -83,6 +88,7 @@
     - Hidden Markov Models (HMMs) <br />
     - The EM algorithm
   slides: "https://www.dropbox.com/s/firdpiojui2o4s5/lecture6-EM-maruan.pdf?dl=0"
+  annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-06/"
   readings:
@@ -97,6 +103,7 @@
   title: >
     <strong>Maximum likelihood learning of undirected GM</strong>
   slides: "https://www.dropbox.com/s/jvuh05ure5i47ca/lecture7-LearningObsMRF.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/g2wbcxe8yx4qt7f/lecture7-LearningObsMRF-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-07/"
   readings:
@@ -110,6 +117,7 @@
   title: >
     <strong>Causal discovery and inference</strong>
   slides: "https://www.dropbox.com/s/9clh12j85c8smgb/lecture8-Causality.pdf?dl=0"
+  annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
   notes:
   readings:
@@ -125,6 +133,7 @@
     - Gaussian graphical models <br>
     - Ising models
   slides: "https://www.dropbox.com/s/yfip5ig21g4qxhn/lecture9-NetworkLearning.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/azf57ov9b079a41/lecture9-NetworkLearning-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-09/"
   readings:
@@ -141,6 +150,7 @@
     - Discrete Hidden State (HMM vs. CRF) <br />
     - Continuous Hidden State (Kalman Filter)
   slides: "https://www.dropbox.com/s/xtsksb4t04a5gu1/lecture10-SequentialModels.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/sf0wt67y03x1wdm/lecture10-SequentialModels-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
   notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-10/"
   readings:
@@ -157,6 +167,7 @@
   title: >
     <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
   slides: "https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/me9ngr5zuxsnkxk/lecture11ab-BP%2BMeanField-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
   notes:
   readings:
@@ -172,6 +183,7 @@
   title: >
     <strong>Theory of Variational Inference: Inner and Outer Approximations</strong>
   slides: "https://www.dropbox.com/s/inzq9ofpqpbetu0/lecture12-VI.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/iu7aiswb9y1in73/lecture12-VI-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
   notes:
   readings:
@@ -184,6 +196,7 @@
   title: >
     <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
   slides: "https://www.dropbox.com/s/8l0wgnxtxouq5f3/lecture13-MC.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/ky3g0jlcfp6a7sh/lecture13-MC-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
   notes:
   readings:
@@ -199,6 +212,7 @@
     - Hamiltonian Monte Carlo <br />
     - Langevin Dynamics
   slides: "https://www.dropbox.com/s/i1pengffzunpfrh/lecture14-MCMC.pdf?dl=0"
+  annotated: "https://www.dropbox.com/s/2h4xhzvag6snl5m/lecture14-MCMC-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
   notes:
   readings:
@@ -216,6 +230,7 @@
     - Insight into DL <br />
     - Connections to GM
   slides: "https://www.dropbox.com/s/w6zpjmy5xk0qtmp/lecture15-NN.pdf?dl=0"
+  annotated: ""
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=caa6ce42-b7b9-4145-bc4c-a9d0012ce923"
   notes:
   readings:
@@ -241,6 +256,7 @@
     - Attention mechanisms <br />
     - (Case studies in NLP)
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -256,6 +272,7 @@
     - Variational autoencoders <br />
     - Generative adversarial networks
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -270,6 +287,7 @@
     - Inverse Autoregressive Flows <br />
     - GANs and Implicit Models
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -283,6 +301,7 @@
     - Symmetric modeling of latent and visible variables <br />
     - Evaluation of Deep Generative Models
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -298,6 +317,7 @@
     - Brief introduction to reinforcement learning (RL) <br />
     - Connections to GM: RL and control as inference
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -313,6 +333,7 @@
     - Some open questions/challenges <br />
     - Applications/case studies (games, robotics, etc.)
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -330,6 +351,7 @@
     - Chinese Restaurant Process (CRP) <br />
     - Indian Buffet Process (IBP)
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -345,6 +367,7 @@
     - Hypernetworks and contextual networks <br />
     - Neural processes (NPs) as an approximation to GPs
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -355,6 +378,7 @@
   title: >
     <strong>Regularized Bayesian GMs (structured sparsiry, diversity, etc.)</strong>
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -365,6 +389,7 @@
   title: >
     <strong>Elements of Spectral & Kernel GMs</strong>
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -377,6 +402,7 @@
   title: >
     <strong>Automated black-box variational inference and elements of probabilistic programming</strong>
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -388,6 +414,7 @@
   title: >
     <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
   slides:
+  annotated:
   video:
   notes:
   readings:
@@ -398,6 +425,7 @@
   title: >
     <strong>Industialization of AI: standards, modules, building-blocks, and platform</strong>
   slides:
+  annotated:
   video:
   notes:
   readings:
