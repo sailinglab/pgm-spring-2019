@@ -10,7 +10,7 @@
     <script type="text/json">{
       "title": "{{ page.title }}",
       "description": "{{ page.description }}",
-      "published": "{{ page.date }}",
+      "published": "{{ page.date | date: '%B %-d, %Y' }}",
       "lecturers": [
         {% for lecturer in page.lecturers %}
         {
