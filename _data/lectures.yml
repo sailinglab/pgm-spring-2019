@@ -257,7 +257,7 @@
     - (Case studies in NLP)
   slides: "https://www.dropbox.com/s/rq05b3anxoqx11q/lecture16-DL-blocks-zhiting.pdf?dl=0"
   annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e48fed41-d33a-429a-880a-a9d0012d041a"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a0b496e-fc7c-4abd-bcdc-aa140107f167"
   notes:
   readings:
     - Pascanu, Mikolov, Bengio, <a href="http://proceedings.mlr.press/v28/pascanu13.pdf" target="_blank">On the difficulty of training recurrent neural networks</a>.
