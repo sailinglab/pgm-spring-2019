@@ -270,11 +270,11 @@
   lecturer: Eric
   title: >
     <strong>Deep generative models (part 1): <br />
-    Overview of advances and theoretical basis of deep generative models</strong> <br />
+    Overview of the theoretical basis and connections of deep generative models</strong> <br />
     - Wake sleep algorithm <br />
     - Variational autoencoders <br />
     - Generative adversarial networks
-  slides:
+  slides: "https://www.dropbox.com/s/ko7qzfprz5l1pp5/lecture17-DGM1.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=564fb367-0a2d-4431-9acd-a9d0012d6b36"
   notes:
