@@ -279,6 +279,10 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=564fb367-0a2d-4431-9acd-a9d0012d6b36"
   notes:
   readings:
+    - <a href="http://www.deeplearningbook.org/" target="_blank">Deep learning book</a>, Ch. 20.9-10
+    - Variational Autoencoders, <a href="https://arxiv.org/abs/1312.6114" target="_blank">Kingma and Welling, 2014</a>.
+    - Generative Adversarial Nets, <a href="http://papers.nips.cc/paper/5423-generative-adversarial-nets" target="_blank">Goodfellow et al., 2014</a>.
+    - Sanjeev Arora's <a href="http://www.offconvex.org/2017/03/15/GANs/" target="_blank">blog post on GANs</a>.
   logistics:
 
 - date: 3/25
