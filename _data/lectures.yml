@@ -294,7 +294,7 @@
     - Integrating domain knowledge in DL
   slides: "https://www.dropbox.com/s/nxsj7yfg5goiei1/lecture18-DGM2-zhiting.pdf?dl=0"
   annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=564fb367-0a2d-4431-9acd-a9d0012d6b36"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
   notes:
   readings:
     - Arjovsky, Bottou, <a href="https://arxiv.org/pdf/1701.04862.pdf" target="_blank">Towards principled methods for training generative adversarial networks</a>.
