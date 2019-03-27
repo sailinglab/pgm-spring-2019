@@ -313,7 +313,7 @@
     - Unifying MLE and RL objectives for text generation
   slides: "https://www.dropbox.com/s/myrmirbtb9z0j6q/lecture19-TextGen-zhiting.pdf?dl=0"
   annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e1ca7f0-811c-493b-98f7-aa1600c828e5"
   notes:
   readings:
     - Ranzato et al., <a href="https://arxiv.org/pdf/1511.06732.pdf" target="_blank">Sequence Level Training with Recurrent Neural Networks</a>.
