@@ -119,7 +119,7 @@
   slides: "https://www.dropbox.com/s/9clh12j85c8smgb/lecture8-Causality.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-08/"
   readings:
     - J. Pearl, M. Glymour, and N. P. Jewell. <a href="http://bayes.cs.ucla.edu/PRIMER/" target="_blank">Causal Inference in Statistics A Primer</a>. Concepts related to causality and identification of causal effects.
     - P. Spirtes, C. Glymour, and R. Scheines. <a href="https://www.researchgate.net/publication/242448131_Causation_Prediction_and_Search" target="_blank">Causation, Prediction, and Search</a>. Pages 80-89 and 125-123-136. Traditional methods for causal discovery, including the PC and FCI algorithms.
@@ -169,7 +169,7 @@
   slides: "https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/me9ngr5zuxsnkxk/lecture11ab-BP%2BMeanField-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-11/"
   readings:
     - Yedidia et al., <a href="http://papers.nips.cc/paper/1832-generalized-belief-propagation.pdf" target="_blank">Generalized Belief Propagation</a>.
     - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
@@ -185,7 +185,7 @@
   slides: "https://www.dropbox.com/s/inzq9ofpqpbetu0/lecture12-VI.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/iu7aiswb9y1in73/lecture12-VI-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-12/"
   readings:
     - Wainwright and Jordan, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.4581&rep=rep1&type=pdf" target="_blank">Variational Inference in Graphical Models - The View from the Marginal Polytope</a>.
     - Wainwright and Jordan, <a href="http://www.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf" target="_blank">Graphical Models, Exponential Families, and Variational Inference</a> (Sec. 3 and 4).
@@ -198,7 +198,7 @@
   slides: "https://www.dropbox.com/s/8l0wgnxtxouq5f3/lecture13-MC.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/ky3g0jlcfp6a7sh/lecture13-MC-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-13/"
   readings:
     - Jordan Textbook, Ch. 21
     - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.1-29.3).
@@ -214,7 +214,7 @@
   slides: "https://www.dropbox.com/s/i1pengffzunpfrh/lecture14-MCMC.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/2h4xhzvag6snl5m/lecture14-MCMC-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-14/"
   readings:
     - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.4-29.10).
     - Neal, <a href="https://arxiv.org/pdf/1206.1901.pdf" target="_blank">MCMC using Hamiltonian dynamics</a>.
