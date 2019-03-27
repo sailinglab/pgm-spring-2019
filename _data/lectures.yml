@@ -274,6 +274,7 @@
     - Wake sleep algorithm <br />
     - Variational autoencoders <br />
     - Generative adversarial networks
+    - A unified view of DGM
   slides: "https://www.dropbox.com/s/ko7qzfprz5l1pp5/lecture17-DGM1.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e48fed41-d33a-429a-880a-a9d0012d041a"
@@ -306,15 +307,18 @@
 - date: 3/27
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
-    <strong>A unified view of deep generative models</strong> <br />
-    - New formulations of deep generative models <br />
-    - Symmetric modeling of latent and visible variables <br />
-    - Evaluation of Deep Generative Models
-  slides:
+    <strong>Case Study: Text Generation</strong>
+    - The encoder-decoder framework <br />
+    - Machine translation as conditional generation <br />
+    - Unifying MLE and RL objectives for text generation
+  slides: "https://www.dropbox.com/s/myrmirbtb9z0j6q/lecture19-TextGen-zhiting.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
   notes:
   readings:
+    - Ranzato et al., <a href="https://arxiv.org/pdf/1511.06732.pdf" target="_blank">Sequence Level Training with Recurrent Neural Networks</a>.
+    - Hu et al., <a href="https://arxiv.org/pdf/1703.00955.pdf" target="_blank">Toward Controlled Generation of Text</a>.
+    - Tan, Hu et al., <a href="https://arxiv.org/pdf/1811.09740.pdf" target="_blank">Connecting the Dots Between MLE and RL for Sequence Generation</a>.
   logistics: >
     <span class="deadline">Midway report due (Fri, 3/29)</span>
 
