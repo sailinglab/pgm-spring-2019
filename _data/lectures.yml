@@ -307,7 +307,7 @@
 - date: 3/27
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
-    <strong>Case Study: Text Generation</strong>
+    <strong>Case Study: Text Generation</strong> <br />
     - The encoder-decoder framework <br />
     - Machine translation as conditional generation <br />
     - Unifying MLE and RL objectives for text generation
