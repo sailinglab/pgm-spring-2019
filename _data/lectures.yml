@@ -119,7 +119,7 @@
   slides: "https://www.dropbox.com/s/9clh12j85c8smgb/lecture8-Causality.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-08/"
   readings:
     - J. Pearl, M. Glymour, and N. P. Jewell. <a href="http://bayes.cs.ucla.edu/PRIMER/" target="_blank">Causal Inference in Statistics A Primer</a>. Concepts related to causality and identification of causal effects.
     - P. Spirtes, C. Glymour, and R. Scheines. <a href="https://www.researchgate.net/publication/242448131_Causation_Prediction_and_Search" target="_blank">Causation, Prediction, and Search</a>. Pages 80-89 and 125-123-136. Traditional methods for causal discovery, including the PC and FCI algorithms.
@@ -169,7 +169,7 @@
   slides: "https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/me9ngr5zuxsnkxk/lecture11ab-BP%2BMeanField-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-11/"
   readings:
     - Yedidia et al., <a href="http://papers.nips.cc/paper/1832-generalized-belief-propagation.pdf" target="_blank">Generalized Belief Propagation</a>.
     - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
@@ -185,7 +185,7 @@
   slides: "https://www.dropbox.com/s/inzq9ofpqpbetu0/lecture12-VI.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/iu7aiswb9y1in73/lecture12-VI-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-12/"
   readings:
     - Wainwright and Jordan, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.4581&rep=rep1&type=pdf" target="_blank">Variational Inference in Graphical Models - The View from the Marginal Polytope</a>.
     - Wainwright and Jordan, <a href="http://www.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf" target="_blank">Graphical Models, Exponential Families, and Variational Inference</a> (Sec. 3 and 4).
@@ -198,7 +198,7 @@
   slides: "https://www.dropbox.com/s/8l0wgnxtxouq5f3/lecture13-MC.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/ky3g0jlcfp6a7sh/lecture13-MC-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-13/"
   readings:
     - Jordan Textbook, Ch. 21
     - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.1-29.3).
@@ -214,7 +214,7 @@
   slides: "https://www.dropbox.com/s/i1pengffzunpfrh/lecture14-MCMC.pdf?dl=0"
   annotated: "https://www.dropbox.com/s/2h4xhzvag6snl5m/lecture14-MCMC-annotated.pdf?dl=0"
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-14/"
   readings:
     - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.4-29.10).
     - Neal, <a href="https://arxiv.org/pdf/1206.1901.pdf" target="_blank">MCMC using Hamiltonian dynamics</a>.
@@ -274,6 +274,7 @@
     - Wake sleep algorithm <br />
     - Variational autoencoders <br />
     - Generative adversarial networks
+    - A unified view of DGM
   slides: "https://www.dropbox.com/s/ko7qzfprz5l1pp5/lecture17-DGM1.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e48fed41-d33a-429a-880a-a9d0012d041a"
@@ -289,29 +290,35 @@
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
     <strong>Deep generative models (part 2)</strong> <br />
-    - Variational Autoencoders (VAE) <br />
+    - GANs and their variations <br />
     - Normalizing Flows <br />
-    - Inverse Autoregressive Flows <br />
-    - GANs and Implicit Models
-  slides:
+    - Integrating domain knowledge in DL
+  slides: "https://www.dropbox.com/s/nxsj7yfg5goiei1/lecture18-DGM2-zhiting.pdf?dl=0"
   annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=564fb367-0a2d-4431-9acd-a9d0012d6b36"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
   notes:
   readings:
+    - Arjovsky, Bottou, <a href="https://arxiv.org/pdf/1701.04862.pdf" target="_blank">Towards principled methods for training generative adversarial networks</a>.
+    - Kingma, Dhariwal, <a href="https://arxiv.org/pdf/1807.03039.pdf" target="_blank">Glow - Generative Flow with Invertible 1x1 Convolutions</a>.
+    - Hu et al., <a href="https://arxiv.org/pdf/1603.06318.pdf" target="_blank">Harnessing Deep Neural Networks with Logic Rules</a>.
+    - Hu et al., <a href="http://papers.nips.cc/paper/8250-deep-generative-models-with-learnable-knowledge-constraints.pdf" target="_blank">Deep Generative Models with Learnable Knowledge Constraints</a>.
   logistics:
 
 - date: 3/27
   lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
   title: >
-    <strong>A unified view of deep generative models</strong> <br />
-    - New formulations of deep generative models <br />
-    - Symmetric modeling of latent and visible variables <br />
-    - Evaluation of Deep Generative Models
-  slides:
+    <strong>Case Study: Text Generation</strong> <br />
+    - The encoder-decoder framework <br />
+    - Machine translation as conditional generation <br />
+    - Unifying MLE and RL objectives for text generation
+  slides: "https://www.dropbox.com/s/myrmirbtb9z0j6q/lecture19-TextGen-zhiting.pdf?dl=0"
   annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e1ca7f0-811c-493b-98f7-aa1600c828e5"
   notes:
   readings:
+    - Ranzato et al., <a href="https://arxiv.org/pdf/1511.06732.pdf" target="_blank">Sequence Level Training with Recurrent Neural Networks</a>.
+    - Hu et al., <a href="https://arxiv.org/pdf/1703.00955.pdf" target="_blank">Toward Controlled Generation of Text</a>.
+    - Tan, Hu et al., <a href="https://arxiv.org/pdf/1811.09740.pdf" target="_blank">Connecting the Dots Between MLE and RL for Sequence Generation</a>.
   logistics: >
     <span class="deadline">Midway report due (Fri, 3/29)</span>
 
@@ -328,6 +335,9 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7ed31bba-5c30-45ef-b71b-a9d0012db6db"
   notes:
   readings:
+    - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>.
+    - Ziebart, <a href="https://www.cs.cmu.edu/~bziebart/publications/thesis-bziebart.pdf" target="_blank">Modeling Purposeful Adaptive Behavior with the Principle of Maximum Causal Entropy</a>.
+    - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>.
   logistics:
 
 - date: 4/3
