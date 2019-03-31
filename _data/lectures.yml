@@ -335,9 +335,10 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7ed31bba-5c30-45ef-b71b-a9d0012db6db"
   notes:
   readings:
-    - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>.
-    - Ziebart, <a href="https://www.cs.cmu.edu/~bziebart/publications/thesis-bziebart.pdf" target="_blank">Modeling Purposeful Adaptive Behavior with the Principle of Maximum Causal Entropy</a>.
-    - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>.
+    - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 3, 4.
+    - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>, Sec. 1-3.
+    - Ziebart, <a href="https://www.cs.cmu.edu/~bziebart/publications/thesis-bziebart.pdf" target="_blank">Modeling Purposeful Adaptive Behavior with the Principle of Maximum Causal Entropy</a>, Ch. 5.1-2, 6.1-2.
+    - Koller and Friedman Textbook, Ch. 20.3.
   logistics:
 
 - date: 4/3
@@ -354,6 +355,9 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=241c108f-bb4b-4feb-909b-a9d0012dd93a"
   notes:
   readings:
+    - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>, Sec. 4.
+    - Haarnoja et al., <a href="https://arxiv.org/pdf/1702.08165.pdf" target="_blank">Reinforcement Learning with Deep Energy-Based Policies</a>.
+    - Haarnoja et al., <a href="https://arxiv.org/pdf/1801.01290.pdf" target="_blank">Soft Actor-Critic</a>.
   logistics: >
     <span class="deadline">HW3 due (Wed, 4/3)</span>
 
