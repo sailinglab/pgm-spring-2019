@@ -273,7 +273,7 @@
     Overview of the theoretical basis and connections of deep generative models</strong> <br />
     - Wake sleep algorithm <br />
     - Variational autoencoders <br />
-    - Generative adversarial networks
+    - Generative adversarial networks <br />
     - A unified view of DGM
   slides: "https://www.dropbox.com/s/ko7qzfprz5l1pp5/lecture17-DGM1.pdf?dl=0"
   annotated:
@@ -329,8 +329,9 @@
   title: >
     <strong>Sequential decision making (part 1): The framework</strong> <br />
     - Brief introduction to reinforcement learning (RL) <br />
-    - Connections to GM: RL and control as inference
-  slides:
+    - Connections to GM: RL and control as inference <br />
+    - Control via Variational Inference
+  slides: "https://www.dropbox.com/s/v3ber20mzj5rpi8/lecture20-RL%2BPGM-part1-maruan.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7ed31bba-5c30-45ef-b71b-a9d0012db6db"
   notes:
