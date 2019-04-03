@@ -353,7 +353,7 @@
     - Soft Q-learning algorithms <br />
     - Some open questions/challenges <br />
     - Applications/case studies (games, robotics, etc.)
-  slides:
+  slides: "https://www.dropbox.com/s/bw3lazuqj141v9a/lecture21-RL%2BPGM-part2-maruan.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=241c108f-bb4b-4feb-909b-a9d0012dd93a"
   notes:
