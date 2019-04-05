@@ -333,7 +333,7 @@
     - Control via Variational Inference
   slides: "https://www.dropbox.com/s/v3ber20mzj5rpi8/lecture20-RL%2BPGM-part1-maruan.pdf?dl=0"
   annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7ed31bba-5c30-45ef-b71b-a9d0012db6db"
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63c27723-7630-42ee-93c2-aa2201091059"
   notes:
   readings:
     - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 3, 4.
@@ -356,6 +356,7 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=241c108f-bb4b-4feb-909b-a9d0012dd93a"
   notes:
   readings:
+    - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 13.
     - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>, Sec. 4.
     - Haarnoja et al., <a href="https://arxiv.org/pdf/1702.08165.pdf" target="_blank">Reinforcement Learning with Deep Energy-Based Policies</a>.
     - Haarnoja et al., <a href="https://arxiv.org/pdf/1801.01290.pdf" target="_blank">Soft Actor-Critic</a>.
