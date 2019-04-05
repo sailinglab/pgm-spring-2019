@@ -11,8 +11,8 @@ Each project will be assigned a TA as a project consultant/mentor; instructors a
 
 1. **Proposal** : 2 pages excluding references (10%)
 2. **Midway Report** : 5 pages excluding references (20%)
-3. **Final Report** : 8 pages excluding references (40%)
-4. **Presentation** : 10 minute talk (30%)
+3. **Presentation** : poster presentation (20%)
+4. **Final Report** : 8 pages excluding references (50%)
 
 All write-ups should use the [ICML style](https://media.neurips.cc/Conferences/ICML2019/Styles/icml2019_style.zip).
 
@@ -97,9 +97,9 @@ The project final report will be due at **11:59 PM on Friday, May 10th** (tentat
 ### Presentation
 
 All project teams will present their work at the end of the semester.
-Each team will be given a time slot during which they will give a slide presentation to the class, similar in style to a conference presentation.
+We will have a 2-3-hour long poster session held in NSH atrium on April 30.
+Each team should prepare a poster (similar in style to a conference poster) and present it during the allocated time.
 If applicable, live demonstrations of your software are highly encouraged.
-
 
 ## Project Suggestions
 
