@@ -83,8 +83,9 @@ You may be late by up to 6 days on any homework assignment.
 Once those days are used, you will be penalized according to the following policy:
 
 - Homework is worth full credit at the due time on the due date.
-- It is worth half credit for the next 48 hours.
-- It is worth zero credit after that.
+- The allowed late days are counted by day (i.e., each new late day starts at 12:00 am ET).
+- Once the allowed late days are exceeded, the penalty is 50% per late day conted by hour (i.e., 2.0833% per hour).
+- The homework is worth zero credit 48 hours after exceeding the late day limit.
 
 You must turn in at least 3 of the 4 assignments, even if for zero credit, in order to pass the course.
 Please upload your late submissions to [Gradescope](https://www.gradescope.com/courses/36025){:target="\_blank"}.
