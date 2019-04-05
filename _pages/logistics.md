@@ -42,7 +42,7 @@ The grading breakdown is as follows:
 
 We appreciate everyone being actively involved in the class!
 There are several ways of earning participation credit, which will be capped at 4%:
-- **Piazza participation:** The top ~20 contributors to Piazza will get 3.5%; others will get credit in proportion to the participation of the ~20th person.
+- **Piazza participation:** The top ~20 contributors to Piazza will get 3.5%; others will get credit in proportion to the participation of the ~20th person. (To prevent abuse of the system, not all contributions are counted and instructors hold the right to determine to count contributions as positive or negative.)
 - **Completing mid-semester evaluation:** Around the middle of the semester, we will send out a survey to help us understand how the course is going, and how we can improve. Completing it is worth 0.5%.
 - **Karma point:** Any other act that improves the class, which a 10-708 TA or instructor notices and deems worthy: 1%.
 
