@@ -371,7 +371,7 @@
     <strong>Bayesian non-parameterics</strong> <br />
     - Dirichlet process (DP) <br />
     - Indian Buffet Process (IBP)
-  slides:
+  slides: "https://www.dropbox.com/s/8wh862cpedv375d/lecture22-NPBayes.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=60166141-95e4-4582-8e87-a9d0012df42c"
   notes:
