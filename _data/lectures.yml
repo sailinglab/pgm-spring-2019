@@ -370,14 +370,14 @@
   title: >
     <strong>Bayesian non-parameterics</strong> <br />
     - Dirichlet process (DP) <br />
-    - Hierarchical Dirichlet Process (HDP) <br />
-    - Chinese Restaurant Process (CRP) <br />
     - Indian Buffet Process (IBP)
   slides:
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=60166141-95e4-4582-8e87-a9d0012df42c"
   notes:
   readings:
+    - Teh, <a href="http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/dp.pdf" target="_blank">Dirichlet Process</a>.
+    - Griffiths and Ghahramani, <a href="http://jmlr.csail.mit.edu/papers/volume12/griffiths11a/griffiths11a.pdf" target="_blank">The Indian Buffet Process</a>.
   logistics: >
     <span class="event">HW4 out (Mon, 4/8)</span>
 
