@@ -399,10 +399,10 @@
   lecturer: Maruan
   title: >
     <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
-    - GPs and (deep) kernel learning <br />
-    - Meta-learning formulation as learning a process <br />
-    - Hypernetworks and contextual networks <br />
-    - Neural processes (NPs) as an approximation to GPs
+    - Gaussian Processes (GPs) and kernel functions <br />
+    - (Deep) kernel learning and approximations <br />
+    - Neural Processes (NPs) as an approximation to GPs <br />
+    - Elements of meta-learning
   slides:
   annotated:
   video:
