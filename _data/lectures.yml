@@ -369,7 +369,7 @@
   lecturer: Eric
   title: >
     <strong>Bayesian non-parameterics</strong> <br />
-    - Dirichlet process (DP) <br />
+    - Dirichlet Process (DP) <br />
     - Indian Buffet Process (IBP)
   slides: "https://www.dropbox.com/s/8wh862cpedv375d/lecture22-NPBayes.pdf?dl=0"
   annotated:
@@ -384,6 +384,20 @@
 - date: 4/10
   lecturer: Maruan
   title: >
+    <strong>Bayesian non-parameterics (continued)</strong> <br />
+    - Inference in Dirichlet Process (DP) <br />
+    - Hierarchical Dirichlet Process (HDP) <br />
+    - Indian Buffet Process (IBP)
+  slides:
+  annotated:
+  video:
+  notes:
+  readings:
+  logistics:
+
+- date: 4/15
+  lecturer: Maruan
+  title: >
     <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
     - GPs and (deep) kernel learning <br />
     - Meta-learning formulation as learning a process <br />
@@ -396,7 +410,7 @@
   readings:
   logistics:
 
-- date: 4/15
+- date: 4/17
   lecturer: Eric
   title: >
     <strong>Regularized Bayesian GMs (structured sparsiry, diversity, etc.)</strong>
@@ -407,7 +421,7 @@
   readings:
   logistics:
 
-- date: 4/17
+- date: 4/22
   lecturer: Eric
   title: >
     <strong>Elements of Spectral & Kernel GMs</strong>
@@ -416,21 +430,10 @@
   video:
   notes:
   readings:
-  logistics:
-
-- title: "Module 6: Modular and scalable algorithms and systems"
-
-- date: 4/22
-  lecturer:
-  title: >
-    <strong>Automated black-box variational inference and elements of probabilistic programming</strong>
-  slides:
-  annotated:
-  video:
-  notes:
-  readings:
   logistics: >
     <span class="deadline">HW4 due (Mon, 4/22)</span>
+
+- title: "Module 6: Modular and scalable algorithms and systems"
 
 - date: 4/24
   lecturer: Eric
