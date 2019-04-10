@@ -393,6 +393,8 @@
   video:
   notes:
   readings:
+    - <a href="https://dp.tdhopper.com/" target="_blank">Notes on Dirichlet Processes</a>.
+    - Teh, Jordan, Beal, Blei, <a href="https://people.eecs.berkeley.edu/~jordan/papers/hdp.pdf" target="_blank">Hierarchical Dirichlet Process</a>.
   logistics:
 
 - date: 4/15
