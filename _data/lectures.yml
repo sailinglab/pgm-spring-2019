@@ -394,6 +394,7 @@
   notes:
   readings:
     - <a href="https://dp.tdhopper.com/" target="_blank">Notes on Dirichlet Processes</a>.
+    - Ishwaran, James, <a href="http://people.ee.duke.edu/~lcarin/Yuting3.3.06.pdf" target="_blank">Gibbs Sampling Methods for Stick-Breaking Priors</a>.
     - Teh, Jordan, Beal, Blei, <a href="https://people.eecs.berkeley.edu/~jordan/papers/hdp.pdf" target="_blank">Hierarchical Dirichlet Process</a>.
   logistics:
 
