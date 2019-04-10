@@ -72,7 +72,7 @@
   slides: "https://www.dropbox.com/s/mycn78k6k0saxr5/lecture5-LearningObs.pdf?dl=0"
   annotated:
   video:
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-05/"
   readings:
     - Jordan Textbook, Ch. 8, 9 (Sec. 9.1 - 9.2)
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch17.1-17.4.pdf" target="_blank">Ch. 17 (Sections 17.1 - 17.4)</a>
@@ -314,7 +314,7 @@
   slides: "https://www.dropbox.com/s/myrmirbtb9z0j6q/lecture19-TextGen-zhiting.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e1ca7f0-811c-493b-98f7-aa1600c828e5"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-19/"
   readings:
     - Ranzato et al., <a href="https://arxiv.org/pdf/1511.06732.pdf" target="_blank">Sequence Level Training with Recurrent Neural Networks</a>.
     - Hu et al., <a href="https://arxiv.org/pdf/1703.00955.pdf" target="_blank">Toward Controlled Generation of Text</a>.
