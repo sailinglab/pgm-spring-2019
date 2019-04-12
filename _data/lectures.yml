@@ -399,6 +399,28 @@
   logistics:
 
 - date: 4/15
+  lecturer: Eric
+  title: >
+    <strong>Regularized Bayesian GMs (structured sparsiry, diversity, etc.)</strong>
+  slides:
+  annotated:
+  video:
+  notes:
+  readings:
+  logistics:
+
+- date: 4/17
+  lecturer: Eric
+  title: >
+    <strong>Elements of Spectral & Kernel GMs</strong>
+  slides:
+  annotated:
+  video:
+  notes:
+  readings:
+  logistics:
+
+- date: 4/22
   lecturer: Maruan
   title: >
     <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
@@ -411,35 +433,13 @@
   video:
   notes:
   readings:
-  logistics:
-
-- date: 4/17
-  lecturer: Eric
-  title: >
-    <strong>Regularized Bayesian GMs (structured sparsiry, diversity, etc.)</strong>
-  slides:
-  annotated:
-  video:
-  notes:
-  readings:
-  logistics:
-
-- date: 4/22
-  lecturer: Eric
-  title: >
-    <strong>Elements of Spectral & Kernel GMs</strong>
-  slides:
-  annotated:
-  video:
-  notes:
-  readings:
   logistics: >
     <span class="deadline">HW4 due (Mon, 4/22)</span>
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
 - date: 4/24
-  lecturer: Eric
+  lecturer: guest lecture, <a href="https://sites.google.com/site/hoqirong/" target="_blank">Qirong Ho</a> 
   title: >
     <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
   slides:
