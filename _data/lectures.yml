@@ -72,7 +72,7 @@
   slides: "https://www.dropbox.com/s/mycn78k6k0saxr5/lecture5-LearningObs.pdf?dl=0"
   annotated:
   video:
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-05/"
   readings:
     - Jordan Textbook, Ch. 8, 9 (Sec. 9.1 - 9.2)
     - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch17.1-17.4.pdf" target="_blank">Ch. 17 (Sections 17.1 - 17.4)</a>
@@ -258,7 +258,7 @@
   slides: "https://www.dropbox.com/s/rq05b3anxoqx11q/lecture16-DL-blocks-zhiting.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a0b496e-fc7c-4abd-bcdc-aa140107f167"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-16/"
   readings:
     - Pascanu, Mikolov, Bengio, <a href="http://proceedings.mlr.press/v28/pascanu13.pdf" target="_blank">On the difficulty of training recurrent neural networks</a>.
     - Vasvani et al., <a href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank">Attention is all you need</a>.
@@ -314,7 +314,7 @@
   slides: "https://www.dropbox.com/s/myrmirbtb9z0j6q/lecture19-TextGen-zhiting.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e1ca7f0-811c-493b-98f7-aa1600c828e5"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-19/"
   readings:
     - Ranzato et al., <a href="https://arxiv.org/pdf/1511.06732.pdf" target="_blank">Sequence Level Training with Recurrent Neural Networks</a>.
     - Hu et al., <a href="https://arxiv.org/pdf/1703.00955.pdf" target="_blank">Toward Controlled Generation of Text</a>.
@@ -369,7 +369,7 @@
   lecturer: Eric
   title: >
     <strong>Bayesian non-parameterics</strong> <br />
-    - Dirichlet process (DP) <br />
+    - Dirichlet Process (DP) <br />
     - Indian Buffet Process (IBP)
   slides: "https://www.dropbox.com/s/8wh862cpedv375d/lecture22-NPBayes.pdf?dl=0"
   annotated:
@@ -384,16 +384,18 @@
 - date: 4/10
   lecturer: Maruan
   title: >
-    <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
-    - GPs and (deep) kernel learning <br />
-    - Meta-learning formulation as learning a process <br />
-    - Hypernetworks and contextual networks <br />
-    - Neural processes (NPs) as an approximation to GPs
-  slides:
+    <strong>Bayesian non-parameterics (continued)</strong> <br />
+    - Inference in Dirichlet Process (DP) <br />
+    - Hierarchical Dirichlet Process (HDP) <br />
+    - Indian Buffet Process (IBP)
+  slides: "https://www.dropbox.com/s/yrmlc11twcefbeh/lecture23-NPBayes-continued-maruan.pdf?dl=0"
   annotated:
   video:
   notes:
   readings:
+    - <a href="https://dp.tdhopper.com/" target="_blank">Notes on Dirichlet Processes</a>.
+    - Ishwaran, James, <a href="http://people.ee.duke.edu/~lcarin/Yuting3.3.06.pdf" target="_blank">Gibbs Sampling Methods for Stick-Breaking Priors</a>.
+    - Teh, Jordan, Beal, Blei, <a href="https://people.eecs.berkeley.edu/~jordan/papers/hdp.pdf" target="_blank">Hierarchical Dirichlet Process</a>.
   logistics:
 
 - date: 4/15
@@ -418,12 +420,14 @@
   readings:
   logistics:
 
-- title: "Module 6: Modular and scalable algorithms and systems"
-
 - date: 4/22
-  lecturer:
+  lecturer: Maruan
   title: >
-    <strong>Automated black-box variational inference and elements of probabilistic programming</strong>
+    <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
+    - Gaussian Processes (GPs) and kernel functions <br />
+    - (Deep) kernel learning and approximations <br />
+    - Neural Processes (NPs) as an approximation to GPs <br />
+    - Elements of meta-learning
   slides:
   annotated:
   video:
@@ -432,8 +436,10 @@
   logistics: >
     <span class="deadline">HW4 due (Mon, 4/22)</span>
 
+- title: "Module 6: Modular and scalable algorithms and systems"
+
 - date: 4/24
-  lecturer: Eric
+  lecturer: guest lecture, <a href="https://sites.google.com/site/hoqirong/" target="_blank">Qirong Ho</a> 
   title: >
     <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
   slides:
