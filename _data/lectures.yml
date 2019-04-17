@@ -405,7 +405,7 @@
   slides: "https://www.dropbox.com/s/meupm5e1p96gize/lecture24-PosteriorReg.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b418dd05-cafc-4d6e-bebf-aa1600c873a8"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-24/"
   readings:
     - Ganchev, Graça, Gillenwater, Taskar. <a href="http://www.jmlr.org/papers/volume11/ganchev10a/ganchev10a.pdf" target="_blank">Posterior Regularization for Structured Latent Variable Models</a>.
     - Zhu, Chen, Xing. <a href="http://www.jmlr.org/papers/volume15/zhu14b/zhu14b.pdf" target="_blank">Bayesian Inference with Posterior Regularization and Applications to Infinite Latent SVMs</a>.
