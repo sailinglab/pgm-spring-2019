@@ -278,7 +278,7 @@
   slides: "https://www.dropbox.com/s/ko7qzfprz5l1pp5/lecture17-DGM1.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e48fed41-d33a-429a-880a-a9d0012d041a"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-17/"
   readings:
     - <a href="http://www.deeplearningbook.org/" target="_blank">Deep learning book</a>, Ch. 20.9-10
     - Variational Autoencoders, <a href="https://arxiv.org/abs/1312.6114" target="_blank">Kingma and Welling, 2014</a>.
