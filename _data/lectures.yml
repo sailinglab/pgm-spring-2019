@@ -439,6 +439,10 @@
   video:
   notes:
   readings:
+    - Rasmussen, Williams. <a href="http://www.gaussianprocess.org/gpml/" target="_blank">Gaussian Processes for Machine Learning</a>, Ch. 2.2-2.4, 4.1-4.2.
+    - Görtler, Kehlbeck, Deussen. <a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank"> A Visual Exploration of Gaussian Processes</a>.
+    - Wilson, Hu, Salakhutdinov, Xing. <a href="https://arxiv.org/abs/1511.02222" target="_blank">Deep Kernel Learning</a>.
+    - Garnelo et al. <a href="https://arxiv.org/abs/1807.01613" target="_blank">Conditional</a> <a href="https://arxiv.org/abs/1807.01622" target="_blank">Neural Processes</a>.
   logistics: >
     <span class="deadline">HW4 due (Mon, 4/22)</span>
 
