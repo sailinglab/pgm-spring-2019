@@ -443,8 +443,7 @@
     - Görtler, Kehlbeck, Deussen. <a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank"> A Visual Exploration of Gaussian Processes</a>.
     - Wilson, Hu, Salakhutdinov, Xing. <a href="https://arxiv.org/abs/1511.02222" target="_blank">Deep Kernel Learning</a>.
     - Garnelo et al. <a href="https://arxiv.org/abs/1807.01613" target="_blank">Conditional</a> <a href="https://arxiv.org/abs/1807.01622" target="_blank">Neural Processes</a>.
-  logistics: >
-    <span class="deadline">HW4 due (Mon, 4/22)</span>
+  logistics:
 
 - title: "Module 6: Modular and scalable algorithms and systems"
 
@@ -457,7 +456,8 @@
   video:
   notes:
   readings:
-  logistics:
+  logistics: >
+    <span class="deadline">HW4 due (Mon, 4/22)</span>
 
 - date: 4/29
   lecturer: Eric
