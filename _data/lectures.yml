@@ -456,6 +456,10 @@
   video:
   notes:
   readings:
+    - Bradley et al. (2011). <a href="http://www.select.cs.cmu.edu/publications/paperdir/icml2011-bradley-kyrola-bickson-guestrin.pdf" target="_blank">Parallel Coordinate Descent for L1-Regularized Loss Minimization</a>.
+    - Yuan et al. (2015). <a href="https://daiwei89.github.io/papers/lightlda.pdf" target="_blank">LightLDA - Big Topic Models on Modest Computer Clusters</a>.
+    - Ho et al. (2013). <a href="http://papers.nips.cc/paper/4894-more-effective-distributed-ml-via-a-stale-synchronous-parallel-parameter-server.pdf" target="_blank">More effective distributed ML via a stale synchronous parallel parameter server</a>.
+    - Kim et al. (2016). <a href="https://dl.acm.org/citation.cfm?id=2901331" target="_blank">STRADS - A Distributed Framework for Scheduled Model Parallel Machine Learning</a>.
   logistics: >
     <span class="deadline">HW4 due (Mon, 4/24)</span>
 
