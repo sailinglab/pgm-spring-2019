@@ -436,7 +436,7 @@
     - Elements of meta-learning
   slides: "https://www.dropbox.com/s/f3iowgpfeiyii8b/lecture26-GP-maruan.pdf?dl=0"
   annotated:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a5dcf74f-9c2d-4306-a916-aa1600c89407"
   notes:
   readings:
     - Rasmussen, Williams. <a href="http://www.gaussianprocess.org/gpml/" target="_blank">Gaussian Processes for Machine Learning</a>, Ch. 2.2-2.4, 4.1-4.2.
@@ -451,9 +451,9 @@
   lecturer: guest lecture, <a href="https://sites.google.com/site/hoqirong/" target="_blank">Qirong Ho</a> 
   title: >
     <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
-  slides:
+  slides: "https://www.dropbox.com/s/6npnome8i499rsc/lecture27-scalable-algorithms-and-systems-qirong.pdf?dl=0"
   annotated:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b944a404-0d3e-4668-b7c3-aa3701087dfe"
   notes:
   readings:
     - Bradley et al. (2011). <a href="http://www.select.cs.cmu.edu/publications/paperdir/icml2011-bradley-kyrola-bickson-guestrin.pdf" target="_blank">Parallel Coordinate Descent for L1-Regularized Loss Minimization</a>.
@@ -469,7 +469,7 @@
     <strong>Industialization of AI: standards, modules, building-blocks, and platform</strong>
   slides:
   annotated:
-  video:
+  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c4f50fb4-29e0-4403-b57f-aa370108c04e"
   notes:
   readings:
   logistics:
