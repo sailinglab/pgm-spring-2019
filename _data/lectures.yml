@@ -1,474 +1,60 @@
-- title: "Module 1: Introduction, Representation, and Exact Inference"
-
-- date: 1/14
-  lecturer: Eric
-  title: >
-    <strong>Introduction to GM</strong>
-  slides: "https://www.dropbox.com/s/noxer7mbtvalj0t/lecture1-Introduction.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/y2p85ehk5j7igl9/lecture1-Introduction-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bab0b8be-a86f-4a46-9dae-a9d0012950cb"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-01/"
-  readings:
-    - Jordan, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/reading/graphical_model_Jordan.pdf" target="_blank">Graphical Models</a>
-    - E. Airoldi, <a href="https://dash.harvard.edu/bitstream/handle/1/2757496/Airoldi_GettingStarted.pdf" target="_blank">Getting Started in Probabilistic Graphical Models</a>
-  logistics:
-
-- date: 1/16
-  lecturer: Eric
-  title: >
-    <strong>Representation: Directed GMs (BNs)</strong>
-  slides: "https://www.dropbox.com/s/q53gmhc056zob8e/lecture2-BNrepresentation.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/fp340t7exxzch7g/lecture2-BNrepresentation-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=388ec3f4-de78-4f5e-b5ca-a9d001296630"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-02/"
-  readings:
-    - Jordan Textbook, <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter2.pdf" target="_blank">Ch. 2</a> (Sec. 2.1)
-    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%203.pdf" target="_blank">Ch. 3</a>
-  logistics:
-
-- date: 1/21
-  title: No class (MLK day)
-
-- date: 1/23
-  lecturer: Eric
-  title: >
-    <strong>Representation: Undirected GMs (MRFs)</strong>
-  slides: "https://www.dropbox.com/s/a22z8io0nuxnp5o/lecture3-MRFrepresentation.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/ujbe8vcfc0jf0kz/lecture3-MRFrepresentation-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=702de16d-fb04-4906-9014-a9d0012983e2"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-03/"
-  readings:
-    - Jordan Textbook, Ch. 2 (Sec. 2.2 - end)
-    - Koller and Friedman Textbook, <a href="http://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch%204.pdf" target="_blank">Ch. 4</a>
-    - A. Fischer and C. Igel, <a href="https://pdfs.semanticscholar.org/dd13/5a89b5075af5cbef5becaf419457cdd77cc9.pdf" target="_blank">An Introducton to Restricted Boltzmann Machines</a>
-  logistics:
-
-- date: 1/28
-  lecturer: Eric
-  title: >
-    <strong>Exact inference</strong> <br />
-    - Elimination <br />
-    - Message passing <br />
-    - Sum product algorithm
-  slides: "https://www.dropbox.com/s/yyo1t7d48kzxlqu/lecture4-ExactInference.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/49w8lflglvpcmn2/lecture4-ExactInference-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61db95f2-aec1-415d-9180-a9d0012992fe"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-04/"
-  readings:
-    - Jordan Textbook, Ch. <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter3.pdf" target="_blank">3</a> and <a href="https://people.eecs.berkeley.edu/~jordan/prelims/chapter4.pdf" target="_blank">4</a>
-    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch9.1-9.4.pdf" target="_blank">Ch. 9</a>, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch10.1-10.3.pdf" target="_blank">Ch. 10</a>
-    - Tom Minka, <a href="https://www.seas.harvard.edu/courses/cs281/papers/minka-divergence.pdf" target="_blank">Divergence measures and message passing</a>
-
-  logistics: >
-    <span class="event">HW1 out (Mon, 1/28)</span>
-
-- date: 1/30
-  lecturer: skipped
-  title: >
-    <strong>Parameter learning in fully observable Bayesian Networks</strong> <br />
-    - Generalized Linear Models (GLIMs) <br />
-    - Maximum Likelihood Estimation (MLE) <br />
-    - Markov Models
-  slides: "https://www.dropbox.com/s/mycn78k6k0saxr5/lecture5-LearningObs.pdf?dl=0"
-  annotated:
-  video:
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-05/"
-  readings:
-    - Jordan Textbook, Ch. 8, 9 (Sec. 9.1 - 9.2)
-    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch17.1-17.4.pdf" target="_blank">Ch. 17 (Sections 17.1 - 17.4)</a>
-    - Geiger and Heckerman, <a href="https://projecteuclid.org/euclid.aos/1035844981" target="_blank">Parameter priors for directed acyclic graphical models and the characterization of several probability distributions</a>
-    - Geiger and Heckerman, <a href="https://projecteuclid.org/euclid.aos/1069362752" target="_blank">A characterization of the Dirichlet distribution through global and local parameter independence</a>
-  logistics:
-
-- date: 2/4
-  lecturer: Maruan
-  title: >
-    <strong>Parameter Learning of partially observed BN</strong> <br />
-    - Mixture models <br />
-    - Hidden Markov Models (HMMs) <br />
-    - The EM algorithm
-  slides: "https://www.dropbox.com/s/firdpiojui2o4s5/lecture6-EM-maruan.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e3746b9-fd53-4939-af7b-a9d00129a06f"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-06/"
-  readings:
-    - Jordan Textbook, Ch. 11
-    - Koller and Friedman Textbook, <a href="https://www.cs.cmu.edu/~epxing/Class/10708-17/readings/Ch19.1-19.4.pdf" target="_blank">Ch. 19.1-19.4</a>
-    - Borman, <a href="https://www.cs.utah.edu/~piyush/teaching/EM_algorithm.pdf">The EM algorithm (A short tutorial)</a>
-    - <a href="http://www.cs.toronto.edu/~hinton/absps/emk.pdf" target="_blank">Some interesting aspects of the EM algorithm</a> (Neal and Hinton)
-  logistics:
-
-- date: 2/6
-  lecturer: Eric
-  title: >
-    <strong>Maximum likelihood learning of undirected GM</strong>
-  slides: "https://www.dropbox.com/s/jvuh05ure5i47ca/lecture7-LearningObsMRF.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/g2wbcxe8yx4qt7f/lecture7-LearningObsMRF-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d004814a-0054-49c6-9a2b-a9d00129aa04"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-07/"
-  readings:
-    - Jordan Textbook, Ch. 9 (Sec. 9.3-9.5), Ch. 20
-    - Friedman, Hastie, Tibshirani. <a href="http://statweb.stanford.edu/~tibs/glasso/" target="_blank">Sparse inverse covariance estimation with the graphical lasso</a>.
-    - Lafferty et al., <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.26.803&rep=rep1&type=pdf" target="_blank">Conditional Random Fields - Probabilistic Models for Segmenting and Labeling Sequence Data</a>.
-  logistics:
-
-- date: 2/11
-  lecturer: guest lecture, <a href="https://www.cmu.edu/dietrich/philosophy/people/faculty/zhang.html" target="_blank">Kun Zhang</a> @ Department of Philosophy
-  title: >
-    <strong>Causal discovery and inference</strong>
-  slides: "https://www.dropbox.com/s/9clh12j85c8smgb/lecture8-Causality.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51529b86-51dd-41eb-840f-a9d00129b93c"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-08/"
-  readings:
-    - J. Pearl, M. Glymour, and N. P. Jewell. <a href="http://bayes.cs.ucla.edu/PRIMER/" target="_blank">Causal Inference in Statistics A Primer</a>. Concepts related to causality and identification of causal effects.
-    - P. Spirtes, C. Glymour, and R. Scheines. <a href="https://www.researchgate.net/publication/242448131_Causation_Prediction_and_Search" target="_blank">Causation, Prediction, and Search</a>. Pages 80-89 and 125-123-136. Traditional methods for causal discovery, including the PC and FCI algorithms.
-    - K. Zhang, B. Schöklopf, P. Spirtes, and C. Glymour. <a href="https://academic.oup.com/nsr/article/5/1/26/4638533" target="_blank">Learning causality and causality-related learning</a>. Brief review of recent methods for causal discovery.
-  logistics:
-
-- date: 2/13
-  lecturer: Eric
-  title: >
-    <strong>Modeling networks</strong> <br>
-    - Gaussian graphical models <br>
-    - Ising models
-  slides: "https://www.dropbox.com/s/yfip5ig21g4qxhn/lecture9-NetworkLearning.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/azf57ov9b079a41/lecture9-NetworkLearning-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2005749e-7531-473e-adb6-a9d00129c5e1"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-09/"
-  readings:
-    - Meinshausen and Buhlmann, <a href="https://projecteuclid.org/euclid.aos/1152540754" target="_blank">High-Dimensional Graphs and Variable Selection with the Lasso</a>.
-    - Kolar et al., <a href="https://www.cs.cmu.edu/~epxing/papers/2010/kolar_song_xing_aoas10.pdf" target="_blank">Estimating Time-Varying Networks</a>.
-    - Dempster, <a href="https://www.jstor.org/stable/2528966?origin=JSTOR-artinfo&seq=1#page_scan_tab_contents" target="_blank">Covariance Selection</a>.
-  logistics: >
-    <span class="deadline">HW1 due (Wed, 2/13)</span>
-
-- date: 2/18
-  lecturer: Eric
-  title: >
-    <strong>Sequential models</strong> <br />
-    - Discrete Hidden State (HMM vs. CRF) <br />
-    - Continuous Hidden State (Kalman Filter)
-  slides: "https://www.dropbox.com/s/xtsksb4t04a5gu1/lecture10-SequentialModels.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/sf0wt67y03x1wdm/lecture10-SequentialModels-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77665f85-3445-4146-b0c6-a9d00129cf56"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-10/"
-  readings:
-    - Jordan Textbook, Ch. 14, Ch. 15
-    - Ng, <a href="http://cs229.stanford.edu/notes/cs229-notes9.pdf" target="_blank">Lecture notes on factor analysis</a>.
-    - Welch and Bishop, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.6578&rep=rep1&type=pdf" target="_blank">An Introduction to the Kalman Filter</a>.
-    - <a href="https://people.cs.umass.edu/~wallach/technical_reports/wallach04conditional.pdf" target="_blank">Conditional Random Fields - An Introduction</a>.
-  logistics:
-
-- title: "Module 2: Approximate Inference"
-
-- date: 2/20
-  lecturer: Eric
-  title: >
-    <strong>Approximate Inference: Mean Field (MF) and loopy Belief Propagation (BP) approximations</strong>
-  slides: "https://www.dropbox.com/s/x2rw3xctxmhxxfd/lecture11ab-BP%2BMeanFieid.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/me9ngr5zuxsnkxk/lecture11ab-BP%2BMeanField-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f0ffcd91-f4a6-4321-8595-a9d00129da6e"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-11/"
-  readings:
-    - Yedidia et al., <a href="http://papers.nips.cc/paper/1832-generalized-belief-propagation.pdf" target="_blank">Generalized Belief Propagation</a>.
-    - Xing et al., <a href="http://www.cs.berkeley.edu/~russell/papers/uai03-gmf.pdf" target="_blank">A Generalized Mean Field Algorithm for Variational Inference in Exponential Families</a>.
-    - <a href="https://media.nips.cc/Conferences/2016/Slides/6199-Slides.pdf" target="_blank">Variational inference tutorial (NIPS 2016)</a>
-  logistics: >
-    <span class="event">HW2 out (Fri, 2/22)</span> <br>
-    <span class="deadline">Project proposal due (Fri, 2/22)</span>
-
-- date: 2/25
-  lecturer: Eric
-  title: >
-    <strong>Theory of Variational Inference: Inner and Outer Approximations</strong>
-  slides: "https://www.dropbox.com/s/inzq9ofpqpbetu0/lecture12-VI.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/iu7aiswb9y1in73/lecture12-VI-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45100737-122a-4087-9088-a9d0012c1e1f"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-12/"
-  readings:
-    - Wainwright and Jordan, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.4581&rep=rep1&type=pdf" target="_blank">Variational Inference in Graphical Models - The View from the Marginal Polytope</a>.
-    - Wainwright and Jordan, <a href="http://www.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf" target="_blank">Graphical Models, Exponential Families, and Variational Inference</a> (Sec. 3 and 4).
-  logistics:
-
-- date: 2/27
-  lecturer: Eric
-  title: >
-    <strong>Approximate Inference: Monte Carlo and Sequential Monte Carlo methods</strong>
-  slides: "https://www.dropbox.com/s/8l0wgnxtxouq5f3/lecture13-MC.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/ky3g0jlcfp6a7sh/lecture13-MC-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ed8bdd59-b55e-42b4-be99-a9d0012c953d"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-13/"
-  readings:
-    - Jordan Textbook, Ch. 21
-    - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.1-29.3).
-  logistics:
-
-- date: 3/4
-  lecturer: Eric
-  title: >
-    <strong>Markov Chain Monte Carlo</strong> <br />
-    - Metropolis-Hastings <br />
-    - Hamiltonian Monte Carlo <br />
-    - Langevin Dynamics
-  slides: "https://www.dropbox.com/s/i1pengffzunpfrh/lecture14-MCMC.pdf?dl=0"
-  annotated: "https://www.dropbox.com/s/2h4xhzvag6snl5m/lecture14-MCMC-annotated.pdf?dl=0"
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=725d390e-9176-4a16-919b-a9d0012ccd9a"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-14/"
-  readings:
-    - David MacKay's Textbook, <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf#page=368" target="_blank">Ch. 29</a> (Sec. 29.4-29.10).
-    - Neal, <a href="https://arxiv.org/pdf/1206.1901.pdf" target="_blank">MCMC using Hamiltonian dynamics</a>.
-    - Patterson and Teh, <a href="http://papers.nips.cc/paper/4883-stochastic-gradient-riemannian-langevin-dynamics-on-the-probability-simplex.pdf" target="_blank">Stochastic Gradient Riemannian Langevin Dynamics on the Probability Simplex</a>.
-  logistics:
-
-- title: "Module 3: Deep Learning &amp; Generative Models"
-
-- date: 3/6
-  lecturer: Eric
-  title: >
-    <strong>Statistical and Algorithmic Foundations of Deep Learning</strong> <br />
-    - Insight into DL <br />
-    - Connections to GM
-  slides: "https://www.dropbox.com/s/w6zpjmy5xk0qtmp/lecture15-NN.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=caa6ce42-b7b9-4145-bc4c-a9d0012ce923"
-  notes:
-  readings:
-    - <a href="http://www.deeplearningbook.org/" target="_blank">Deep learning book</a>, Ch. 6.2-5, 20.3-4.
-    - Salakhutdinov and Hinton, <a href="http://www.jmlr.org/proceedings/papers/v5/salakhutdinov09a/salakhutdinov09a.pdf" target="_blank">Deep Boltzmann machines</a>.
-    - Belanger and McCallum, <a href="https://people.cs.umass.edu/~belanger/belanger_spen_icml.pdf" target="_blank">Structured prediction energy networks</a>.
-    - Ranganath et al., <a href="http://www.jmlr.org/proceedings/papers/v38/ranganath15.pdf" target="_blank">Deep exponential families</a>.
-  logistics: >
-    <span class="deadline">HW2 due (Mon, 3/11)</span>
-
-- date: 3/11
-  title: No classes (Spring break)
-
-- date: 3/13
-  title: No classes (Spring break)
-
-- date: 3/18
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
-  title: >
-    <strong>Building blocks of DL</strong> <br />
-    - RNN and LSTM <br />
-    - CNN, Transformers <br />
-    - Attention mechanisms <br />
-    - (Case studies in NLP)
-  slides: "https://www.dropbox.com/s/rq05b3anxoqx11q/lecture16-DL-blocks-zhiting.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a0b496e-fc7c-4abd-bcdc-aa140107f167"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-16/"
-  readings:
-    - Pascanu, Mikolov, Bengio, <a href="http://proceedings.mlr.press/v28/pascanu13.pdf" target="_blank">On the difficulty of training recurrent neural networks</a>.
-    - Vasvani et al., <a href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank">Attention is all you need</a>.
-    - Devlin et al., <a href="https://arxiv.org/pdf/1810.04805.pdf" target="_blank">BERT - Pre-training of Deep Bidirectional Transformers for Language Understanding</a>.
-  logistics: >
-    <span class="event">HW3 out (Mon, 3/18)</span>
-
-- date: 3/20
-  lecturer: Eric
-  title: >
-    <strong>Deep generative models (part 1): <br />
-    Overview of the theoretical basis and connections of deep generative models</strong> <br />
-    - Wake sleep algorithm <br />
-    - Variational autoencoders <br />
-    - Generative adversarial networks <br />
-    - A unified view of DGM
-  slides: "https://www.dropbox.com/s/ko7qzfprz5l1pp5/lecture17-DGM1.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e48fed41-d33a-429a-880a-a9d0012d041a"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-17/"
-  readings:
-    - <a href="http://www.deeplearningbook.org/" target="_blank">Deep learning book</a>, Ch. 20.9-10
-    - Variational Autoencoders, <a href="https://arxiv.org/abs/1312.6114" target="_blank">Kingma and Welling, 2014</a>.
-    - Generative Adversarial Nets, <a href="http://papers.nips.cc/paper/5423-generative-adversarial-nets" target="_blank">Goodfellow et al., 2014</a>.
-    - Sanjeev Arora's <a href="http://www.offconvex.org/2017/03/15/GANs/" target="_blank">blog post on GANs</a>.
-  logistics:
-
-- date: 3/25
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
-  title: >
-    <strong>Deep generative models (part 2)</strong> <br />
-    - GANs and their variations <br />
-    - Normalizing Flows <br />
-    - Integrating domain knowledge in DL
-  slides: "https://www.dropbox.com/s/nxsj7yfg5goiei1/lecture18-DGM2-zhiting.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
-  notes:
-  readings:
-    - Arjovsky, Bottou, <a href="https://arxiv.org/pdf/1701.04862.pdf" target="_blank">Towards principled methods for training generative adversarial networks</a>.
-    - Kingma, Dhariwal, <a href="https://arxiv.org/pdf/1807.03039.pdf" target="_blank">Glow - Generative Flow with Invertible 1x1 Convolutions</a>.
-    - Hu et al., <a href="https://arxiv.org/pdf/1603.06318.pdf" target="_blank">Harnessing Deep Neural Networks with Logic Rules</a>.
-    - Hu et al., <a href="http://papers.nips.cc/paper/8250-deep-generative-models-with-learnable-knowledge-constraints.pdf" target="_blank">Deep Generative Models with Learnable Knowledge Constraints</a>.
-  logistics:
-
-- date: 3/27
-  lecturer: guest lecture, <a href="https://www.cs.cmu.edu/~zhitingh/" target="_blank">Zhiting Hu</a>
-  title: >
-    <strong>Case Study: Text Generation</strong> <br />
-    - The encoder-decoder framework <br />
-    - Machine translation as conditional generation <br />
-    - Unifying MLE and RL objectives for text generation
-  slides: "https://www.dropbox.com/s/myrmirbtb9z0j6q/lecture19-TextGen-zhiting.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e1ca7f0-811c-493b-98f7-aa1600c828e5"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-19/"
-  readings:
-    - Ranzato et al., <a href="https://arxiv.org/pdf/1511.06732.pdf" target="_blank">Sequence Level Training with Recurrent Neural Networks</a>.
-    - Hu et al., <a href="https://arxiv.org/pdf/1703.00955.pdf" target="_blank">Toward Controlled Generation of Text</a>.
-    - Tan, Hu et al., <a href="https://arxiv.org/pdf/1811.09740.pdf" target="_blank">Connecting the Dots Between MLE and RL for Sequence Generation</a>.
-  logistics: >
-    <span class="deadline">Midway report due (Fri, 3/29)</span>
-
-- title: "Module 4: Reinforcement Learning &amp; Control Through Inference in GM"
-
-- date: 4/1
-  lecturer: Maruan
-  title: >
-    <strong>Sequential decision making (part 1): The framework</strong> <br />
-    - Brief introduction to reinforcement learning (RL) <br />
-    - Connections to GM: RL and control as inference <br />
-    - Control via Variational Inference
-  slides: "https://www.dropbox.com/s/v3ber20mzj5rpi8/lecture20-RL%2BPGM-part1-maruan.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63c27723-7630-42ee-93c2-aa2201091059"
-  notes:
-  readings:
-    - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 3, 4.
-    - Lilian Weng, <a href="https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html" target="_blank">A peek into RL (blog)</a>.
-    - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>, Sec. 1-3.
-    - Ziebart, <a href="https://www.cs.cmu.edu/~bziebart/publications/thesis-bziebart.pdf" target="_blank">Modeling Purposeful Adaptive Behavior with the Principle of Maximum Causal Entropy</a>, Ch. 5.1-2, 6.1-2.
-    - Todorov, <a href="http://folk.ntnu.no/skoge/prost/proceedings/cdc-2008/data/papers/1788.pdf" target="_blank">General duality between optimal control and estimation</a>.
-    - Koller and Friedman Textbook, Ch. 20.3.
-  logistics:
-
-- date: 4/3
-  lecturer: Maruan
-  title: >
-    <strong>Sequential decision making (part 2): The algorithms</strong> <br />
-    - Intro to RL algorithms: policy gradients and Q-learning <br />
-    - Max-entropy policy gradient <br />
-    - Soft Q-learning
-  slides: "https://www.dropbox.com/s/bw3lazuqj141v9a/lecture21-RL%2BPGM-part2-maruan.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=241c108f-bb4b-4feb-909b-a9d0012dd93a"
-  notes:
-  readings:
-    - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 13.
-    - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>, Sec. 4.
-    - Haarnoja et al., <a href="https://arxiv.org/pdf/1702.08165.pdf" target="_blank">Reinforcement Learning with Deep Energy-Based Policies</a>.
-    - Haarnoja et al., <a href="https://arxiv.org/pdf/1801.01290.pdf" target="_blank">Soft Actor-Critic</a>.
-  logistics: >
-    <span class="deadline">HW3 due (Wed, 4/3)</span>
-
-- title: "Module 5: Nonparametric methods"
-
-- date: 4/8
-  lecturer: Eric
-  title: >
-    <strong>Bayesian non-parameterics</strong> <br />
-    - Dirichlet Process (DP) <br />
-    - Indian Buffet Process (IBP)
-  slides: "https://www.dropbox.com/s/8wh862cpedv375d/lecture22-NPBayes.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=446e2313-d65b-406c-b893-aa1600c8564d"
-  notes:
-  readings:
-    - Teh, <a href="http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/dp.pdf" target="_blank">Dirichlet Process</a>.
-    - Griffiths and Ghahramani, <a href="http://jmlr.csail.mit.edu/papers/volume12/griffiths11a/griffiths11a.pdf" target="_blank">The Indian Buffet Process</a>.
-  logistics: >
-    <span class="event">HW4 out (Mon, 4/8)</span>
-
-- date: 4/10
-  lecturer: Maruan
-  title: >
-    <strong>Bayesian non-parameterics (continued)</strong> <br />
-    - Inference in Dirichlet Process (DP) <br />
-    - Hierarchical Dirichlet Process (HDP) <br />
-    - Indian Buffet Process (IBP)
-  slides: "https://www.dropbox.com/s/yrmlc11twcefbeh/lecture23-NPBayes-continued-maruan.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aee3315-845f-4022-8c57-aa1600c86513"
-  notes:
-  readings:
-    - <a href="https://dp.tdhopper.com/" target="_blank">Notes on Dirichlet Processes</a>.
-    - Ishwaran, James, <a href="http://people.ee.duke.edu/~lcarin/Yuting3.3.06.pdf" target="_blank">Gibbs Sampling Methods for Stick-Breaking Priors</a>.
-    - Teh, Jordan, Beal, Blei, <a href="https://people.eecs.berkeley.edu/~jordan/papers/hdp.pdf" target="_blank">Hierarchical Dirichlet Process</a>.
-  logistics:
-
-- date: 4/15
-  lecturer: Eric
-  title: >
-    <strong>Integrative Paradigms of GM: Regularized Bayesian Methods</strong>
-  slides: "https://www.dropbox.com/s/meupm5e1p96gize/lecture24-PosteriorReg.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b418dd05-cafc-4d6e-bebf-aa1600c873a8"
-  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-24/"
-  readings:
-    - Ganchev, Graça, Gillenwater, Taskar. <a href="http://www.jmlr.org/papers/volume11/ganchev10a/ganchev10a.pdf" target="_blank">Posterior Regularization for Structured Latent Variable Models</a>.
-    - Zhu, Chen, Xing. <a href="http://www.jmlr.org/papers/volume15/zhu14b/zhu14b.pdf" target="_blank">Bayesian Inference with Posterior Regularization and Applications to Infinite Latent SVMs</a>.
-  logistics:
-
-- date: 4/17
-  lecturer: Eric
-  title: >
-    <strong>Elements of Spectral & Kernel GMs</strong>
-  slides: "https://www.dropbox.com/s/vsn4gbq4iggxd8q/lecture25-SpectrumGM.pdf?dl=0"
-  annotated:
-  video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49837ef3-3e49-4298-8a9e-aa1600c8843e"
-  notes:
-  readings:
-    - Song. <a href="http://www.cc.gatech.edu/~lsong/papers/lesong_thesis.pdf">Learning via Hilbert space embedding of distributions</a>, Sec. 2.1, 2.2, 3.1, 3.2.
-    - Hsu, Kakade, Zhang. <a href="https://arxiv.org/pdf/0811.4413v6.pdf" target="_blank">A Spectral Algorithm for Learning Hidden Markov Models</a>.
-    - Song, Liu, Parikh, Xing. <a href="https://arxiv.org/abs/1401.3940" target="_blank">Nonparametric latent tree graphical models</a>.
-    - Parikh, Song, Xing. <a href="http://www.cs.cmu.edu/~epxing/papers/2011/Parikh_Song_Xing_ICML11.pdf" target="_blank">A Spectral Algorithm for Latent Tree Graphical Models</a>.
-  logistics:
-
-- date: 4/22
-  lecturer: Maruan
-  title: >
-    <strong>Gaussian processes (GPs) and elements of meta-learning</strong> <br />
-    - Gaussian Processes (GPs) and kernel functions <br />
-    - (Deep) kernel learning and approximations <br />
-    - Neural Processes (NPs) as an approximation to GPs <br />
-    - Elements of meta-learning
-  slides:
-  annotated:
-  video:
-  notes:
-  readings:
-    - Rasmussen, Williams. <a href="http://www.gaussianprocess.org/gpml/" target="_blank">Gaussian Processes for Machine Learning</a>, Ch. 2.2-2.4, 4.1-4.2.
-    - Görtler, Kehlbeck, Deussen. <a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank"> A Visual Exploration of Gaussian Processes</a>.
-    - Wilson, Hu, Salakhutdinov, Xing. <a href="https://arxiv.org/abs/1511.02222" target="_blank">Deep Kernel Learning</a>.
-    - Garnelo et al. <a href="https://arxiv.org/abs/1807.01613" target="_blank">Conditional</a> <a href="https://arxiv.org/abs/1807.01622" target="_blank">Neural Processes</a>.
-  logistics: >
-    <span class="deadline">HW4 due (Mon, 4/22)</span>
-
-- title: "Module 6: Modular and scalable algorithms and systems"
-
-- date: 4/24
-  lecturer: guest lecture, <a href="https://sites.google.com/site/hoqirong/" target="_blank">Qirong Ho</a> 
-  title: >
-    <strong>Scalable algorithms and systems for learning, inference, and prediction</strong>
-  slides:
-  annotated:
-  video:
-  notes:
-  readings:
-  logistics:
-
-- date: 4/29
-  lecturer: Eric
-  title: >
-    <strong>Industialization of AI: standards, modules, building-blocks, and platform</strong>
-  slides:
-  annotated:
-  video:
-  notes:
-  readings:
-  logistics:
-
-- date: 5/1
-  title: Project presentations (TBA)
+Using proxy at localhost:29434
+># Test ability to fetch very small text file
+>serve s1                       # Set up server
+Server s1 running at angelshark.ics.cs.cmu.edu:13881
+>generate random-text.txt 50    # Create file
+>fetch f1 random-text.txt s1    # Fetch it from server
+Client: Fetching '/random-text.txt' from angelshark.ics.cs.cmu.edu:13881
+>wait *
+>check f1                       # Make sure it's correct
+Request f1 yielded expected status 'ok'
+>trace f1                       # Run trace on transaction
+== Trace of request f1 =========================================================
+Initial request by client had header:
+GET http://angelshark.ics.cs.cmu.edu:13881/random-text.txt HTTP/1.0\r\n
+Host: angelshark.ics.cs.cmu.edu:13881\r\n
+Request-ID: f1\r\n
+Response: Immediate\r\n
+Connection: close\r\n
+Proxy-Connection: close \r\n
+User-Agent: CMU/1.0 Iguana/20180704 PxyDrive/0.0.1\r\n
+\r\n
+--------------------------------------------------------------------------------
+Message received by server had header:
+GET /random-text.txt HTTP/1.0\r\n
+Host: angelshark.ics.cs.cmu.edu:13881\r\n
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:3.10.0) Gecko/20190401 Firefox/63.0.1Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n
+Accept-Encoding: gzip, deflate\r\n
+Connection: close\r\n
+Proxy-Connection: close\r\n
+Request-ID: f1\r\n
+Response: Immediate\r\n
+\r\n
+--------------------------------------------------------------------------------
+Message sent by server had header:
+HTTP/1.0 200 OK\r\n
+Server: Proxylab driver\r\n
+Request-ID: f1\r\n
+Content-length: 50\r\n
+Content-type: text/plain\r\n
+Content-Identifier: s1-/random-text.txt\r\n
+Sequence-Identifier: 1\r\n
+\r\n
+--------------------------------------------------------------------------------
+Message received by client had header:
+HTTP/1.0 200 OK
+Server: Proxylab driver\r\n
+Request-ID: f1\r\n
+Content-length: 50\r\n
+Content-type: text/plain\r\n
+Content-Identifier: s1-/random-text.txt\r\n
+Sequence-Identifier: 1\r\n
+\r\n
+--------------------------------------------------------------------------------
+Response status: ok
+  Source file in ./source_files/random/random-text.txt
+Request status:  ok (OK)
+  Result file in ./response_files/f1-random-text.txt
+>quit                           # Exit program
+Testing done.  Elapsed time = 1.03 seconds
+ALL TESTS PASSED
