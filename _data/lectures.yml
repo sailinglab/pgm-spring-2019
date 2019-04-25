@@ -354,7 +354,7 @@
   slides: "https://www.dropbox.com/s/bw3lazuqj141v9a/lecture21-RL%2BPGM-part2-maruan.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=241c108f-bb4b-4feb-909b-a9d0012dd93a"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-21/"
   readings:
     - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 13.
     - Levine, <a href="https://arxiv.org/abs/1805.00909" target="_blank">Reinforcement Learning and Control as Probabilistic Inference</a>, Sec. 4.
