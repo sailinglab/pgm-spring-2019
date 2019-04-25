@@ -472,8 +472,7 @@
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c4f50fb4-29e0-4403-b57f-aa370108c04e"
   notes:
   readings:
-    - Xing et al. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7239545" target="_blank">Petuum - A New Platform for Distributed
-Machine Learning on Big Data</a>.
+    - Xing et al. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7239545" target="_blank">Petuum - A New Platform for Distributed Machine Learning on Big Data</a>.
     - Xing et al. <a href="https://www.cs.cmu.edu/~epxing/papers/2016/Xing_Engineering16.pdf" target="_blank">Strategies and Principles of Distributed Machine Learning on Big Data</a>.
   logistics:
 
