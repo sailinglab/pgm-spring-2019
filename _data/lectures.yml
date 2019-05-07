@@ -374,7 +374,7 @@
   slides: "https://www.dropbox.com/s/8wh862cpedv375d/lecture22-NPBayes.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=446e2313-d65b-406c-b893-aa1600c8564d"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-22/"
   readings:
     - Teh, <a href="http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/dp.pdf" target="_blank">Dirichlet Process</a>.
     - Griffiths and Ghahramani, <a href="http://jmlr.csail.mit.edu/papers/volume12/griffiths11a/griffiths11a.pdf" target="_blank">The Indian Buffet Process</a>.
