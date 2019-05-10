@@ -296,7 +296,7 @@
   slides: "https://www.dropbox.com/s/nxsj7yfg5goiei1/lecture18-DGM2-zhiting.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=231412f0-243a-4d82-9441-a9d0012d9aa7"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-18/"
   readings:
     - Arjovsky, Bottou, <a href="https://arxiv.org/pdf/1701.04862.pdf" target="_blank">Towards principled methods for training generative adversarial networks</a>.
     - Kingma, Dhariwal, <a href="https://arxiv.org/pdf/1807.03039.pdf" target="_blank">Glow - Generative Flow with Invertible 1x1 Convolutions</a>.
@@ -334,7 +334,7 @@
   slides: "https://www.dropbox.com/s/v3ber20mzj5rpi8/lecture20-RL%2BPGM-part1-maruan.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=63c27723-7630-42ee-93c2-aa2201091059"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-20/"
   readings:
     - Sutton, Barto, <a href="http://incompleteideas.net/book/RLbook2018.pdf" target="_blank">Reinforcement Learning, An Introduction</a>, Ch. 3, 4.
     - Lilian Weng, <a href="https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html" target="_blank">A peek into RL (blog)</a>.
@@ -391,7 +391,7 @@
   slides: "https://www.dropbox.com/s/yrmlc11twcefbeh/lecture23-NPBayes-continued-maruan.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aee3315-845f-4022-8c57-aa1600c86513"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-23/"
   readings:
     - <a href="https://dp.tdhopper.com/" target="_blank">Notes on Dirichlet Processes</a>.
     - Ishwaran, James, <a href="http://people.ee.duke.edu/~lcarin/Yuting3.3.06.pdf" target="_blank">Gibbs Sampling Methods for Stick-Breaking Priors</a>.
@@ -418,7 +418,7 @@
   slides: "https://www.dropbox.com/s/vsn4gbq4iggxd8q/lecture25-SpectrumGM.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49837ef3-3e49-4298-8a9e-aa1600c8843e"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-25/"
   readings:
     - Song. <a href="http://www.cc.gatech.edu/~lsong/papers/lesong_thesis.pdf">Learning via Hilbert space embedding of distributions</a>, Sec. 2.1, 2.2, 3.1, 3.2.
     - Hsu, Kakade, Zhang. <a href="https://arxiv.org/pdf/0811.4413v6.pdf" target="_blank">A Spectral Algorithm for Learning Hidden Markov Models</a>.
@@ -437,7 +437,7 @@
   slides: "https://www.dropbox.com/s/f3iowgpfeiyii8b/lecture26-GP-maruan.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a5dcf74f-9c2d-4306-a916-aa1600c89407"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-26/"
   readings:
     - Rasmussen, Williams. <a href="http://www.gaussianprocess.org/gpml/" target="_blank">Gaussian Processes for Machine Learning</a>, Ch. 2.2-2.4, 4.1-4.2.
     - Görtler, Kehlbeck, Deussen. <a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank"> A Visual Exploration of Gaussian Processes</a>.
