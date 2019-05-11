@@ -454,7 +454,7 @@
   slides: "https://www.dropbox.com/s/6npnome8i499rsc/lecture27-scalable-algorithms-and-systems-qirong.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b944a404-0d3e-4668-b7c3-aa3701087dfe"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-27/"
   readings:
     - Bradley et al. (2011). <a href="http://www.select.cs.cmu.edu/publications/paperdir/icml2011-bradley-kyrola-bickson-guestrin.pdf" target="_blank">Parallel Coordinate Descent for L1-Regularized Loss Minimization</a>.
     - Yuan et al. (2015). <a href="https://daiwei89.github.io/papers/lightlda.pdf" target="_blank">LightLDA - Big Topic Models on Modest Computer Clusters</a>.
@@ -470,7 +470,7 @@
   slides: "https://www.dropbox.com/s/tllltyw89dfkz4m/lecture28-AI%20Civil%20Engineering.pdf?dl=0"
   annotated:
   video: "https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c4f50fb4-29e0-4403-b57f-aa370108c04e"
-  notes:
+  notes: "https://sailinglab.github.io/pgm-spring-2019/notes/lecture-28/"
   readings:
     - Xing et al. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7239545" target="_blank">Petuum - A New Platform for Distributed Machine Learning on Big Data</a>.
     - Xing et al. <a href="https://www.cs.cmu.edu/~epxing/papers/2016/Xing_Engineering16.pdf" target="_blank">Strategies and Principles of Distributed Machine Learning on Big Data</a>.
