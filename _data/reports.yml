@@ -48,13 +48,13 @@
     - name: "Elan Rosenfeld"
 
 - title: "Stylistic Melody Generation with Conditional Variational Auto-Encoder"
-  path: /assets/project/final-reports/projec8.pdf
+  path: /assets/project/final-reports/project8.pdf
   authors:
     - name: "Junyan Jiang"
     - name: "Zhiqi Wang"
 
 - title: "Realistic Noisy Text Generation for Fortified NLP"
-  path: /assets/project/final-reports/projec9.pdf
+  path: /assets/project/final-reports/project9.pdf
   authors:
     - name: "Danish Pruthi"
     - name: "Sachin Kumar"
@@ -62,19 +62,19 @@
     - name: "Nikolai Vogler"
 
 - title: "Incorporating Visual and Textual Cues in Dialogue Generation: An Application to Comic Strips"
-  path: /assets/project/final-reports/projec10.pdf
+  path: /assets/project/final-reports/project10.pdf
   authors:
     - name: "Aniketh Janardhan Reddy"
     - name: "Ramesh Balaji"
 
 - title: "Randomized Deep Learning Models Against Adversarial Attacks"
-  path: /assets/project/final-reports/projec11.pdf
+  path: /assets/project/final-reports/project11.pdf
   authors:
     - name: "Zhuoran Liu"
     - name: "Ninghao Sha"
 
 - title: "Unsupervised Risk Discovery for Child Welfare Screening"
-  path: /assets/project/final-reports/projec12.pdf
+  path: /assets/project/final-reports/project12.pdf
   authors:
     - name: "Sebastian Caldas"
     - name: "Amanda Coston"
@@ -82,7 +82,7 @@
     - name: "Leqi Liu"
 
 - title: "Post-nonlinear Causal Model with Deep Neural Networks"
-  path: /assets/project/final-reports/projec13.pdf
+  path: /assets/project/final-reports/project13.pdf
   authors:
     - name: "Youngseog Chung"
     - name: "Joon Kim"
@@ -90,7 +90,7 @@
     - name: "Helen Zhou"
 
 - title: "Semantically Disentangled Object Generation"
-  path: /assets/project/final-reports/projec14.pdf
+  path: /assets/project/final-reports/project14.pdf
   authors:
     - name: "Austin Dill"
     - name: "Neel Guha"
@@ -98,14 +98,14 @@
     - name: "Jeffrey Li"
 
 - title: "Investigating Max-Entropy Latent-Space Policies for Hierarchical Reinforcement Learning"
-  path: /assets/project/final-reports/projec15.pdf
+  path: /assets/project/final-reports/project15.pdf
   authors:
     - name: "Siddharth Ancha"
     - name: "Mengxiong Liu"
     - name: "Xingyu Lin"
 
 - title: "Latent Variable Models to Uncover Neural Population Dynamics"
-  path: /assets/project/final-reports/projec16.pdf
+  path: /assets/project/final-reports/project16.pdf
   authors:
     - name: "Tze Hui Koh"
     - name: "Hillary Wehry"
@@ -113,14 +113,14 @@
     - name: "Darby Losey"
 
 - title: "Text Style Transfer via Back Inference with Pseudo-Parallel Data"
-  path: /assets/project/final-reports/projec17.pdf
+  path: /assets/project/final-reports/project17.pdf
   authors:
     - name: "Mengzhou Xia"
     - name: "Xuanyue Yang"
     - name: "Jiacheng Zhu"
 
 - title: "Approximate inference with Graph Neural Networks"
-  path: /assets/project/final-reports/projec18.pdf
+  path: /assets/project/final-reports/project18.pdf
   authors:
     - name: "Lingxiao Zhao"
     - name: "Ksenia Korovina"
@@ -128,27 +128,27 @@
     - name: "Mark Cheung"
 
 - title: "Pedestrian Trajectory Prediction with Graph Neural Networks"
-  path: /assets/project/final-reports/projec19.pdf
+  path: /assets/project/final-reports/project19.pdf
   authors:
     - name: "Allan Wang"
     - name: "Zirui Wang"
     - name: "Wentao Yuan"
 
 - title: "Flow Posterior for Uncertainty Estimation"
-  path: /assets/project/final-reports/projec20.pdf
+  path: /assets/project/final-reports/project20.pdf
   authors:
     - name: "Neil Xu"
     - name: "Shalom Yiblet"
 
 - title: "Deep Generative Model for 2D Structure of Natural Product"
-  path: /assets/project/final-reports/projec21.pdf
+  path: /assets/project/final-reports/project21.pdf
   authors:
     - name: "Michael Anastos"
     - name: "Nadim Farhat"
     - name: "Liu Cao"
 
 - title: "Semi-supervised Open Domain Information Extraction with Conditional VAE"
-  path: /assets/project/final-reports/projec22.pdf
+  path: /assets/project/final-reports/project22.pdf
   authors:
     - name: "Zhengbao Jiang"
     - name: "Songwei Ge"
@@ -156,13 +156,13 @@
     - name: "Donghan Yu"
 
 - title: "Hierarchical Structural Learning for Language Generation"
-  path: /assets/project/final-reports/projec23.pdf
+  path: /assets/project/final-reports/project23.pdf
   authors:
     - name: "Benjamin Striner"
     - name: "Siddharth Dalmia"
 
 - title: "Improving DQN and TRPO with Hierarchical Meta-controllers"
-  path: /assets/project/final-reports/projec24.pdf
+  path: /assets/project/final-reports/project24.pdf
   authors:
     - name: "Scott Sun"
     - name: "Aniruddh Shetty"
@@ -170,14 +170,14 @@
     - name: "Raunaq Bhirangi"
 
 - title: "Meta Exploration for Model-Agnostic Reinforcement Learning"
-  path: /assets/project/final-reports/projec25.pdf
+  path: /assets/project/final-reports/project25.pdf
   authors:
     - name: "Swaminathan Gurumurthy"
     - name: "Sumit Kumar"
     - name: "Tianwei Yue"
 
 - title: "Augmenting Contextual Explanation Networks with Logic Rules"
-  path: /assets/project/final-reports/projec26.pdf
+  path: /assets/project/final-reports/project26.pdf
   authors:
     - name: "Angel C. Hernandez"
     - name: "Yao Chong Lim"
@@ -185,7 +185,7 @@
     - name: "Wenchao Du"
 
 - title: "Motion-Object-Background Disentangled Representation from Video"
-  path: /assets/project/final-reports/projec27.pdf
+  path: /assets/project/final-reports/project27.pdf
   authors:
     - name: "Binghao Deng"
     - name: "Weizhao Shao"
@@ -193,41 +193,41 @@
     - name: "Yue Li"
 
 - title: "Video Content Swapping Using GAN"
-  path: /assets/project/final-reports/projec28.pdf
+  path: /assets/project/final-reports/project28.pdf
   authors:
     - name: "Tingfung Lau"
     - name: "Sailun Xu"
     - name: "Xinze Wang"
 
 - title: "Adversarial Music: Real world Audio Adversary against Wake-word Detection Systems"
-  path: /assets/project/final-reports/projec29.pdf
+  path: /assets/project/final-reports/project29.pdf
   authors:
     - name: "Billy Li"
     - name: "Bingqing Chen"
     - name: "Zhuoran Zhang"
 
 - title: "Using Deep Kernels in Time Varying Networks for Reverse-Engineering of Gene Interactions"
-  path: /assets/project/final-reports/projec30.pdf
+  path: /assets/project/final-reports/project30.pdf
   authors:
     - name: "Yiwen Yuan"
     - name: "Xueqian Li"
     - name: "Dong Wang"
 
 - title: "Deep generative model for harmonizing time-series scRNA-seq data"
-  path: /assets/project/final-reports/projec31.pdf
+  path: /assets/project/final-reports/project31.pdf
   authors:
     - name: "Dongshunyi (Dora) Li"
     - name: "Hyun Woong Kim"
 
 - title: "Graph the Invisible: Reasoning for Adversarial Attacks with GNNs"
-  path: /assets/project/final-reports/projec32.pdf
+  path: /assets/project/final-reports/project32.pdf
   authors:
     - name: "Ziheng Cai"
     - name: "Irene Li"
     - name: "Yue Wu"
 
 - title: "Learning Structured Latent Space Encoding for Part Based Generative Modeling of 3D Objects"
-  path: /assets/project/final-reports/projec33.pdf
+  path: /assets/project/final-reports/project33.pdf
   authors:
     - name: "Cormac OMeadhra"
     - name: "Stephen Landers"
